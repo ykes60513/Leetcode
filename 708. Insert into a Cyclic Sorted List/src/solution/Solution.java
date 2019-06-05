@@ -27,7 +27,7 @@ class Solution {
 		while (cur != start) {
 			int next = cur.val;
 			int pre = prev.val;
-			if (x == pre || x <= next && x > pre || next < pre && x > pre || next < pre && x < next) {
+			if (x == pre || (x <= next && x > pre) || (next < pre && x > pre ) || (next < pre && x < next)) {
 				find = true;
 				Node node = new Node(x);
 				prev.next = node;

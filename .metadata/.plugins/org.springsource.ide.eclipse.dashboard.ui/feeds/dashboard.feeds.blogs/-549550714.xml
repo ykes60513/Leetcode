@@ -5,7 +5,64 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-06-04T15:49:43Z</updated>
+  <updated>2019-06-05T16:46:35Z</updated>
+  <entry>
+    <title>Spring Tips: Organizational Consistency in your Spring Boot Applications</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/06/05/spring-tips-organizational-consistency-in-your-spring-boot-applications" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2019-06-05:3704</id>
+    <updated>2019-06-05T16:46:35Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! In this installment we look at things you might do to achieve organizational consistency in your Spring Boot applications and services.&lt;/p&gt;
+&lt;p&gt;speaker: &lt;a href="http://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/D33awJnlhWg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>React-ing to start.spring.io + User feedback updates</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/06/05/react-ing-to-start-spring-io-user-feedback-updates" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Damien Vitrac</name>
+    </author>
+    <id>tag:spring.io,2019-06-05:3703</id>
+    <updated>2019-06-05T14:08:16Z</updated>
+    <content type="html">&lt;p&gt;We are happy to announce today that &lt;a href="https://start.spring.io"&gt;start.spring.io&lt;/a&gt; is now built using &lt;strong&gt;React/Gatsby&lt;/strong&gt; as the front-end framework. We also made &lt;strong&gt;UI improvements&lt;/strong&gt; based on your feedback. &lt;strong&gt;Thank you&lt;/strong&gt; to all those who have contributed to this update and to all the users who continue to tell us how to improve!&lt;/p&gt;&lt;h2&gt;&lt;a href="#react-js" class="anchor" name="react-js"&gt;&lt;/a&gt;React.js&lt;/h2&gt;
+&lt;p&gt;During the previous Web UI modernization (launched on March 5th), we realized that making even small changes to the site had become more time consuming than we anticipated. The architecture was inhibiting our ability to run experiments and move quickly to make small, incremental changes. &lt;/p&gt;
+&lt;p&gt;As a result, we decided to rewrite the front-end using a modern and popular javascript framework - &lt;a href="https://www.gatsbyjs.org/"&gt;Gatsby&lt;/a&gt;. &lt;/p&gt;&lt;h2&gt;&lt;a href="#changes-based-on-your-feedback" class="anchor" name="changes-based-on-your-feedback"&gt;&lt;/a&gt;Changes based on your feedback&lt;/h2&gt;
+&lt;p&gt;Thanks to everyone who continues to &lt;strong&gt;give us feedback&lt;/strong&gt; - at conferences, through GitHub, taking the survey, etc. Based on those results, the team has cultivated a list of improvements we are planning on making over the coming months. Below are the changes included to the current site.&lt;/p&gt;&lt;h3&gt;&lt;a href="#no-more-modal-window-dependency-list" class="anchor" name="no-more-modal-window-dependency-list"&gt;&lt;/a&gt;No more modal-window dependency list&lt;/h3&gt;
+&lt;p&gt;After rolling out the &lt;strong&gt;new UI&lt;/strong&gt;, we removed the dependency list. You voiced your opinion about this removal and we quickly brought the list back in the form of a modal window. While this worked, we wanted to continue to improve the user experience.&lt;/p&gt;
+&lt;img src="https://static.spring.io/blog/damienvitrac/20190605/start.png" /&gt;
+&lt;p&gt;&lt;strong&gt;Changes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Showing the full dependency list has been promoted to a prominent position. We have removed the link and replaced it with a list icon next to the search functionality.&lt;/li&gt;
+  &lt;li&gt;To better utilize the space we switched to a grid style which allows us to fit more dependencies on the page at once and decrease the amount of scrolling. Additionally, each group can be collapsed/opened as well.&lt;/li&gt;
+  &lt;li&gt;Updated groupings and descriptions. We reviewed the dependencies, polished the descriptions to better describe the functionality and re-grouped some of them.&lt;/li&gt;
+  &lt;li&gt;Visual indication of selected dependencies.&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#new-help-menu" class="anchor" name="new-help-menu"&gt;&lt;/a&gt;New ．Help・ Menu!&lt;/h3&gt;
+&lt;img src="https://static.spring.io/blog/damienvitrac/20190605/help.png" /&gt;
+&lt;p&gt;From this menu users can access:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Projects (link to projects page) - Users can access the home page for the major Spring Projects.&lt;/li&gt;
+  &lt;li&gt;Spring Guides (link to the guides page) - This page provides users with samples of how to use and integrate Spring projects.&lt;/li&gt;
+  &lt;li&gt;What・s New With Spring - This will take users to the Spring blog, which is one of the best places to stay up-to-date on news and updates from the Spring team&lt;/li&gt;
+  &lt;li&gt;Migrate from 1.5 =&amp;gt; 2.0 - With 1.x lines End-Of-Life fast approaching (August, 2019) we have provided quick access to the migration manual.&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#additional-ui-changes" class="anchor" name="additional-ui-changes"&gt;&lt;/a&gt;Additional UI Changes&lt;/h3&gt;
+&lt;p&gt;As always, we made small html/css changes as well:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Searching will now sort incompatible items to the bottom of the list.&lt;/li&gt;
+  &lt;li&gt;Searching will show a warning message if your search term is too broad&lt;/li&gt;
+  &lt;li&gt;We changed the styling on the options menu&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#gradle-kotlin-dsl" class="anchor" name="gradle-kotlin-dsl"&gt;&lt;/a&gt;Gradle Kotlin DSL&lt;/h3&gt;
+&lt;p&gt;In an effort to continue our support of the &lt;strong&gt;Kotlin&lt;/strong&gt; community we now support and provide &lt;strong&gt;Gradle Kotlin DSL projects&lt;/strong&gt;. When generating a new project, when the user selects ：Gradle； and ：Kotlin； the project generated will include &lt;em&gt;build.gradle.kts&lt;/em&gt; and &lt;em&gt;settings.gradle.kts&lt;/em&gt; by default.&lt;/p&gt;&lt;h2&gt;&lt;a href="#a-note-about-using-curl" class="anchor" name="a-note-about-using-curl"&gt;&lt;/a&gt;A note about using cURL&lt;/h2&gt;
+&lt;p&gt;Recently the start.spring.io page was updated to https:// from http://. The result is that if a user types &lt;code&gt;curl start.spring.io&lt;/code&gt; from the terminal nothing happens&amp;hellip;and there is no user feedback. &lt;/p&gt;
+&lt;p&gt;Currently, cURL does not support redirects out-of-the-box. When using cURL please use&lt;br/&gt;&lt;code&gt;curl https://start.spring.io&lt;/code&gt;. &lt;/p&gt;
+&lt;hr/&gt;
+&lt;p&gt;Again we appreciate &lt;strong&gt;everyone&amp;rsquo;s help and feedback&lt;/strong&gt; as we continue learning and iterating on the site and the initializr library. &lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring  - June 4, 2019</title>
     <link rel="alternate" href="https://spring.io/blog/2019/06/04/this-week-in-spring-june-4-2019" />
@@ -926,51 +983,6 @@ Mono&amp;lt;Void&amp;gt; atomic = template.update(Step.class)&#xD;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The code above sets up a &lt;code&gt;ReactiveTransactionManager&lt;/code&gt; and uses &lt;code&gt;TransactionalOperator&lt;/code&gt; to perform multiple write actions within a single transaction. &lt;code&gt;ReactiveMongoTemplate&lt;/code&gt; gets configured to participate in reactive transactions.&lt;/p&gt;&lt;h2&gt;&lt;a href="#next-steps" class="anchor" name="next-steps"&gt;&lt;/a&gt;Next Steps&lt;/h2&gt;
 &lt;p&gt;Reactive Transaction Management ships with Spring Framework 5.2 M2, Spring Data MongoDB 2.2 M4, and Spring Data R2DBC 1.0 M2 milestone releases. You can pick up these and start integrating reactive transaction management in your code. We look forward to community feedback so that we can smooth out any sharp edges before shipping release candidates in early June.&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Reactor Dysprosium-M1 is Available Now</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/05/15/reactor-dysprosium-m1-is-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Stephane Maldini</name>
-    </author>
-    <id>tag:spring.io,2019-05-15:3683</id>
-    <updated>2019-05-15T23:36:00Z</updated>
-    <content type="html">&lt;p&gt;The 4th Generation of Reactor is arriving. On behalf of the team we want to thank all our community for the tremendous feedback. Over the last year we have grown our reactive line-up significantly including &lt;a href="https://r2dbc.io"&gt;R2DBC&lt;/a&gt; and &lt;a href="https://github.com/reactor/BlockHound"&gt;BlockHound&lt;/a&gt;. Our adoption in the java ecosystem looks phenomenal and we are collaborating with major corps including Microsoft and Google. We have more than doubled our regular &lt;a href="https://gitter.im/reactor/reactor"&gt;Gitter&lt;/a&gt; audience with some awesome -you guessed it- &lt;em&gt;reactive&lt;/em&gt; discussions happening every day. Finally, &lt;a href="https://twitter.com/bsideup"&gt;Sergei Egorov&lt;/a&gt; has joined the core team and we have no plans to stop expanding!&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Dysprosium-M1&lt;/code&gt; is available on &lt;a href="http://repo.spring.io/milestone/"&gt;our milestone repository&lt;/a&gt;. It is paving the way for more changes in the work. It&amp;rsquo;s worth noting that 2 features are being deprecated, and evaluated for removal at the end of the milestone phase :&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-  &lt;p&gt;&lt;code&gt;EventLoopProcessor&lt;/code&gt; =&amp;gt; &lt;code&gt;TopicProcessor&lt;/code&gt;, &lt;code&gt;WorkQueueProcessor&lt;/code&gt; and &lt;code&gt;WaitStrategy&lt;/code&gt; : The processors have been moved to &lt;a href="https://github.com/reactor/reactor-addons"&gt;reactor-extra&lt;/a&gt; for optional use. They require the availability of &lt;code&gt;Unsafe&lt;/code&gt;, making them rather niche given modern JVM restrictions. Not only they can be found elsewhere but they can also be replaced by equivalent constructs like &lt;code&gt;EmitterProcessor&lt;/code&gt; with &lt;code&gt;publishOn&lt;/code&gt; and &lt;code&gt;ParallelFlux&lt;/code&gt; with &lt;code&gt;runOn&lt;/code&gt;.&lt;/p&gt;&lt;/li&gt;
-  &lt;li&gt;
-  &lt;p&gt;&lt;code&gt;Kotlin&lt;/code&gt; extensions are being given a &lt;a href="https://github.com/reactor/reactor-kotlin-extensions"&gt;dedicated space&lt;/a&gt; for further experimentation. With the latest developments around &lt;code&gt;coroutines&lt;/code&gt; and &lt;code&gt;inlining&lt;/code&gt;, we are excited to evaluate how we can leverage Kotlin to provide a smoother developer experience. One of the goals we have set to this experiment is to provide a dedicated API that will enable writing custom producers and operators with the conciseness of Kotlin.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Even with these changes we do not anticipate major pains for our community, but we&amp;rsquo;d like to have your opinion.&lt;/p&gt;
-&lt;p&gt;Change logs and release notes:&lt;br/&gt;- &lt;a href="https://github.com/reactor/reactor-core/releases/tag/v3.3.0.M1"&gt;reactor-core 3.3.0.M1&lt;/a&gt;&lt;br/&gt;- &lt;a href="https://github.com/reactor/reactor-netty/releases/tag/v0.9.0.M1"&gt;reactor-netty 0.9.0.M1&lt;/a&gt;&lt;br/&gt;- &lt;a href="https://github.com/reactor/reactor-addons/releases/tag/v3.3.0.M1"&gt;reactor-addons 3.3.0.M1&lt;/a&gt;&lt;br/&gt;- &lt;a href="https://github.com/reactor/BlockHound/releases/tag/1.0.0.M3"&gt;BlockHound 1.0.0.M3&lt;/a&gt;&lt;/p&gt;&lt;h1&gt;&lt;a href="#runtime-performances" class="anchor" name="runtime-performances"&gt;&lt;/a&gt;Runtime performances&lt;/h1&gt;
-&lt;p&gt;We are working hard at improving the overall experience for our users and upgrading our runtime efficiency across the board:&lt;br/&gt;- &lt;code&gt;reactor-netty 0.9.0.M1/0.8.8&lt;/code&gt; has seen a 40% throughput improvement for request/reply (HTTP) scenarios and at least 20% increase for streaming scenarios. More importantly, memory management has been tightened to control some reported memory issues and the number of required &lt;code&gt;flush&lt;/code&gt; operations has been dramatically reduced (3x less) which is a welcome news for CPU use.&lt;br/&gt;- For &lt;code&gt;reactor-core 3.3.0&lt;/code&gt; , we are looking at progressively moving debugging interceptors outside of the critical path using an &lt;a href="https://github.com/reactor/reactor-tools"&gt;agent based approach&lt;/a&gt;. &lt;/p&gt;&lt;h1&gt;&lt;a href="#bismuth-eol" class="anchor" name="bismuth-eol"&gt;&lt;/a&gt;Bismuth EOL&lt;/h1&gt;
-&lt;p&gt;Anticipating the coming &lt;code&gt;Dysprosium-RELEASE&lt;/code&gt;, our &lt;em&gt;reactor-core 3.1.x&lt;/em&gt; and &lt;em&gt;reactor-netty 0.7.x&lt;/em&gt; lines will not receive further patches. We encourage our users to update to &lt;code&gt;Californium&lt;/code&gt; releases trains, which match &lt;em&gt;Spring Boot 2.1.x&lt;/em&gt; and &lt;em&gt;Spring Framework 5.1.x&lt;/em&gt;. &lt;/p&gt;
-&lt;p&gt;If you already are using &lt;em&gt;Spring Boot 2.2.x&lt;/em&gt; and &lt;em&gt;Spring Framework 5.2.x&lt;/em&gt;, you will be required to use &lt;code&gt;Dysprosium&lt;/code&gt; including &lt;em&gt;reactor-core 3.3.x&lt;/em&gt; and &lt;em&gt;reactor-netty 0.9.x&lt;/em&gt;.&lt;/p&gt;&lt;h1&gt;&lt;a href="#trivia" class="anchor" name="trivia"&gt;&lt;/a&gt;Trivia&lt;/h1&gt;
-&lt;p&gt;What is &lt;code&gt;Dysprosium&lt;/code&gt; ? Well its a chemical element starting with the 4th letter of the latin alphabet. It also means &amp;ldquo;&lt;em&gt;hard to get&lt;/em&gt;&amp;rdquo; because it took quite a few attempts to isolate it. So, mark my words, everything should be ok with &lt;code&gt;Dysprosium&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Again, we appreciate your valuable input, please join us on &lt;a href="https://gitter.im/reactor/reactor"&gt;Gitter&lt;/a&gt; and share your question, story or both! Meanwhile, we are sailing towards a second milestone early June.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://http://projectreactor.io"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/reactor"&gt;GitHub&lt;/a&gt; | &lt;a href="https://projectreactor.io/docs"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/project-reactor"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/reactor/reactor"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Reactor Californium-SR8 is out</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/05/15/reactor-californium-sr8-is-out" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Stephane Maldini</name>
-    </author>
-    <id>tag:spring.io,2019-05-15:3684</id>
-    <updated>2019-05-15T16:48:00Z</updated>
-    <content type="html">&lt;p&gt;The 8th Service Release for Californium is out. Beyond fixing its share of issues, it is shipping with a turbo-charged &lt;code&gt;reactor-netty&lt;/code&gt; -thanks to changes backported- from our new &lt;a href="https://spring.io/blog/2019/05/15/reactor-dysprosium-m1-is-available-now"&gt;Dysprosium-M1 release&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The release is available on your preferred maven central repository.&lt;/p&gt;
-&lt;p&gt;Change logs and release notes:&lt;br/&gt;- &lt;a href="https://github.com/reactor/reactor-core/releases/tag/v3.2.9.RELEASE"&gt;reactor-core 3.2.9.RELEASE&lt;/a&gt;&lt;br/&gt;- &lt;a href="https://github.com/reactor/reactor-netty/releases/tag/v0.8.8.RELEASE"&gt;reactor-netty 0.8.8.RELEASE&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Note that the release overrides &lt;code&gt;Californium-SR7&lt;/code&gt; which has shipped with an unwelcome regression in &lt;code&gt;reactor-netty 0.8.7&lt;/code&gt;.&lt;/p&gt;&lt;h1&gt;&lt;a href="#bismuth-eol" class="anchor" name="bismuth-eol"&gt;&lt;/a&gt;Bismuth EOL&lt;/h1&gt;
-&lt;p&gt;Anticipating the coming &lt;code&gt;Dysprosium-RELEASE&lt;/code&gt;, our &lt;em&gt;reactor-core 3.1.x&lt;/em&gt; and &lt;em&gt;reactor-netty 0.7.x&lt;/em&gt; lines will not receive further patches. We encourage our users to update to &lt;code&gt;Californium&lt;/code&gt; releases trains, which match &lt;em&gt;Spring Boot 2.1.x&lt;/em&gt; and &lt;em&gt;Spring Framework 5.1.x&lt;/em&gt;. &lt;/p&gt;
-&lt;p&gt;If you already are using &lt;em&gt;Spring Boot 2.2.x&lt;/em&gt; and &lt;em&gt;Spring Framework 5.2.x&lt;/em&gt;, you will be required to use &lt;code&gt;Dysprosium&lt;/code&gt; including &lt;em&gt;reactor-core 3.3.x&lt;/em&gt; and &lt;em&gt;reactor-netty 0.9.x&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://http://projectreactor.io"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/reactor"&gt;GitHub&lt;/a&gt; | &lt;a href="https://projectreactor.io/docs"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/project-reactor"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/reactor/reactor"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
