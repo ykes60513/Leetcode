@@ -800,3 +800,30 @@ java.net.UnknownHostException: dist.springsource.com
 	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.recommenders.rcp 4 18 2019-06-06 00:26:57.297
+!MESSAGE Failed to resolve selection in ‘=202. Happy Number/src<solution{Solution1.java’ at offset 653.
+!STACK 1
+Java Model Exception: Java Model Status [Index out of bounds]
+	at org.eclipse.jdt.internal.core.Openable.codeSelect(Openable.java:160)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:387)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect_aroundBody0(CompilationUnit.java:380)
+	at org.eclipse.jdt.internal.core.CompilationUnit$AjcClosure1.run(CompilationUnit.java:1)
+	at org.eclipse.contribution.jdt.itdawareness.ITDAwarenessAspect.ajc$around$org_eclipse_contribution_jdt_itdawareness_ITDAwarenessAspect$6$3f3ffce8proceed(ITDAwarenessAspect.aj:311)
+	at org.eclipse.contribution.jdt.itdawareness.ITDAwarenessAspect.ajc$around$org_eclipse_contribution_jdt_itdawareness_ITDAwarenessAspect$6$3f3ffce8(ITDAwarenessAspect.aj:312)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:380)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromTypeRootInEditor(JavaElementSelections.java:138)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromEditor(JavaElementSelections.java:119)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelections.resolveJavaElementFromEditor(JavaElementSelections.java:102)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService.handleSelectionInEditor(JavaElementSelectionService.java:108)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService.access$1(JavaElementSelectionService.java:105)
+	at org.eclipse.recommenders.internal.rcp.JavaElementSelectionService$1.run(JavaElementSelectionService.java:82)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SUBENTRY 1 org.eclipse.jdt.core 4 980 2019-06-06 00:26:57.328
+!MESSAGE Index out of bounds
