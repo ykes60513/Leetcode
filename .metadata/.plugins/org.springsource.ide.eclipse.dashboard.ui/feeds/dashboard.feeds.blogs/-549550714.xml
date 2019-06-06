@@ -28,7 +28,7 @@
       <name>Damien Vitrac</name>
     </author>
     <id>tag:spring.io,2019-06-05:3703</id>
-    <updated>2019-06-05T14:08:16Z</updated>
+    <updated>2019-06-05T14:08:00Z</updated>
     <content type="html">&lt;p&gt;We are happy to announce today that &lt;a href="https://start.spring.io"&gt;start.spring.io&lt;/a&gt; is now built using &lt;strong&gt;React/Gatsby&lt;/strong&gt; as the front-end framework. We also made &lt;strong&gt;UI improvements&lt;/strong&gt; based on your feedback. &lt;strong&gt;Thank you&lt;/strong&gt; to all those who have contributed to this update and to all the users who continue to tell us how to improve!&lt;/p&gt;&lt;h2&gt;&lt;a href="#react-js" class="anchor" name="react-js"&gt;&lt;/a&gt;React.js&lt;/h2&gt;
 &lt;p&gt;During the previous Web UI modernization (launched on March 5th), we realized that making even small changes to the site had become more time consuming than we anticipated. The architecture was inhibiting our ability to run experiments and move quickly to make small, incremental changes. &lt;/p&gt;
 &lt;p&gt;As a result, we decided to rewrite the front-end using a modern and popular javascript framework - &lt;a href="https://www.gatsbyjs.org/"&gt;Gatsby&lt;/a&gt;. &lt;/p&gt;&lt;h2&gt;&lt;a href="#changes-based-on-your-feedback" class="anchor" name="changes-based-on-your-feedback"&gt;&lt;/a&gt;Changes based on your feedback&lt;/h2&gt;
@@ -57,8 +57,8 @@
   &lt;li&gt;We changed the styling on the options menu&lt;/li&gt;
 &lt;/ul&gt;&lt;h3&gt;&lt;a href="#gradle-kotlin-dsl" class="anchor" name="gradle-kotlin-dsl"&gt;&lt;/a&gt;Gradle Kotlin DSL&lt;/h3&gt;
 &lt;p&gt;In an effort to continue our support of the &lt;strong&gt;Kotlin&lt;/strong&gt; community we now support and provide &lt;strong&gt;Gradle Kotlin DSL projects&lt;/strong&gt;. When generating a new project, when the user selects ¡§Gradle¡¨ and ¡§Kotlin¡¨ the project generated will include &lt;em&gt;build.gradle.kts&lt;/em&gt; and &lt;em&gt;settings.gradle.kts&lt;/em&gt; by default.&lt;/p&gt;&lt;h2&gt;&lt;a href="#a-note-about-using-curl" class="anchor" name="a-note-about-using-curl"&gt;&lt;/a&gt;A note about using cURL&lt;/h2&gt;
-&lt;p&gt;Recently the start.spring.io page was updated to https:// from http://. The result is that if a user types &lt;code&gt;curl start.spring.io&lt;/code&gt; from the terminal nothing happens&amp;hellip;and there is no user feedback. &lt;/p&gt;
-&lt;p&gt;Currently, cURL does not support redirects out-of-the-box. When using cURL please use&lt;br/&gt;&lt;code&gt;curl https://start.spring.io&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;Recently the start.spring.io page was updated to https:// from http://. The result is that if a user types curl start.spring.io from the terminal nothing happens¡Kand there is no user feedback.&lt;/p&gt;
+&lt;p&gt;When using &lt;strong&gt;cURL&lt;/strong&gt; or &lt;strong&gt;httpie&lt;/strong&gt;, you should use &lt;code&gt;https://start.spring.io&lt;/code&gt; from now on - please update your scripts!&lt;/p&gt;
 &lt;hr/&gt;
 &lt;p&gt;Again we appreciate &lt;strong&gt;everyone&amp;rsquo;s help and feedback&lt;/strong&gt; as we continue learning and iterating on the site and the initializr library. &lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
