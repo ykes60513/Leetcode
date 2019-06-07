@@ -5,7 +5,21 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-06-05T16:46:35Z</updated>
+  <updated>2019-06-07T03:26:26Z</updated>
+  <entry>
+    <title>A Bootiful Podcast: Spring Cloud lead Spencer Gibb on Microservices, Brazil, and more</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/06/07/a-bootiful-podcast-spring-cloud-lead-spencer-gibb-on-microservices-brazil-and-more" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2019-06-07:3705</id>
+    <updated>2019-06-07T03:26:26Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! In this installment &lt;a href="http://twitter.com/Starbuxman"&gt;Josh Long&lt;/a&gt; interviews Spring Cloud lead &lt;a href="http://twitter.com/SpencerBGibb"&gt;Spencer Gibb&lt;/a&gt; about open-source, Brazil, microservices, Spring, his journey to the Spring team, and more.&lt;/p&gt;
+&lt;p&gt;Spencer on Twitter: &lt;a href="http://Twittter.com/SpencerBGibb"&gt;@SpencerBGibb&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/632979783&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Tips: Organizational Consistency in your Spring Boot Applications</title>
     <link rel="alternate" href="https://spring.io/blog/2019/06/05/spring-tips-organizational-consistency-in-your-spring-boot-applications" />
@@ -867,122 +881,6 @@ dependencies {&#xD;
   &lt;li&gt;&lt;a href="http://blog.frankel.ch"&gt;Nicolas&amp;rsquo; epic blog&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/621942714&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"&gt;&lt;/iframe&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Reactive Transactions with Spring</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/05/16/reactive-transactions-with-spring" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Mark Paluch</name>
-    </author>
-    <id>tag:spring.io,2019-05-09:3668</id>
-    <updated>2019-05-16T06:59:00Z</updated>
-    <content type="html">&lt;p&gt;Back in 2016, our reactive journey started with Spring Framework 5 accompanied by a couple of reactive integrations. Throughout our journey, other projects joined the reactive movement. With R2DBC, we now also provide a reactive integration for SQL databases. With the growth of transaction-capable integrations, we constantly got asked:&lt;/p&gt;&lt;h2&gt;&lt;a href="#does-spring-framework-support-reactive-transaction" class="anchor" name="does-spring-framework-support-reactive-transaction"&gt;&lt;/a&gt;Does Spring Framework support Reactive @Transaction?&lt;/h2&gt;
-&lt;p&gt;At the time our journey began, we had no reactive form of transactional integrations, so this question was simple to answer: There¡¦s no need for reactive transaction management. &lt;/p&gt;
-&lt;p&gt;Over time, MongoDB started to support multi-document transactions with MongoDB Server 4.0. R2DBC (the specification for reactive SQL database drivers) started to emerge, and we decided to pick up on R2DBC with Spring Data R2DBC. Both projects wanted to expose transactional behavior, so they eventually provided &lt;code&gt;inTransaction(¡K)&lt;/code&gt; methods on their Template APIs to perform units of work guarded by native transactions.&lt;/p&gt;
-&lt;p&gt;While it is convenient to use an &lt;code&gt;inTransaction(¡K)&lt;/code&gt; method for smaller chunks of work, it does not reflect the Spring way of supporting transactions. When working with imperative programming models, Spring Framework allows for two arrangements of transaction management: &lt;code&gt;@Transactional&lt;/code&gt; and &lt;code&gt;TransactionTemplate&lt;/code&gt; (declarative respective programmatic transaction management).&lt;/p&gt;
-&lt;p&gt;Both approaches to transaction management are built on top of &lt;code&gt;PlatformTransactionManager&lt;/code&gt;, which manages transactions for transactional resources. &lt;code&gt;PlatformTransactionManager&lt;/code&gt; can be either a Spring-provided transaction manager implementation or a Java EE one based on JTA.&lt;/p&gt;
-&lt;p&gt;Both approaches have in common that they bind the transactional state to &lt;code&gt;ThreadLocal&lt;/code&gt; storage, which allows for transactional state management without passing a &lt;code&gt;TransactionStatus&lt;/code&gt; object. Transaction management should happen in the background in a non-invasive manner.&lt;br/&gt;&lt;code&gt;ThreadLocal&lt;/code&gt; works in imperative programming arrangements because of the underlying assumption that we do not engage threads to continue work within a transaction.&lt;/p&gt;&lt;h2&gt;&lt;a href="#how-imperative-transaction-management-works" class="anchor" name="how-imperative-transaction-management-works"&gt;&lt;/a&gt;How Imperative Transaction Management Works&lt;/h2&gt;
-&lt;p&gt;Transaction management needs to associate its transactional state with an execution. In imperative programming, this is typically a &lt;code&gt;ThreadLocal&lt;/code&gt; storage ¡V Transactional state is bound to a &lt;code&gt;Thread&lt;/code&gt;. The underlying assumption is that transactional code gets executed on the same thread on which the container has invoked it.&lt;/p&gt;
-&lt;p&gt;Reactive programming models remove this fundamental assumption of imperative (synchronous/blocking) programming models. Taking a closer look at reactive execution, we can observe that code gets executed on different threads. This gets more visible when using inter-process communication. We can no longer safely assume that our code is fully executed on the same thread.&lt;/p&gt;
-&lt;p&gt;This change in assumptions invalidates transaction management implementations that rely on &lt;code&gt;ThreadLocal&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Thread switches happen at arbitrary times, due to integrations and optimizations such as operator fusion. This change breaks all code that relies on &lt;code&gt;ThreadLocal&lt;/code&gt;. The consequence is that we need a different arrangement to reflect transactional state without passing a &lt;code&gt;TransactionStatus&lt;/code&gt; object all the time.&lt;/p&gt;
-&lt;p&gt;Associating out-of-band data is not a new requirement in the reactive space. We faced this requirement in other areas, such as the &lt;code&gt;SecurityContext&lt;/code&gt; with Spring Security for reactive method security (to name one example). Project Reactor, the reactive library on top of which Spring builds its reactive support, has provided support for subscriber contexts since version 3.1.&lt;/p&gt;
-&lt;p&gt;Reactor &lt;code&gt;Context&lt;/code&gt; is to reactive programming what &lt;code&gt;ThreadLocal&lt;/code&gt; is to imperative programming: Contexts allow binding contextual data to a particular execution. For reactive programming, this is a &lt;code&gt;Subscription&lt;/code&gt;. Reactor¡¦s &lt;code&gt;Context&lt;/code&gt; lets Spring bind the transaction state, along with all resources and synchronizations, to a particular &lt;code&gt;Subscription&lt;/code&gt;. All reactive code that uses Project Reactor can now participate in reactive transactions. Code that returns scalar values and that wants to access transactional details must be rewritten to use reactive types to participate in transactions. Otherwise, the &lt;code&gt;Context&lt;/code&gt; is not available.&lt;/p&gt;&lt;h2&gt;&lt;a href="#reactive-transaction-management" class="anchor" name="reactive-transaction-management"&gt;&lt;/a&gt;Reactive Transaction Management&lt;/h2&gt;
-&lt;p&gt;Starting with Spring Framework 5.2 M2, Spring supports reactive transaction management through the &lt;code&gt;ReactiveTransactionManager&lt;/code&gt; SPI.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;ReactiveTransactionManager&lt;/code&gt; is a transaction management abstraction for reactive and non-blocking integrations that uses transactional resources. It is a foundation for reactive &lt;code&gt;@Transactional&lt;/code&gt; methods that return &lt;code&gt;Publisher&lt;/code&gt; types and for programmatic transaction management that uses &lt;code&gt;TransactionalOperator&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The first two reactive transaction manager implementations are:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;R2DBC through Spring Data R2DBC 1.0 M2&lt;/li&gt;
-  &lt;li&gt;MongoDB through Spring Data MongoDB 2.2 M4&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Let¡¦s take a look at how reactive transactions look like:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;class TransactionalService {&#xD;
-&#xD;
-  final DatabaseClient db&#xD;
-&#xD;
-  TransactionalService(DatabaseClient db) {&#xD;
-    this.db = db;&#xD;
-  }&#xD;
-&#xD;
-  @Transactional&#xD;
-  Mono&amp;lt;Void&amp;gt; insertRows() {&#xD;
-&#xD;
-    return db.execute()&#xD;
-      .sql(&amp;quot;INSERT INTO person (name, age) VALUES(&amp;#39;Joe&amp;#39;, 34)&amp;quot;)&#xD;
-      .fetch().rowsUpdated()&#xD;
-      .then(db.execute().sql(&amp;quot;INSERT INTO contacts (name) VALUES(&amp;#39;Joe&amp;#39;)&amp;quot;)&#xD;
-      .then();&#xD;
-  }&#xD;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Reactive transactions look very similar to imperative transactions in annotation-driven arrangements. The main difference though is that we work with &lt;code&gt;DatabaseClient&lt;/code&gt;, which is a reactive resource abstraction. All transaction management happens behind the scenes, leveraging Spring¡¦s transaction interceptors and &lt;code&gt;ReactiveTransactionManager&lt;/code&gt;. &lt;/p&gt;
-&lt;p&gt;Spring distinguishes (based on method return types) which type of transaction management to apply:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Method returns a &lt;code&gt;Publisher&lt;/code&gt; type: Reactive Transaction Management&lt;/li&gt;
-  &lt;li&gt;All other return types: Imperative Transaction Management&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This distinction is significant, as you could still use imperative components such as a JPA or JDBC query. Wrapping these results into a &lt;code&gt;Publisher&lt;/code&gt; type signals Spring to apply reactive rather than imperative transaction management. That being said, a reactive transaction arrangement does not open a &lt;code&gt;ThreadLocal&lt;/code&gt;-bound transaction, which is required for JPA or JDBC.&lt;/p&gt;&lt;h2&gt;&lt;a href="#transactionaloperator" class="anchor" name="transactionaloperator"&gt;&lt;/a&gt;TransactionalOperator&lt;/h2&gt;
-&lt;p&gt;As a next step, let¡¦s take a look at programmatic transaction management by using &lt;code&gt;TransactionalOperator&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;ConnectionFactory factory = ¡K&#xD;
-ReactiveTransactionManager tm = new R2dbcTransactionManager(factory);&#xD;
-DatabaseClient db = DatabaseClient.create(factory);&#xD;
-&#xD;
-TransactionalOperator rxtx = TransactionalOperator.create(tm);&#xD;
-&#xD;
-Mono&amp;lt;Void&amp;gt; atomicOperation = db.execute()&#xD;
-  .sql(&amp;quot;INSERT INTO person (name, age) VALUES(&amp;#39;joe&amp;#39;, &amp;#39;Joe&amp;#39;)&amp;quot;)&#xD;
-  .fetch().rowsUpdated()&#xD;
-  .then(db.execute()&#xD;
-    .sql(&amp;quot;INSERT INTO contacts (name) VALUES(&amp;#39;Joe&amp;#39;)&amp;quot;)&#xD;
-    .then())&#xD;
-  .as(rxtx::transactional);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The code above contains some notable components:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;R2dbcTransactionManager&lt;/code&gt;: This is the reactive transaction manager for a R2DBC &lt;code&gt;ConnectionFactory&lt;/code&gt; .&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;DatabaseClient&lt;/code&gt;: The client provides access to SQL databases using R2DBC drivers.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;TransactionalOperator&lt;/code&gt;: This operator associates all upstream R2DBC publishers with a transactional context. You can use it either operator style &lt;code&gt;as(¡K::transactional)&lt;/code&gt; or call-back style with &lt;code&gt;execute(txStatus -&amp;gt; ¡K)&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Reactive transactions are started lazily upon subscription. The operator starts a transaction, sets the appropriate isolation level and associates the database connection with its subscriber context. All participating (upstream) &lt;code&gt;Publisher&lt;/code&gt; instances use a single &lt;code&gt;Context&lt;/code&gt;-bound transactional connection. &lt;/p&gt;
-&lt;p&gt;Reactive-functional operator chains can be either linear (by using a single &lt;code&gt;Publisher&lt;/code&gt;) or non-linear (by merging multiple streams). Reactive transactions affect all upstream &lt;code&gt;Publisher&lt;/code&gt;s when using operator style. To limit the transaction scope to a particular set of &lt;code&gt;Publisher&lt;/code&gt;s, apply callback style, as follows:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;TransactionalOperator rxtx = TransactionalOperator.create(tm);&#xD;
-&#xD;
-Mono&amp;lt;Void&amp;gt; outsideTransaction = db.execute()&#xD;
-  .sql(&amp;quot;INSERT INTO person (name, age) VALUES(&amp;#39;Jack&amp;#39;, 31)&amp;quot;)&#xD;
-  .then();&#xD;
-&#xD;
-Mono&amp;lt;Void&amp;gt; insideTransaction = rxtx.execute(txStatus -&amp;gt; {&#xD;
-  return db.execute()&#xD;
-    .sql(&amp;quot;INSERT INTO person (name, age) VALUES(&amp;#39;Joe&amp;#39;, 34)&amp;quot;)&#xD;
-    .fetch().rowsUpdated()&#xD;
-    .then(db.execute()&#xD;
-      .sql(&amp;quot;INSERT INTO contacts (name) VALUES(&amp;#39;Joe Black&amp;#39;)&amp;quot;)&#xD;
-      .then());&#xD;
-  }).then();&#xD;
-&#xD;
-Mono&amp;lt;Void&amp;gt; completion = outsideTransaction.then(insideTransaction);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In the example above, transaction management is limited to &lt;code&gt;Publisher&lt;/code&gt; instances subscribed within &lt;code&gt;execute(¡K)&lt;/code&gt;. Or, to put it differently, the transaction is scoped. &lt;code&gt;Publisher&lt;/code&gt; instances within &lt;code&gt;execute(¡K)&lt;/code&gt; participate in the transaction, and the &lt;code&gt;Publisher&lt;/code&gt; named &lt;code&gt;outsideTransaction&lt;/code&gt; performs its work outside the transaction.&lt;/p&gt;
-&lt;p&gt;R2DBC is one of Spring¡¦s integrations with reactive transactions. Another integration is MongoDB through Spring Data MongoDB, which you can use to participate in multi-document transactions by using reactive programming.&lt;/p&gt;
-&lt;p&gt;Spring Data MongoDB ships with &lt;code&gt;ReactiveMongoTransactionManager&lt;/code&gt; as a &lt;code&gt;ReactiveTransactionManager&lt;/code&gt; implementation. It creates a session and manages transactions so that code executed within a managed transaction participates in multi-document transactions.&lt;/p&gt;
-&lt;p&gt;The following example shows programmatic transaction management with MongoDB:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint java"&gt;ReactiveTransactionManager tm &#xD;
-  = new ReactiveMongoTransactionManager(databaseFactory);&#xD;
-ReactiveMongoTemplate template = ¡K&#xD;
-template.setSessionSynchronization(ALWAYS);                                          &#xD;
-&#xD;
-TransactionalOperator rxtx = TransactionalOperator.create(tm);&#xD;
-&#xD;
-Mono&amp;lt;Void&amp;gt; atomic = template.update(Step.class)&#xD;
-  .apply(Update.set(&amp;quot;state&amp;quot;, ¡K))&#xD;
-  .then(template.insert(EventLog.class).one(new EventLog(¡K))&#xD;
-  .as(rxtx::transactional)&#xD;
-  .then();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The code above sets up a &lt;code&gt;ReactiveTransactionManager&lt;/code&gt; and uses &lt;code&gt;TransactionalOperator&lt;/code&gt; to perform multiple write actions within a single transaction. &lt;code&gt;ReactiveMongoTemplate&lt;/code&gt; gets configured to participate in reactive transactions.&lt;/p&gt;&lt;h2&gt;&lt;a href="#next-steps" class="anchor" name="next-steps"&gt;&lt;/a&gt;Next Steps&lt;/h2&gt;
-&lt;p&gt;Reactive Transaction Management ships with Spring Framework 5.2 M2, Spring Data MongoDB 2.2 M4, and Spring Data R2DBC 1.0 M2 milestone releases. You can pick up these and start integrating reactive transaction management in your code. We look forward to community feedback so that we can smooth out any sharp edges before shipping release candidates in early June.&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
