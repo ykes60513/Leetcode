@@ -5,7 +5,115 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-06-07T03:26:26Z</updated>
+  <updated>2019-06-10T23:21:46Z</updated>
+  <entry>
+    <title>This Week in Spring - June 11th, 2019</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/06/10/this-week-in-spring-june-11th-2019" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2019-06-10:3706</id>
+    <updated>2019-06-10T23:21:46Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! Can you &lt;em&gt;believe&lt;/em&gt; it? We&amp;rsquo;re already almost halfway through June! Summer&amp;rsquo;s nearly here! It&amp;rsquo;s &lt;em&gt;97 Fahrenheit&lt;/em&gt; / 37 Celsius in San Francisco! That&amp;rsquo;s &lt;em&gt;nuts&lt;/em&gt;! I&amp;rsquo;m glad I&amp;rsquo;m in beautiful Amsterdam and Eindhoven, NL, beating the heat, though. What a privilege. We&amp;rsquo;ve got a busy week, as always, to get to so let&amp;rsquo;s get to it! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The Spring team has undertaken a massive effort to eliminate insecure HTTP URLs in favor of HTTPS. Learn how we did it (and you could too) in this blog &lt;a href="https://spring.io/blog/2019/06/10/announcing-nohttp"&gt;&lt;em&gt;Announcing nohttp&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/06/07/a-bootiful-podcast-spring-cloud-lead-spencer-gibb-on-microservices-brazil-and-more"&gt;A Bootiful Podcast: Spring Cloud lead Spencer Gibb on Microservices, Brazil, and more&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Hi Spring fans! In last week&amp;rsquo;s installment of &lt;a href="https://spring.io/blog/2019/06/05/spring-tips-organizational-consistency-in-your-spring-boot-applications"&gt;Spring Tips: Organizational Consistency in your Spring Boot Applications&lt;/a&gt; I introduced things you can do to achieve consistency in your applications including auto-configuration, building starter-dependencies, the Spring JavaFormat Maven plugin and more.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/06/05/react-ing-to-start-spring-io-user-feedback-updates"&gt;React-ing to start.spring.io User feedback updates&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://dzone.com/articles/kotlin-microservice-with-spring-boot"&gt;Kotlin Microservice With Spring Boot Tutorial&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I dig this article on &lt;a href="https://dzone.com/articles/how-to-bootstrap-a-spring-boot-application-maven-p"&gt;how to bootstrap a Spring Boot application with Maven&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;An oldie-but-a-goodie: &lt;a href="https://dzone.com/articles/spring-boot-a-work-of-art"&gt;Spring Boot: A Work of Art&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This is sort of awesome. Remember ZK? You can use with Spring Boot! Learn how in this &lt;a href="https://dzone.com/articles/zk-spring-boot"&gt;&amp;ldquo;Using ZK With Spring Boot&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I love this nice post on &lt;a href="https://dzone.com/articles/apache-rocketmq-how-did-we-lowered-latency"&gt; how the Alibaba team lwered latency for Apache RocketMQ&lt;/a&gt;. Also of note: there&amp;rsquo;s a super-slick integration for Apache RocketMQ in Spring Cloud Alibaba. Check it out!&lt;/li&gt;
+  &lt;li&gt;Do &lt;em&gt;not&lt;/em&gt; miss this replay of Olga Maciaszek and Marcin Grzejszczak&amp;rsquo;s Spring I/O talk, &lt;a href="https://twitter.com/springcloud/status/1136290826269679617"&gt;&lt;em&gt;How to live in a post Spring Cloud Netflix world&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Announcing nohttp</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/06/10/announcing-nohttp" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Rob Winch</name>
+    </author>
+    <id>tag:spring.io,2019-06-04:3701</id>
+    <updated>2019-06-10T16:07:46Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;I&amp;#8217;m pleased to announce the &lt;a href="https://github.com/spring-io/nohttp"&gt;nohttp&lt;/a&gt; project, which lets users find, replace, and prevent the usage of &lt;code&gt;http://&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id="background" class="sect0"&gt;&lt;a class="anchor" href="#background"&gt;&lt;/a&gt;Background&lt;/h1&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Today, &lt;a href="https://github.com/JLLeitschuh"&gt;Jonathan Leitschuh&lt;/a&gt; published a blog titled &lt;a href="https://medium.com/@jonathan.leitschuh/want-to-take-over-the-java-ecosystem-all-you-need-is-a-mitm-1fc329d898fb"&gt;Want to take over the Java ecosystem? All you need is a MITM!&lt;/a&gt;. The blog demonstrates that hundreds of Java libraries are downloading dependencies over HTTP. This opens the projects up to potential &lt;a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack"&gt;MITM (man in the middle) attacks&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Unfortunately, there were multiple Spring projects that were using HTTP to download dependencies. Fortunately, we uncovered no signs of a successful MITM attack. We have also addressed the issue to ensure that no MITM attacks can be made in the future.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id="spring-team-reaction" class="sect0"&gt;&lt;a class="anchor" href="#spring-team-reaction"&gt;&lt;/a&gt;Spring Team Reaction&lt;/h1&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The Spring Team takes security very seriously. Since discovering that there were Spring projects downloading dependencies over HTTP, we have taken measures to ensure that a MITM attack cannot happen in the future. The most obvious change is to update Maven repository locations to use HTTPS. However, we have taken this much further by switching to using HTTPS (almost) everywhere.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;It is 2019, so, hopefully, it is apparent why we want to remove the usage of HTTP. Using HTTPS is &lt;a href="https://istlsfastyet.com/"&gt;fast&lt;/a&gt;, &lt;a href="https://httpsiseasy.com/"&gt;simple&lt;/a&gt;, and &lt;a href="https://letsencrypt.org/"&gt;available for free&lt;/a&gt;, so there are no excuses for continuing to use HTTP. As developers, it is important that we help the world transition to use HTTPS everywhere (even &lt;a href="https://www.troyhunt.com/heres-why-your-static-website-needs-https/"&gt;static sites need HTTPS&lt;/a&gt;).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We certainly are not the only ones trying to eliminate HTTP usage. &lt;a href="https://letsencrypt.org/"&gt;Let&amp;#8217;s Encrypt&lt;/a&gt; was formed to make HTTPS free, automated, and open. &lt;a href="https://blog.chromium.org/2018/05/evolving-chromes-security-indicators.html"&gt;Chrome has updated its UI&lt;/a&gt; to indicate that HTTP is insecure. &lt;a href="https://central.sonatype.org/articles/2019/Apr/30/http-access-to-repo1mavenorg-and-repomavenapacheorg-is-being-deprecated/"&gt;Maven Central has deprecated the use of HTTP&lt;/a&gt;. The list goes on.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="replacing-http-with-https"&gt;&lt;a class="anchor" href="#replacing-http-with-https"&gt;&lt;/a&gt;Replacing HTTP with HTTPS&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The Spring team has gone to great lengths to update all of our URLs to use HTTPS. This includes everything from our Maven repository URLs, to Apache License, to documentation links. There are some instances where using HTTPS was not possible. For example, some sites we link to do not support HTTPS, XML namespace identifiers must match the identifier in the document, and so on.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="https-xml-locations-through-the-classpath"&gt;&lt;a class="anchor" href="#https-xml-locations-through-the-classpath"&gt;&lt;/a&gt;HTTPS XML Locations through the Classpath&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In our efforts to eliminate HTTP usage, Spring Framework  &lt;a href="https://github.com/spring-projects/spring-framework/issues/22504"&gt;has been updated&lt;/a&gt; to resolve XML locations that use HTTPS locations through the classpath. Previously, this was only done for URLs that used HTTP. Consider the following XML configuration:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;?xml version="1.0" encoding="UTF-8"?&amp;gt;
+&amp;lt;beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd"&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The &lt;code&gt;&lt;a href="https://www.springframework.org/schema/beans/spring-beans.xsd" class="bare"&gt;https://www.springframework.org/schema/beans/spring-beans.xsd&lt;/a&gt;&lt;/code&gt; URL is resolved through the classpath instead of requiring a network connection.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Notice that the XML namespace name, which is an identifier, cannot be changed to use HTTPS. This is not ideal from the perspective of being able to put &lt;a href="https://en.wikipedia.org/wiki/Security_controls"&gt;security controls&lt;/a&gt; in place, but the name is never requested over a network, so it poses little harm to users.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="infrastructure-updates"&gt;&lt;a class="anchor" href="#infrastructure-updates"&gt;&lt;/a&gt;Infrastructure Updates&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The Spring team has updated all our hosts to ensure that HTTPS is being used. Each site supports HTTPS, redirects to HTTPS, and uses &lt;a href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security"&gt;Strict Transport Security&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;A potential MITM means that our build infrastructure could have been compromised. In response to this, we repaved all of our build infrastructure and rotated all of our credentials.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h1 id="new-security-controls" class="sect0"&gt;&lt;a class="anchor" href="#new-security-controls"&gt;&lt;/a&gt;New Security Controls&lt;/h1&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;While it is important to react to a security incident, it is also important to put &lt;a href="https://en.wikipedia.org/wiki/Security_controls"&gt;security controls&lt;/a&gt; in place to ensure the problem does not happen again.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We have updated our build boxes to block HTTP traffic to ensure that this cannot happen again. To protect developers and our users, we have created the &lt;a href="https://github.com/spring-io/nohttp"&gt;nohttp&lt;/a&gt;  project. This project can be used to find, replace, and prevent &lt;code&gt;http://&lt;/code&gt; usage while being pragmatic about allowing URLs that cannot change (such as XML namespace names). For additional details, refer to the project・s site.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id="join-us" class="sect0"&gt;&lt;a class="anchor" href="#join-us"&gt;&lt;/a&gt;Join Us&lt;/h1&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We hope that you will join the revolution to help eliminate the usage of HTTP.&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>A Bootiful Podcast: Spring Cloud lead Spencer Gibb on Microservices, Brazil, and more</title>
     <link rel="alternate" href="https://spring.io/blog/2019/06/07/a-bootiful-podcast-spring-cloud-lead-spencer-gibb-on-microservices-brazil-and-more" />
@@ -835,52 +943,6 @@ dependencies {&#xD;
   &lt;li&gt;Exciting news! &lt;a href="https://twitter.com/springcentral/status/1128898643686232064"&gt;Spring Boot Maven downloads have more than doubled&lt;/a&gt; in the past year, and are up 23% in just the past 3 months. Given that we&amp;rsquo;re talking about tens of millions of downlaods heere, those are some impressive numbers!&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://twitter.com/springcentral/status/1128898695859232768"&gt;And of course there&amp;rsquo;s a 138% increase over the last year in Spring Cloud downloads!&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Pivotal Cloud Foundry is 5 years old, here・s how it changed my life...</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/05/21/pivotal-cloud-foundry-is-5-years-old-here-s-how-it-changed-my-life" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Ben Wilcock</name>
-    </author>
-    <id>tag:spring.io,2019-05-21:3687</id>
-    <updated>2019-05-21T10:34:00Z</updated>
-    <content type="html">&lt;p&gt;&lt;a href="https://twitter.com/starbuxman"&gt;Josh Long&lt;/a&gt; often says that ：production is the best place on the Internet.； But where I used to work, developers needed to negotiate with operations, networks, and security before their code could go anywhere near this promised land. &lt;/p&gt;
-&lt;p&gt;Understandably, each of these disciplines seemed to have the same hidden agenda: change is bad. Experience had taught us that change was difficult and error-prone, so as a company we・d become risk-averse and cautious about our deployments. Releases were infrequent and large. There was plenty that could go wrong.&lt;/p&gt;
-&lt;p&gt;In spite of this, every six months or so developers would bundle up their code changes into a release, write the release notes, create a rollback plan, and wait around until midnight on a Saturday to deploy it. The deployment would be done manually, and not by developers, but by someone in operations. Developers were strictly passengers on this particular release-train (after all, we・re ：the people who write all the bugs； as my friend &lt;a href="https://twitter.com/cote"&gt;Cot?&lt;/a&gt; would jokingly say). &lt;/p&gt;
-&lt;p&gt;So if production really is ：the best place on the Internet；, I could only go there by proxy, at 3:00 AM on a Sunday, and only if I・d charmed my way past the ：Change Authorization Board； first.&lt;/p&gt;
-&lt;p&gt;The whole process was unrewarding and depressing. It was so difficult that I almost quit because of it. There were simply too many barriers in the way of progress. Delivering code wasn・t a rewarding experience for anyone. You certainly couldn&amp;rsquo;t ．experiment・ with exciting new ideas or technologies. The deployments were too big. The feedback loops were too long and the risks were too great.&lt;/p&gt;&lt;h3&gt;&lt;a href="#but-then-something-amazing-happened-hellip" class="anchor" name="but-then-something-amazing-happened-hellip"&gt;&lt;/a&gt;But then something amazing happened&amp;hellip;&lt;/h3&gt;
-&lt;p&gt;In November 2013 Pivotal Cloud Foundry came along and changed everything. By incorporating hundreds of DevOps best practices into an easy to consume package. &lt;a href="https://run.pivotal.io"&gt;Pivotal Web Services (PWS)&lt;/a&gt; could package, deploy, and run our code effortlessly with a few simple command line instructions. We could go from desktop to production with our software in minutes, and as often as we liked. &lt;/p&gt;
-&lt;p&gt;Developers loved it. Operators loved it. Security and Networks loved it. Best of all, our customers loved it! They couldn・t get enough of it in fact, but that・s another story. Just look how &lt;strong&gt;&lt;em&gt;fast&lt;/em&gt;&lt;/strong&gt; it is!!! You can have apps up and running in under 2 minutes:&lt;/p&gt;
-&lt;script id="asciicast-247474" src="https://asciinema.org/a/247474.js" async&gt;&lt;/script&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;What you&amp;rsquo;re observing here is a simple Spring Boot application that is being &amp;lsquo;pushed&amp;rsquo; to Cloud Foundry with &lt;code&gt;cf push&lt;/code&gt;. This process uses the &lt;code&gt;Java Buildpack&lt;/code&gt; - open source code that configures my application (and OpenJDK) for cloud running and then builds and starts a container image containing both. Finally, it configures an internet URL and we&amp;rsquo;re good to go! &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Gone was the need to obtain permission before a deployment rolled out. Everything the Change Authorization Board wanted in order to keep us safe was already baked into the platform. Developers could work directly with the business, add some value daily, and use an automated pipeline to push it to the cloud. Because we now got instant feedback, innovation and experimentation became easy, safe and encouraged. Epic win! &lt;/p&gt;
-&lt;p&gt;It was the same story with backing services. Databases, messaging, monitoring, you name it, could all be created and attached with a few simple command-line instructions. Spring Boot even auto-wired them for you. No more waiting for your ：new database request； ticket to shuffle it・s way up to the top of the database administrators todo list. Developers could commission their own services as and when required.&lt;/p&gt;
-&lt;p&gt;In the 5 short years that it・s been around, Pivotal Cloud Foundry has completely changed my life. It・s elevated me from the toil of release-trains and allowed developers like me to release code into the hands of users quicker, safer, and more often than ever before. &lt;/p&gt;
-&lt;p&gt;So if production really is ：better than Disneyland, (&lt;a href="https://twitter.com/starbuxman"&gt;Josh Long&lt;/a&gt;, 2018)； thanks to Pivotal Cloud Foundry, I have a first-class season ticket!&lt;/p&gt;
-&lt;hr/&gt;
-&lt;p&gt;You can try Pivotal Web Services (a &amp;lsquo;pay-as-you-go&amp;rsquo; version of Pivotal Cloud Foundry) for yourself with this &lt;a href="https://pivotal.io/platform/pcf-tutorials/getting-started-with-pivotal-cloud-foundry/introduction"&gt;simple step by step tutorial&lt;/a&gt;. You don・t need a credit card to sign up for &lt;a href="https://run.pivotal.io"&gt;Pivotal Web Services&lt;/a&gt; and new users get $87 of free credit. It・s super easy to push your code and very, very rewarding! You can have something up and running in a couple of minutes. &lt;/p&gt;
-&lt;p&gt;Pivotal Web Services is based on &lt;a href="https://pivotal.io/pas"&gt;Pivotal Cloud Foundry PAS&lt;/a&gt; which allows enterprises to get the same smooth developer workflow on the cloud of their choice. &lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>A Bootiful Podcast: Community Member Nicolas Frankel on Testing, Security, and More</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/05/17/a-bootiful-podcast-community-member-nicolas-frankel-on-testing-security-and-more" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2019-05-17:3685</id>
-    <updated>2019-05-17T04:57:31Z</updated>
-    <content type="html">&lt;p&gt;HI Spring fans! In this installment Josh Long (@starbuxman) talks to Nicolas Frankel (@nicolas_frankel) about integration testing, blogging, Kotlin, application security, living on the French/Swiss border, blogging consistently, and much more. It&amp;rsquo;s an interview with one of my favorite voices in the community.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="http://twitter.com/nicolas_frankel"&gt;Nicolas on Twitter (@nicolas_frankel)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://blog.frankel.ch"&gt;Nicolas&amp;rsquo; epic blog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/621942714&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"&gt;&lt;/iframe&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
