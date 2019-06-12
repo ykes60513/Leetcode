@@ -5,7 +5,21 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-06-12T15:58:00Z</updated>
+  <updated>2019-06-12T20:45:05Z</updated>
+  <entry>
+    <title>Spring Tips: Spring's Support for Kotlin Coroutines</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/06/12/spring-tips-spring-s-support-for-kotlin-coroutines" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2019-06-12:3709</id>
+    <updated>2019-06-12T20:45:05Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! In this week&amp;rsquo;s installment Josh Long (@starbuxman) looks at Kotlin&amp;rsquo;s new support for coroutines (&amp;ldquo;Koroutines&amp;rdquo;?) and the rich integrations in Spring.&lt;/p&gt;
+&lt;p&gt;speaker: &lt;a href="http://twitter.com/Starbuxman"&gt;Josh Long (@starbuxman) &lt;/a&gt;&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/3xu5xttCrVk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Java CFEnv 1.1.0.RC1 Released</title>
     <link rel="alternate" href="https://spring.io/blog/2019/06/12/java-cfenv-1-1-0-rc1-released" />
@@ -919,35 +933,6 @@ dependencies {&#xD;
     <content type="html">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/9henAE6VUbk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;Hi Spring fans! In this installment &lt;a href="http://twitter.com/Starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; looks at the just-announced support for reactive transactions, now supported in both &lt;a href="https://r2dbc.io/"&gt;R2DBC&lt;/a&gt; and Spring Data MongoDB. &lt;/p&gt;
 &lt;p&gt;speaker: Josh Long&lt;br/&gt;twitter: @starbuxman&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Cloud Data Flow 2.1 GA Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/05/21/spring-cloud-data-flow-2-1-ga-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Mark Pollack</name>
-    </author>
-    <id>tag:spring.io,2019-05-20:3686</id>
-    <updated>2019-05-21T14:40:59Z</updated>
-    <content type="html">&lt;p&gt;The Spring Cloud Data Flow team is pleased to announce the release of 2.1 of Data Flow.&lt;/p&gt;
-&lt;p&gt;We have a brand new website with great new content, which is where you can find our &lt;a href="https://dataflow.spring.io/getting-started/"&gt;getting started guide&lt;/a&gt; for use on Cloud Foundry and Kubernetes and your Local Machine.&lt;/p&gt;
-&lt;p&gt;Here are the highlights:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;New Dedicated Data Flow Website&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The Data Flow team takes pride is openly communicating with the community in various forums including StackOverflow, Gitter, GitHub, Twitter, and at times in Email and Zoom calls even.&lt;/p&gt;
-&lt;p&gt;However, we realized that we could provide a much better experience to answer common questions and provide an easier on-ramp to using Data Flow if we focused on improving the online documentation. The reference guide was not the ideal format to achieve that goal, so we embarked on creating a new website - &lt;a href="https://dataflow.spring.io"&gt;https://dataflow.spring.io&lt;/a&gt; - that acts as the hub for learning about all things Data Flow related.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://github.com/spring-cloud/spring-cloud-dataflow/raw/master/spring-cloud-dataflow-docs/src/main/asciidoc/images/new-web-site.png" alt="scdf-new-website" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Helm Chart Updates&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;With continued interest from the community, we have now added support to toggle between RabbitMQ and Apache Kafka when using Data Flow&amp;rsquo;s &lt;a href="https://hub.kubeapps.com/charts/stable/spring-cloud-data-flow"&gt;Helm Chart&lt;/a&gt;. The &lt;a href="https://dataflow.spring.io/docs/installation/kubernetes/helm/"&gt;installation instructions for Kubernetes&lt;/a&gt; is the best place to get started using the Chart. &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Concurrent Launch Throttling for Tasks&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;With the recent feedback from the community concerning the concurrent task launching algorithm, we have redesigned the approach to decide whether or not Tasks are currently running, and if running, how many are concurrently in running state. A more realistic view of what¡¦s actually happening with Tasks is now possible by querying against the runtime status of the Tasks in the underlying platforms (e.g., Local, Cloud Foundry and Kubernetes). You can read all about the new design and the corner cases from the &lt;a href="http://docs.spring.io/spring-cloud-dataflow/docs/2.1.0.RELEASE/reference/htmlsingle/#spring-cloud-dataflow-task-limit-concurrent-executions"&gt;reference guide&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Deployer Properties as Dropdown&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;A growing number of support cases indicated that it is hard for the developers to discover and then supply the platform-specific deployer properties when deploying streams and tasks. We are fixing that by adding a new dropdown with deployer properties automatically populated based on the platform where Data Flow is configured to run. The same also will apply for scenarios when there are 1 or more target platforms configured, the dropdown updates to reflect the target platform. We have implemented this for Stream deployments and in the next version will include support for Tasks.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/50398/56348316-137ab480-61be-11e9-9f92-6607b7ec6fc6.png" alt="scdf-local-deployment-properties-1" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Switched to ZenHub&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;From a product backlog perspective, we have switched and migrated all the GitHub backlog from Waffle to ZenHub (see: &lt;a href="https://waffle.io/"&gt;reasons&lt;/a&gt;). If you¡¦re interested in following along the product release progress, you could install the ZenHub plugin for the web browser and navigate to ZenHub tab in the Data Flow GitHub repository. &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Stay in touch&lt;/strong&gt;?&lt;/p&gt;
-&lt;p&gt;As always, we welcome feedback and contributions, so please reach out to us on &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-dataflow"&gt;StackOverflow&lt;/a&gt; or &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow"&gt;GitHub&lt;/a&gt; or via &lt;a href="https://gitter.im/spring-cloud/spring-cloud-dataflow"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
