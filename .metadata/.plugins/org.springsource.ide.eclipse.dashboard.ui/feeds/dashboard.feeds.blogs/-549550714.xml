@@ -5,7 +5,22 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-06-12T20:45:05Z</updated>
+  <updated>2019-06-13T14:58:31Z</updated>
+  <entry>
+    <title>Spring Framework 5.2.0.M3 and 5.1.8 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/06/13/spring-framework-5-2-0-m3-and-5-1-8-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>St?phane Nicoll</name>
+    </author>
+    <id>tag:spring.io,2019-06-13:3710</id>
+    <updated>2019-06-13T14:58:31Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework &lt;code&gt;5.2.0.M3&lt;/code&gt; and &lt;code&gt;5.1.8&lt;/code&gt; are available now.&lt;/p&gt;
+&lt;p&gt;The third milestone of Spring Framework 5.2 includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.2.0.M3"&gt;50 fixes and improvements&lt;/a&gt; while Spring Framework &lt;code&gt;5.1.8&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.1.8.RELEASE"&gt;31 fixes and selected improvements&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you want to give the milestone a try, you can boostrap a new application on &lt;a href="https://start.spring.io"&gt;start.spring.io&lt;/a&gt; once Spring Boot &lt;code&gt;2.2.0.M4&lt;/code&gt; is released early next week.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/5.1.8.RELEASE/spring-framework-reference"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Tips: Spring's Support for Kotlin Coroutines</title>
     <link rel="alternate" href="https://spring.io/blog/2019/06/12/spring-tips-spring-s-support-for-kotlin-coroutines" />
@@ -919,20 +934,6 @@ dependencies {&#xD;
 &lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2019-05-24-422-release"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2019-05-24-422-release&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Spring Tools 4.3.0 is scheduled to be released in late June 2019 and will be based on Eclipse 2019-06.&lt;/p&gt;
 &lt;p&gt;Enjoy!&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tips: Reactive Transactions</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/05/22/spring-tips-reactive-transactions" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2019-05-21:3689</id>
-    <updated>2019-05-22T00:00:00Z</updated>
-    <content type="html">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/9henAE6VUbk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;Hi Spring fans! In this installment &lt;a href="http://twitter.com/Starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; looks at the just-announced support for reactive transactions, now supported in both &lt;a href="https://r2dbc.io/"&gt;R2DBC&lt;/a&gt; and Spring Data MongoDB. &lt;/p&gt;
-&lt;p&gt;speaker: Josh Long&lt;br/&gt;twitter: @starbuxman&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
