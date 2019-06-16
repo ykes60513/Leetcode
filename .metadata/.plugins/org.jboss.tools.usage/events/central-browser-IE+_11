@@ -1,8 +1,8 @@
-#Fri Jun 14 23:42:51 EDT 2019
+#Sat Jun 15 23:42:55 EDT 2019
 l=Specifies which browser was used for JBoss Tools Central
 ct=central
-d=1560570171740
-c=1
+d=1560656575726
+c=0
 cmp=central
 a=browser
 cl=IE _11

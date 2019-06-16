@@ -7,8 +7,12 @@ package solution;
 import java.util.*;
 
 public class Solution2 {
+
+	private static final List<int[]> DERECTION = Arrays.asList(new int[] { -1, 0 }, new int[] { 1, 0 },
+			new int[] { 0, -1 }, new int[] { 0, 1 });
+
 	public int numIslands(char[][] grid) {
-		if (grid == null || grid.length == 0 || grid[0].length==0) {
+		if (grid == null || grid.length == 0 || grid[0].length == 0) {
 			return 0;
 		}
 
@@ -27,21 +31,14 @@ public class Solution2 {
 						int id = neighbors.remove();
 						int row = id / n;
 						int col = id % n;
-						if (row - 1 >= 0 && grid[row - 1][col] == '1') {
-							neighbors.add((row - 1) * n + col);
-							grid[row - 1][col] = '0';
-						}
-						if (row + 1 < m && grid[row + 1][col] == '1') {
-							neighbors.add((row + 1) * n + col);
-							grid[row + 1][col] = '0';
-						}
-						if (col - 1 >= 0 && grid[row][col - 1] == '1') {
-							neighbors.add(row * n + col - 1);
-							grid[row][col - 1] = '0';
-						}
-						if (col + 1 < n && grid[row][col + 1] == '1') {
-							neighbors.add(row * n + col + 1);
-							grid[row][col + 1] = '0';
+						for (int[] d : DERECTION) {
+							int r = row + d[0];
+							int c = col + d[1];
+							if (r >= 0 && c >= 0 && r < m && c < n && grid[r][c] == '1') {
+								neighbors.add(r * n + c);
+								grid[r][c] = '0';
+							}
+
 						}
 					}
 				}
