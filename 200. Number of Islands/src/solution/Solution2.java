@@ -8,7 +8,7 @@ import java.util.*;
 
 public class Solution2 {
 
-	private static final List<int[]> DERECTION = Arrays.asList(new int[] { -1, 0 }, new int[] { 1, 0 },
+	private static final List<int[]> DIRECTIONS = Arrays.asList(new int[] { -1, 0 }, new int[] { 1, 0 },
 			new int[] { 0, -1 }, new int[] { 0, 1 });
 
 	public int numIslands(char[][] grid) {
@@ -31,7 +31,7 @@ public class Solution2 {
 						int id = neighbors.remove();
 						int row = id / n;
 						int col = id % n;
-						for (int[] d : DERECTION) {
+						for (int[] d : DIRECTIONS) {
 							int r = row + d[0];
 							int c = col + d[1];
 							if (r >= 0 && c >= 0 && r < m && c < n && grid[r][c] == '1') {
