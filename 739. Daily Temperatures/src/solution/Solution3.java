@@ -1,5 +1,5 @@
 /***
- * ArrayQueue-Solution
+ * ArrayDeque-Solution
  */
 
 package solution;
