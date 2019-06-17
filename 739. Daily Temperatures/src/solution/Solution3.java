@@ -1,24 +1,25 @@
 /***
- * Stack-solution
+ * ArrayQueue-Solution
  */
+
 package solution;
 
 import java.util.*;
 
-public class Solution1 {
+public class Solution3 {
 	public int[] dailyTemperatures(int[] T) {
-		
-		int[] ans = new int[T.length];
-		Stack<Integer> stack = new Stack<>();
-		
+
+		Deque<Integer> stack = new ArrayDeque<>();
+		int[] result = new int[T.length];
+
 		for (int i = 0; i < T.length; i++) {
 			while (!stack.isEmpty() && T[i] > T[stack.peek()]) {
 				int temp = stack.pop();
-				ans[temp] = i - temp;
-				
+				result[temp] = i - temp;
 			}
 			stack.push(i);
+
 		}
-		return ans;
+		return result;
 	}
 }

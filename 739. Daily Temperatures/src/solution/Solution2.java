@@ -1,3 +1,7 @@
+/***
+ * Array to implement Stack
+ */
+
 package solution;
 
 public class Solution2 {
