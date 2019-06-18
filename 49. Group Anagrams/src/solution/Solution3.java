@@ -11,14 +11,12 @@ public class Solution3 {
 			for (Character ch : str.toCharArray()) {
 				count[ch - 'a']++;
 			}
-			
 			StringBuilder sb = new StringBuilder();
 
 			for (int i = 0; i < count.length; i++) {
 				if (count[i] != 0) {
 					sb.append(count[i]).append((char) (i + 'a'));
 				}
-
 			}
 			String s = sb.toString();
 			if (map.containsKey(s)) {
