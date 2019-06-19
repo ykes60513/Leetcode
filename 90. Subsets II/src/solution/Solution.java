@@ -18,6 +18,7 @@ public class Solution {
 		res.add(new ArrayList<>(list));
 		for (int i = start; i < nums.length; i++) {
 
+			// skip duplicate
 			if (i > start && nums[i] == nums[i - 1])
 				continue;
 			list.add(nums[i]);
