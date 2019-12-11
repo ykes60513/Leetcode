@@ -9,10 +9,11 @@ public class Solution {
 		int n = b.length() - 1;
 
 		int carry = 0;
+		int sum = 0;
 
 		while (m >= 0 || n >= 0) {
 
-			int sum = carry;
+			sum = carry;
 
 			if (m >= 0)
 				sum += a.charAt(m--) - '0';
