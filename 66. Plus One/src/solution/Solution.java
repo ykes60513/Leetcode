@@ -7,24 +7,25 @@ public class Solution {
 
 		LinkedList<Integer> list = new LinkedList<>();
 
-		int a, b;
+		int carry;
+		int num;
 
 		int t = digits[digits.length - 1] + 1;
 
-		b = t % 10;
-		a = t / 10;
+		num = t % 10;
+		carry = t / 10;
 
 		for (int i = digits.length - 2; i >= 0; i--) {
 
-			list.addFirst(b);
-			t = digits[i] + a;
-			b = t % 10;
-			a = t / 10;
+			list.addFirst(num);
+			t = digits[i] + carry;
+			num = t % 10;
+			carry = t / 10;
 
 		}
-		list.addFirst(b);
-		if (a != 0)
-			list.addFirst(a);
+		list.addFirst(num);
+		if (carry != 0)
+			list.addFirst(carry);
 
 		int[] result = new int[list.size()];
 		for (int i = 0; i < list.size(); i++)
