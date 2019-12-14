@@ -1,17 +1,8 @@
 package solution;
 
-/*
- * Definition for singly-linked list.
-*/
-class ListNode {
-	int val;
-	ListNode next;
+import main.ListNode;
 
-	ListNode(int x) {
-		val = x;
-	}
-}
-class Solution {
+class Solution1 {
 	public ListNode reverseList(ListNode head) {
 
 		if (head == null)
