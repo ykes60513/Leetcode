@@ -1,13 +1,6 @@
 package solution;
 
-class ListNode {
-	int val;
-	ListNode next;
-
-	ListNode(int x) {
-		val = x;
-	}
-}
+import main.ListNode;
 
 class Solution {
 	public boolean isPalindrome(ListNode head) {
