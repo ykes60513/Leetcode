@@ -1,13 +1,7 @@
 package solution;
 
-class ListNode {
-	int val;
-	ListNode next;
+import main.ListNode;
 
-	ListNode(int x) {
-		val = x;
-	}
-}
 class Solution {
 	public ListNode removeElements(ListNode head, int val) {
 
