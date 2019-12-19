@@ -17,14 +17,7 @@ public class Solution3 {
 		int i = 0;
 		int j = 0;
 
-		while (true) {
-
-			if (j == nLength) {
-
-				return i - nLength;
-			}
-			if (i == hLength)
-				return -1;
+		while (i < hLength && j < nLength) {
 
 			if (hArr[i] == nArr[j]) {
 
@@ -38,6 +31,12 @@ public class Solution3 {
 			}
 
 		}
+		if (j == nLength) {
+
+			return i - nLength;
+		}
+
+		return -1;
 
 	}
 }
