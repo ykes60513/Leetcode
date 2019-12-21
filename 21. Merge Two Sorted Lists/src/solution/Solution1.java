@@ -1,15 +1,11 @@
+/*****************************
+ * Iterative solution
+ */
 package solution;
 
-class ListNode {
-	int val;
-	ListNode next;
+import main.ListNode;
 
-	ListNode(int x) {
-		val = x;
-	}
-}
-
-class Solution {
+class Solution1 {
 	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 
 		ListNode dummy = new ListNode(0);
@@ -27,10 +23,7 @@ class Solution {
 			cur = cur.next;
 		}
 
-		if (l1 == null)
-			cur.next = l2;
-		else
-			cur.next = l1;
+		cur.next = (l1==null) ? l2 : l1;
 
 		return dummy.next;
 
