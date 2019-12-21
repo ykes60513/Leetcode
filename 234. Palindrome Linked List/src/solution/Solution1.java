@@ -2,7 +2,7 @@ package solution;
 
 import main.ListNode;
 
-class Solution {
+class Solution1 {
 	public boolean isPalindrome(ListNode head) {
 
 		ListNode slow = head;
