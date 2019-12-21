@@ -31,19 +31,18 @@ class Solution1 {
 
 	private ListNode reverse(ListNode head) {
 
-		if (head == null)
-			return head;
 
-		ListNode ptr = head;
-		while (ptr.next != null) {
+		ListNode newHead = null;
+		while (head != null) {
 
-			ListNode next = ptr.next.next;
-			ptr.next.next = head;
-			head = ptr.next;
-			ptr.next = next;
+			ListNode next = head.next;
+			head.next = newHead;
+			newHead = head;
+			head = next;
+			
 		}
 
-		return head;
+		return newHead;
 
 	}
 }
