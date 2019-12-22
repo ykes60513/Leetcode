@@ -1,6 +1,5 @@
 /***************************
- * 
-
+ * Iterative solution
  */
 
 package solution;
