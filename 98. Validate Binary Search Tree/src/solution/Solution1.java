@@ -1,10 +1,13 @@
+/******************************
+ * Inorder Traversal
+ */
 package solution;
 
 import java.util.*;
 
-import node.*;
+import main.*;
 
-public class Solution {
+public class Solution1 {
 	public boolean isValidBST(TreeNode root) {
 
 		Stack<TreeNode> stack = new Stack<>();
