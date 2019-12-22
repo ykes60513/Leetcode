@@ -4,15 +4,21 @@ import main.TreeNode;
 
 public class Solution1 {
 	public boolean isSymmetric(TreeNode root) {
-		return root == null || isSymmetricHelp(root.left, root.right);
+
+		if (root == null)
+			return true;
+
+		return symmetricHelper(root.left, root.right);
+
 	}
 
-	private boolean isSymmetricHelp(TreeNode left, TreeNode right) {
+	private boolean symmetricHelper(TreeNode left, TreeNode right) {
+
 		if (left == null || right == null)
 			return left == right;
-		if (left.val != right.val)
-			return false;
-		return isSymmetricHelp(left.left, right.right) && isSymmetricHelp(left.right, right.left);
+
+		return left.val == right.val && symmetricHelper(left.left, right.right)
+				&& symmetricHelper(left.right, right.left);
 
 	}
 
