@@ -1,6 +1,6 @@
 package solution;
 
-public class Solution {
+public class Solution1 {
 	public int findMin(int[] nums) {
 
 		int mid;
