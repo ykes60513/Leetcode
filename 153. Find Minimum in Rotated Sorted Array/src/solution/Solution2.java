@@ -3,7 +3,9 @@ package solution;
 public class Solution2 {
 	public int findMin(int[] nums) {
 
-		int mid, left = 0, right = nums.length - 1;
+		int mid; 
+		int left = 0;
+		int right = nums.length - 1;
 
 		while (left < right) {
 
