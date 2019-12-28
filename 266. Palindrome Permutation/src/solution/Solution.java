@@ -18,6 +18,6 @@ public class Solution {
 			num += i;
 		}
 
-		return (num == 0 || num == 1);
+		return num <= 1;
 	}
 }
