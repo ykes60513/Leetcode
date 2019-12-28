@@ -1,6 +1,6 @@
 package solution;
 
-public class Solution {
+public class Solution1 {
 	public int compress(char[] chars) {
 		int anchor = 0, write = 0;
 		for (int read = 0; read < chars.length; read++) {
