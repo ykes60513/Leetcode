@@ -10408,3 +10408,2715 @@ Caused by: java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git
 	at java.io.FileInputStream.<init>(FileInputStream.java:93)
 	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:181)
 	... 79 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-22 01:58:34.453
+!MESSAGE Preparing classpath changed notification 844. Backspace String Compare
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-22 01:58:34.453
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-22 01:58:34.454
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-22 01:58:34.454
+!MESSAGE buffering callback sts4.classpath.qRteLwpt 844. Backspace String Compare false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-22 01:58:34.455
+!MESSAGE executing callback sts4.classpath.qRteLwpt 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-22 01:58:34.462
+!MESSAGE executing callback sts4.classpath.qRteLwpt SUCCESS [done]
+
+!ENTRY org.eclipse.ui 4 0 2020-09-22 01:58:41.203
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (The system cannot find the path specified))
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:67)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:146)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4622)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:361)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:113)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:194)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:205)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:258)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:115)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:472)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:466)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:498)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4173)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5134)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4790)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1501)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2138)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4812)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:253)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4027)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3579)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
+Caused by: org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (The system cannot find the path specified))
+	at org.eclipse.swt.SWT.error(SWT.java:4711)
+	at org.eclipse.swt.SWT.error(SWT.java:4626)
+	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:184)
+	at org.eclipse.tm.terminal.view.ui.local.showin.ExternalExecutablesManager.loadImage(ExternalExecutablesManager.java:266)
+	at org.eclipse.tm.terminal.view.ui.local.showin.DynamicContributionItems.getContributionItems(DynamicContributionItems.java:79)
+	at org.eclipse.ui.actions.CompoundContributionItem.getContributionItemsToFill(CompoundContributionItem.java:83)
+	at org.eclipse.ui.actions.CompoundContributionItem.fill(CompoundContributionItem.java:57)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:146)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:805)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:672)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1224)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicAllRenderedVisibility(MenuManagerRenderer.java:218)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 65 more
+Caused by: java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:181)
+	... 79 more
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:23:00.142
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:24:08.917
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:24:22.005
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.811
+!MESSAGE Cannot handle sun.awt.event (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.812
+!MESSAGE Cannot handle sun.text (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.812
+!MESSAGE Cannot handle sun.misc (not open) [in <module:jdk.unsupported>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.812
+!MESSAGE Cannot handle sun.security.x509 (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.813
+!MESSAGE Cannot handle sun.util.calendar (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.813
+!MESSAGE Cannot handle sun.security.provider.certpath [in <module:java.base>]
+  AdaptableX509CertSelector.class (not open)
+  AdjacencyList.class (not open)
+  AlgorithmChecker.class (not open)
+  BasicChecker.class (not open)
+  BuildStep.class (not open)
+  Builder.class (not open)
+  CertId.class (not open)
+  CertPathHelper.class (not open)
+  CollectionCertStore.class (not open)
+  ConstraintsChecker.class (not open)
+  DistributionPointFetcher.class (not open)
+  ForwardBuilder$PKIXCertComparator.class (not open)
+  ForwardBuilder.class (not open)
+  ForwardState.class (not open)
+  IndexedCollectionCertStore.class (not open)
+  KeyChecker.class (not open)
+  OCSP$RevocationStatus$CertStatus.class (not open)
+  OCSP$RevocationStatus.class (not open)
+  OCSP.class (not open)
+  OCSPNonceExtension.class (not open)
+  OCSPRequest.class (not open)
+  OCSPResponse$1.class (not open)
+  OCSPResponse$IssuerInfo.class (not open)
+  OCSPResponse$ResponseStatus.class (not open)
+  OCSPResponse$SingleResponse.class
+    class SingleResponse
+  OCSPResponse.class (not open)
+  PKIX$BuilderParams.class (not open)
+  PKIX$CertStoreComparator.class (not open)
+  PKIX$CertStoreTypeException.class (not open)
+  PKIX$ValidatorParams.class (not open)
+  PKIX.class (not open)
+  PKIXCertPathValidator.class (not open)
+  PKIXExtendedParameters.class (not open)
+  PKIXMasterCertPathValidator.class (not open)
+  PolicyChecker.class (not open)
+  PolicyNodeImpl.class (not open)
+  ResponderId$1.class (not open)
+  ResponderId$Type.class (not open)
+  ResponderId.class (not open)
+  RevocationChecker$1.class (not open)
+  RevocationChecker$2.class (not open)
+  RevocationChecker$Mode.class (not open)
+  RevocationChecker$RejectKeySelector.class (not open)
+  RevocationChecker$RevocationProperties.class (not open)
+  RevocationChecker.class (not open)
+  State.class (not open)
+  SunCertPathBuilder.class (not open)
+  SunCertPathBuilderException.class (not open)
+  SunCertPathBuilderResult.class (not open)
+  URICertStore$UCS.class (not open)
+  URICertStore.class (not open)
+  UntrustedChecker.class (not open)
+  Vertex.class (not open)
+  X509CertPath.class (not open)
+  X509CertificatePair.class (not open) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.814
+!MESSAGE Cannot handle sun.applet (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.814
+!MESSAGE Cannot handle sun.security.util.math (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.814
+!MESSAGE Cannot handle sun.java2d.pipe.hw (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.815
+!MESSAGE Cannot handle sun.security.krb5.internal.ccache (not open) [in <module:java.security.jgss>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.815
+!MESSAGE Cannot handle sun.security.util (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.815
+!MESSAGE Cannot handle sun.rmi.server (not open) [in <module:java.rmi>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.816
+!MESSAGE Cannot handle sun.net.www.protocol.http.spnego (not open) [in <module:java.security.jgss>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.816
+!MESSAGE Cannot handle sun.util.resources [in <module:java.base>]
+  BreakIteratorResourceBundle.class (not open)
+  Bundles$1.class (not open)
+  Bundles$2.class (not open)
+  Bundles$BundleReference.class (not open)
+  Bundles$CacheKey.class (not open)
+  Bundles$CacheKeyReference.class (not open)
+  Bundles$Strategy.class
+    interface Strategy
+  Bundles.class (not open)
+  CalendarData.class (not open)
+  CalendarDataProvider.class (not open)
+  CalendarData_en.class (not open)
+  CurrencyNames.class (not open)
+  CurrencyNamesProvider.class (not open)
+  CurrencyNames_en_US.class (not open)
+  LocaleData$1.class (not open)
+  LocaleData$2.class (not open)
+  LocaleData$CommonResourceBundleProvider.class (not open)
+  LocaleData$LocaleDataResourceBundleProvider.class (not open)
+  LocaleData$LocaleDataStrategy.class (not open)
+  LocaleData$SupplementaryResourceBundleProvider.class
+    class SupplementaryResourceBundleProvider
+  LocaleData$SupplementaryStrategy.class (not open)
+  LocaleData.class (not open)
+  LocaleDataProvider.class (not open)
+  LocaleNames.class (not open)
+  LocaleNamesBundle.class (not open)
+  LocaleNamesProvider.class (not open)
+  LocaleNames_en.class (not open)
+  OpenListResourceBundle.class (not open)
+  ParallelListResourceBundle$KeySet$1.class (not open)
+  ParallelListResourceBundle$KeySet.class (not open)
+  ParallelListResourceBundle.class (not open)
+  TimeZoneNames.class (not open)
+  TimeZoneNamesBundle.class (not open)
+  TimeZoneNamesProvider.class (not open)
+  TimeZoneNames_en.class (not open) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.816
+!MESSAGE Cannot handle sun.net.www.protocol.jrt (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.817
+!MESSAGE Cannot handle sun.security.pkcs12 (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.817
+!MESSAGE Cannot handle sun.print.resources (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.817
+!MESSAGE Cannot handle sun.net.ftp (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.817
+!MESSAGE Cannot handle sun.security.krb5.internal.crypto.dk (not open) [in <module:java.security.jgss>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.818
+!MESSAGE Cannot handle sun.security.rsa [in <module:java.base>]
+  MGF1.class (not open)
+  PSSParameters.class (not open)
+  RSACore$BlindingParameters.class (not open)
+  RSACore$BlindingRandomPair.class (not open)
+  RSACore.class (not open)
+  RSAKeyFactory$Legacy.class (not open)
+  RSAKeyFactory$PSS.class (not open)
+  RSAKeyFactory.class (not open)
+  RSAKeyPairGenerator$Legacy.class (not open)
+  RSAKeyPairGenerator$PSS.class (not open)
+  RSAKeyPairGenerator.class (not open)
+  RSAPSSSignature.class (not open)
+  RSAPadding.class (not open)
+  RSAPrivateCrtKeyImpl.class (not open)
+  RSAPrivateKeyImpl.class (not open)
+  RSAPublicKeyImpl.class (not open)
+  RSASignature$MD2withRSA.class (not open)
+  RSASignature$MD5withRSA.class (not open)
+  RSASignature$SHA1withRSA.class
+    class SHA1withRSA
+  RSASignature$SHA224withRSA.class
+    class SHA224withRSA
+  RSASignature$SHA256withRSA.class
+    class SHA256withRSA
+  RSASignature$SHA384withRSA.class
+    class SHA384withRSA
+  RSASignature$SHA512_224withRSA.class
+    class SHA512_224withRSA
+  RSASignature$SHA512_256withRSA.class
+    class SHA512_256withRSA
+  RSASignature$SHA512withRSA.class
+    class SHA512withRSA
+  RSASignature.class (not open)
+  RSAUtil$1.class (not open)
+  RSAUtil$KeyType.class (not open)
+  RSAUtil.class (not open)
+  SunRsaSign.class (not open)
+  SunRsaSignEntries.class (not open) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.818
+!MESSAGE Cannot handle solution [in src [in 844. Backspace String Compare]]
+  [Working copy] Solution.java
+    package solution
+    import java.util.Stack
+    class Solution
+      boolean backspaceCompare(String, String) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.819
+!MESSAGE Cannot handle sun.net.www.protocol.jmod (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.819
+!MESSAGE Cannot handle sun.reflect.misc (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.819
+!MESSAGE Cannot handle sun.security.provider.certpath.ssl (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.820
+!MESSAGE Cannot handle sun.net.dns (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.820
+!MESSAGE Cannot handle sun.java2d.marlin (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.820
+!MESSAGE Cannot handle sun.swing.text (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.820
+!MESSAGE Cannot handle sun.awt.windows (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.821
+!MESSAGE Cannot handle sun.tools.jar (not open) [in <module:jdk.jartool>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.821
+!MESSAGE Cannot handle sun.net.www.protocol.jar (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.821
+!MESSAGE Cannot handle sun.net.www.protocol.ftp (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.822
+!MESSAGE Cannot handle sun.net.httpserver [in <module:jdk.httpserver>]
+  AuthFilter.class (not open)
+  ChunkedInputStream.class (not open)
+  ChunkedOutputStream.class (not open)
+  Code.class (not open)
+  ContextList.class (not open)
+  DefaultHttpServerProvider.class (not open)
+  Event.class (not open)
+  ExchangeImpl$1.class (not open)
+  ExchangeImpl.class (not open)
+  FixedLengthInputStream.class (not open)
+  FixedLengthOutputStream.class (not open)
+  HttpConnection$State.class
+    enum State
+  HttpConnection.class (not open)
+  HttpContextImpl.class (not open)
+  HttpError.class (not open)
+  HttpExchangeImpl.class (not open)
+  HttpServerImpl.class (not open)
+  HttpsExchangeImpl.class (not open)
+  HttpsServerImpl.class (not open)
+  LeftOverInputStream.class (not open)
+  PlaceholderOutputStream.class (not open)
+  Request$ReadStream.class (not open)
+  Request$WriteStream.class (not open)
+  Request.class (not open)
+  SSLStreams$1.class (not open)
+  SSLStreams$BufType.class (not open)
+  SSLStreams$EngineWrapper.class (not open)
+  SSLStreams$InputStream.class (not open)
+  SSLStreams$OutputStream.class (not open)
+  SSLStreams$Parameters.class (not open)
+  SSLStreams$WrapperResult.class (not open)
+  SSLStreams.class (not open)
+  ServerConfig$1.class (not open)
+  ServerConfig$2.class (not open)
+  ServerConfig.class (not open)
+  ServerImpl$1.class (not open)
+  ServerImpl$2.class (not open)
+  ServerImpl$DefaultExecutor.class (not open)
+  ServerImpl$Dispatcher.class (not open)
+  ServerImpl$Exchange$LinkHandler.class (not open)
+  ServerImpl$Exchange.class (not open)
+  ServerImpl$ServerTimerTask.class (not open)
+  ServerImpl$ServerTimerTask1.class (not open)
+  ServerImpl.class (not open)
+  StreamClosedException.class (not open)
+  TimeSource.class (not open)
+  UndefLengthOutputStream.class (not open)
+  UnmodifiableHeaders.class (not open)
+  WriteFinishedEvent.class (not open) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.822
+!MESSAGE Cannot handle sun.util.logging.resources (not open) [in <module:java.logging>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.822
+!MESSAGE Cannot handle sun.net.smtp (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.823
+!MESSAGE Cannot handle sun.invoke.util (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.823
+!MESSAGE Cannot handle sun (not open) [in <module:java.rmi>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.823
+!MESSAGE Cannot handle sun.tools.jconsole.resources (not open) [in <module:jdk.jconsole>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.823
+!MESSAGE Cannot handle sun.security.krb5.internal [in <module:java.security.jgss>]
+  APOptions.class (not open)
+  APRep.class (not open)
+  APReq.class (not open)
+  ASRep.class (not open)
+  ASReq.class (not open)
+  AuthContext.class (not open)
+  Authenticator.class (not open)
+  AuthorizationData.class (not open)
+  AuthorizationDataEntry.class (not open)
+  CredentialsUtil.class (not open)
+  ETypeInfo.class (not open)
+  ETypeInfo2.class (not open)
+  EncAPRepPart.class (not open)
+  EncASRepPart.class (not open)
+  EncKDCRepPart.class (not open)
+  EncKrbCredPart.class (not open)
+  EncKrbPrivPart.class (not open)
+  EncTGSRepPart.class (not open)
+  EncTicketPart.class (not open)
+  HostAddress.class (not open)
+  HostAddresses.class (not open)
+  KDCOptions.class (not open)
+  KDCRep.class (not open)
+  KDCReq.class (not open)
+  KDCReqBody.class (not open)
+  KRBCred.class (not open)
+  KRBError.class (not open)
+  KRBPriv.class (not open)
+  KRBSafe.class (not open)
+  KRBSafeBody.class (not open)
+  KdcErrException.class (not open)
+  KerberosTime.class (not open)
+  Krb5.class (not open)
+  KrbApErrException.class (not open)
+  KrbCredInfo.class (not open)
+  KrbErrException.class (not open)
+  LastReq.class (not open)
+  LastReqEntry.class (not open)
+  LocalSeqNumber.class (not open)
+  LoginOptions.class (not open)
+  MethodData.class (not open)
+  NetClient.class (not open)
+  PAData$SaltAndParams.class
+    class SaltAndParams
+  PAData.class (not open)
+  PAEncTSEnc.class (not open)
+  PAForUserEnc.class (not open)
+  ReplayCache$1.class (not open)
+  ReplayCache.class (not open)
+  SeqNumber.class (not open)
+  TCPClient.class (not open)
+  TGSRep.class (not open)
+  TGSReq.class (not open)
+  Ticket.class (not open)
+  TicketFlags.class (not open)
+  TransitedEncoding.class (not open)
+  UDPClient.class (not open) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.824
+!MESSAGE Cannot handle sun.swing.plaf.synth [in <module:java.desktop>]
+  DefaultSynthStyle$StateInfo.class
+    class StateInfo
+  DefaultSynthStyle.class (not open)
+  Paint9Painter$PaintType.class (not open)
+  Paint9Painter.class (not open)
+  StyleAssociation.class (not open)
+  SynthFileChooserUI$1.class (not open)
+  SynthFileChooserUI$DelayedSelectionUpdater.class (not open)
+  SynthFileChooserUI$FileNameCompletionAction.class (not open)
+  SynthFileChooserUI$GlobFilter.class (not open)
+  SynthFileChooserUI$SynthFCPropertyChangeListener.class (not open)
+  SynthFileChooserUI$UIBorder.class (not open)
+  SynthFileChooserUI.class (not open)
+  SynthFileChooserUIImpl$1.class (not open)
+  SynthFileChooserUIImpl$2.class (not open)
+  SynthFileChooserUIImpl$3.class (not open)
+  SynthFileChooserUIImpl$4.class (not open)
+  SynthFileChooserUIImpl$AlignedLabel.class (not open)
+  SynthFileChooserUIImpl$ButtonAreaLayout.class (not open)
+  SynthFileChooserUIImpl$DirectoryComboBoxAction.class (not open)
+  SynthFileChooserUIImpl$DirectoryComboBoxModel.class (not open)
+  SynthFileChooserUIImpl$DirectoryComboBoxRenderer.class (not open)
+  SynthFileChooserUIImpl$FilterComboBoxModel.class (not open)
+  SynthFileChooserUIImpl$FilterComboBoxRenderer.class (not open)
+  SynthFileChooserUIImpl$IndentIcon.class (not open)
+  SynthFileChooserUIImpl$SynthFileChooserUIAccessor.class (not open)
+  SynthFileChooserUIImpl.class (not open) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.825
+!MESSAGE Cannot handle sun.text.normalizer [in <module:java.base>]
+  BMPSet.class (not open)
+  CharTrie.class (not open)
+  CharacterIteratorWrapper.class (not open)
+  FilteredNormalizer2.class (not open)
+  ICUBinary$1.class (not open)
+  ICUBinary$Authenticate.class (not open)
+  ICUBinary$IsAcceptable.class (not open)
+  ICUBinary.class (not open)
+  Norm2AllModes$ComposeNormalizer2.class (not open)
+  Norm2AllModes$DecomposeNormalizer2.class (not open)
+  Norm2AllModes$NFCSingleton.class (not open)
+  Norm2AllModes$NFKCSingleton.class (not open)
+  Norm2AllModes$NoopNormalizer2.class (not open)
+  Norm2AllModes$Norm2AllModesSingleton.class (not open)
+  Norm2AllModes$Normalizer2WithImpl.class (not open)
+  Norm2AllModes.class (not open)
+  Normalizer2.class (not open)
+  NormalizerBase$1.class (not open)
+  NormalizerBase$Mode.class (not open)
+  NormalizerBase$ModeImpl.class (not open)
+  NormalizerBase$NFC32ModeImpl.class (not open)
+  NormalizerBase$NFCMode.class (not open)
+  NormalizerBase$NFCModeImpl.class (not open)
+  NormalizerBase$NFD32ModeImpl.class (not open)
+  NormalizerBase$NFDMode.class (not open)
+  NormalizerBase$NFDModeImpl.class (not open)
+  NormalizerBase$NFKC32ModeImpl.class (not open)
+  NormalizerBase$NFKCMode.class (not open)
+  NormalizerBase$NFKCModeImpl.class (not open)
+  NormalizerBase$NFKD32ModeImpl.class (not open)
+  NormalizerBase$NFKDMode.class (not open)
+  NormalizerBase$NFKDModeImpl.class (not open)
+  NormalizerBase$NONEMode.class (not open)
+  NormalizerBase$Unicode32.class (not open)
+  NormalizerBase.class (not open)
+  NormalizerImpl$Hangul.class (not open)
+  NormalizerImpl$IsAcceptable.class (not open)
+  NormalizerImpl$NextCCArgs.class (not open)
+  NormalizerImpl$PrevArgs.class (not open)
+  NormalizerImpl$ReorderingBuffer.class (not open)
+  NormalizerImpl$UTF16Plus.class (not open)
+  NormalizerImpl.class (not open)
+  OutputInt.class (not open)
+  Replaceable.class (not open)
+  ReplaceableString.class (not open)
+  ReplaceableUCharacterIterator.class (not open)
+  Trie$DataManipulate.class (not open)
+  Trie$DefaultGetFoldingOffset.class (not open)
+  Trie.class (not open)
+  Trie2$1.class (not open)
+  Trie2$Range.class (not open)
+  Trie2$Trie2Iterator.class (not open)
+  Trie2$UTrie2Header.class (not open)
+  Trie2$ValueMapper.class (not open)
+  Trie2.class (not open)
+  Trie2_16.class (not open)
+  UBiDiProps$IsAcceptable.class (not open)
+  UBiDiProps.class (not open)
+  UCharacter$HangulSyllableType.class (not open)
+  UCharacter$JoiningGroup.class (not open)
+  UCharacter$NumericType.class (not open)
+  UCharacter.class (not open)
+  UCharacterIterator.class (not open)
+  UCharacterProperty$1.class (not open)
+  UCharacterProperty$BiDiIntProperty.class (not open)
+  UCharacterProperty$CombiningClassIntProperty.class (not open)
+  UCharacterProperty$IntProperty.class (not open)
+  UCharacterProperty$IsAcceptable.class (not open)
+  UCharacterProperty$NormQuickCheckIntProperty.class (not open)
+  UCharacterProperty.class (not open)
+  UTF16.class (not open)
+  UnicodeSet$Filter.class (not open)
+  UnicodeSet$SpanCondition.class
+    enum SpanCondition
+  UnicodeSet$VersionFilter.class (not open)
+  UnicodeSet.class (not open)
+  UnicodeSetStringSpan$OffsetList.class (not open)
+  UnicodeSetStringSpan.class (not open)
+  Utility.class (not open)
+  VersionInfo.class (not open) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.825
+!MESSAGE Cannot handle sun.management.spi (not open) [in <module:java.management>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.826
+!MESSAGE Cannot handle sun.util.resources.cldr (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.826
+!MESSAGE Cannot handle sun.java2d.cmm (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.826
+!MESSAGE Cannot handle sun.launcher (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.826
+!MESSAGE Cannot handle sun.management.counter.perf (not open) [in <module:java.management>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.827
+!MESSAGE Cannot handle sun.datatransfer.resources (not open) [in <module:java.datatransfer>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.827
+!MESSAGE Cannot handle sun.util.logging.internal (not open) [in <module:java.logging>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.827
+!MESSAGE Cannot handle sun.invoke.empty (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.827
+!MESSAGE Cannot handle sun.security.internal.spec (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.828
+!MESSAGE Cannot handle sun.security.jgss.spi (not open) [in <module:java.security.jgss>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.828
+!MESSAGE Cannot handle sun.security.action (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.828
+!MESSAGE Cannot handle sun.rmi.runtime (not open) [in <module:java.rmi>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.828
+!MESSAGE Cannot handle sun.awt.image (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.829
+!MESSAGE Cannot handle sun.awt.geom [in <module:java.desktop>]
+  AreaOp$1.class (not open)
+  AreaOp$AddOp.class (not open)
+  AreaOp$CAGOp.class (not open)
+  AreaOp$EOWindOp.class (not open)
+  AreaOp$IntOp.class (not open)
+  AreaOp$NZWindOp.class (not open)
+  AreaOp$SubOp.class
+    class SubOp
+  AreaOp$XorOp.class (not open)
+  AreaOp.class (not open)
+  ChainEnd.class (not open)
+  Crossings$EvenOdd.class (not open)
+  Crossings$NonZero.class (not open)
+  Crossings.class (not open)
+  Curve.class (not open)
+  CurveLink.class (not open)
+  Edge.class (not open)
+  Order0.class (not open)
+  Order1.class (not open)
+  Order2.class (not open)
+  Order3.class (not open)
+  PathConsumer2D.class (not open) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.829
+!MESSAGE Cannot handle sun.reflect.annotation (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.830
+!MESSAGE Cannot handle sun.awt [in <module:java.desktop>]
+  AWTAccessor$AWTEventAccessor.class (not open)
+  AWTAccessor$AccessibleBundleAccessor.class (not open)
+  AWTAccessor$AccessibleContextAccessor.class (not open)
+  AWTAccessor$CheckboxMenuItemAccessor.class (not open)
+  AWTAccessor$ClientPropertyKeyAccessor.class (not open)
+  AWTAccessor$ComponentAccessor.class (not open)
+  AWTAccessor$ContainerAccessor.class (not open)
+  AWTAccessor$CursorAccessor.class (not open)
+  AWTAccessor$DefaultKeyboardFocusManagerAccessor.class (not open)
+  AWTAccessor$DragSourceContextAccessor.class (not open)
+  AWTAccessor$DropTargetContextAccessor.class (not open)
+  AWTAccessor$EventQueueAccessor.class (not open)
+  AWTAccessor$FileDialogAccessor.class (not open)
+  AWTAccessor$FrameAccessor.class (not open)
+  AWTAccessor$InputEventAccessor.class (not open)
+  AWTAccessor$InvocationEventAccessor.class (not open)
+  AWTAccessor$KeyEventAccessor.class (not open)
+  AWTAccessor$KeyboardFocusManagerAccessor.class (not open)
+  AWTAccessor$MenuAccessor.class (not open)
+  AWTAccessor$MenuBarAccessor.class (not open)
+  AWTAccessor$MenuComponentAccessor.class (not open)
+  AWTAccessor$MenuItemAccessor.class (not open)
+  AWTAccessor$MouseEventAccessor.class (not open)
+  AWTAccessor$PopupMenuAccessor.class (not open)
+  AWTAccessor$ScrollPaneAdjustableAccessor.class
+    interface ScrollPaneAdjustableAccessor
+  AWTAccessor$SequencedEventAccessor.class
+    interface SequencedEventAccessor
+  AWTAccessor$SystemColorAccessor.class
+    interface SystemColorAccessor
+  AWTAccessor$SystemTrayAccessor.class
+    interface SystemTrayAccessor
+  AWTAccessor$ToolkitAccessor.class (not open)
+  AWTAccessor$TrayIconAccessor.class (not open)
+  AWTAccessor$WindowAccessor.class (not open)
+  AWTAccessor.class (not open)
+  AWTAutoShutdown$1.class (not open)
+  AWTAutoShutdown.class (not open)
+  AWTCharset$Decoder.class (not open)
+  AWTCharset$Encoder.class (not open)
+  AWTCharset.class (not open)
+  AWTPermissions.class (not open)
+  AWTSecurityManager.class (not open)
+  AppContext$1.class (not open)
+  AppContext$2.class (not open)
+  AppContext$3.class (not open)
+  AppContext$4$1.class (not open)
+  AppContext$4.class (not open)
+  AppContext$5.class (not open)
+  AppContext$6$1.class (not open)
+  AppContext$6.class (not open)
+  AppContext$CreateThreadAction.class (not open)
+  AppContext$GetAppContextLock.class (not open)
+  AppContext$PostShutdownEventRunnable.class (not open)
+  AppContext$State.class (not open)
+  AppContext.class (not open)
+  CausedFocusEvent$1.class (not open)
+  CausedFocusEvent$2.class (not open)
+  CausedFocusEvent$3.class (not open)
+  CausedFocusEvent$Cause.class (not open)
+  CausedFocusEvent.class (not open)
+  CharsetString.class (not open)
+  ComponentFactory.class (not open)
+  ConstrainableGraphics.class (not open)
+  CustomCursor.class (not open)
+  DebugSettings$1.class (not open)
+  DebugSettings.class (not open)
+  DisplayChangedListener.class (not open)
+  EmbeddedFrame$NullEmbeddedFramePeer.class (not open)
+  EmbeddedFrame.class (not open)
+  EventQueueItem.class (not open)
+  ExtendedKeyCodes.class (not open)
+  FontConfiguration$1.class (not open)
+  FontConfiguration$2.class (not open)
+  FontConfiguration$3.class (not open)
+  FontConfiguration$PropertiesHandler$FontProperties.class (not open)
+  FontConfiguration$PropertiesHandler.class (not open)
+  FontConfiguration.class (not open)
+  FontDescriptor.class (not open)
+  FwDispatcher.class (not open)
+  GlobalCursorManager$NativeUpdater.class (not open)
+  GlobalCursorManager.class (not open)
+  Graphics2Delegate.class (not open)
+  HKSCS.class (not open)
+  HToolkit$1.class (not open)
+  HToolkit.class (not open)
+  HeadlessToolkit$1.class (not open)
+  HeadlessToolkit.class (not open)
+  IconInfo.class (not open)
+  InputMethodSupport.class (not open)
+  KeyboardFocusManagerPeerImpl$KfmAccessor.class (not open)
+  KeyboardFocusManagerPeerImpl.class (not open)
+  KeyboardFocusManagerPeerProvider.class (not open)
+  LightweightFrame.class (not open)
+  LightweightPeerHolder.class (not open)
+  ModalExclude.class (not open)
+  ModalityEvent.class (not open)
+  ModalityListener.class (not open)
+  MostRecentKeyValue.class (not open)
+  Mutex.class (not open)
+  NativeLibLoader$1.class (not open)
+  NativeLibLoader.class (not open)
+  NullComponentPeer.class (not open)
+  OSInfo$1.class (not open)
+  OSInfo$OSType.class (not open)
+  OSInfo$WindowsVersion.class (not open)
+  OSInfo.class (not open)
+  OverrideNativeWindowHandle.class (not open)
+  PaintEventDispatcher.class (not open)
+  PeerEvent.class (not open)
+  PlatformFont$PlatformFontCache.class (not open)
+  PlatformFont.class (not open)
+  PostEventQueue.class (not open)
+  RepaintArea.class (not open)
+  RequestFocusController.class (not open)
+  ScrollPaneWheelScroller.class (not open)
+  SoftCache$Entry.class (not open)
+  SoftCache$EntrySet$1.class (not open)
+  SoftCache$EntrySet.class (not open)
+  SoftCache$ValueCell.class (not open)
+  SoftCache.class (not open)
+  SubRegionShowable.class (not open)
+  SunDisplayChanger.class (not open)
+  SunGraphicsCallback$PaintHeavyweightComponentsCallback.class (not open)
+  SunGraphicsCallback$PrintHeavyweightComponentsCallback.class (not open)
+  SunGraphicsCallback.class (not open)
+  SunHints$Key.class (not open)
+  SunHints$LCDContrastKey.class (not open)
+  SunHints$Value.class (not open)
+  SunHints.class (not open)
+  SunToolkit$1.class (not open)
+  SunToolkit$1AWTInvocationLock.class (not open)
+  SunToolkit$2.class (not open)
+  SunToolkit$3.class (not open)
+  SunToolkit$IllegalThreadException.class (not open)
+  SunToolkit$InfiniteLoop.class (not open)
+  SunToolkit$ModalityListenerList.class (not open)
+  SunToolkit$OperationTimedOut.class (not open)
+  SunToolkit.class (not open)
+  Symbol$Encoder.class (not open)
+  Symbol.class (not open)
+  TimedWindowEvent.class (not open)
+  TracedEventQueue.class (not open)
+  UngrabEvent.class (not open)
+  WeakIdentityHashMap$1$1.class (not open)
+  WeakIdentityHashMap$1.class (not open)
+  WeakIdentityHashMap$2$1$1.class (not open)
+  WeakIdentityHashMap$2$1.class (not open)
+  WeakIdentityHashMap$2.class (not open)
+  WeakIdentityHashMap$WeakKey.class (not open)
+  WeakIdentityHashMap.class (not open)
+  Win32ColorModel24.class (not open)
+  Win32FontManager$1.class (not open)
+  Win32FontManager$2.class (not open)
+  Win32FontManager$3.class (not open)
+  Win32FontManager$4.class (not open)
+  Win32FontManager.class (not open)
+  Win32GraphicsConfig.class (not open)
+  Win32GraphicsDevice$1.class (not open)
+  Win32GraphicsDevice$Win32FSWindowAdapter.class (not open)
+  Win32GraphicsDevice.class (not open)
+  Win32GraphicsEnvironment.class (not open)
+  WindowIDProvider.class (not open) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.830
+!MESSAGE Cannot handle sun.jvmstat.monitor (not open) [in <module:jdk.internal.jvmstat>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.830
+!MESSAGE Cannot handle sun.jvmstat.perfdata (not open) [in <module:jdk.internal.jvmstat>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.831
+!MESSAGE Cannot handle sun.io (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.831
+!MESSAGE Cannot handle sun.rmi.transport.tcp (not open) [in <module:java.rmi>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.832
+!MESSAGE Cannot handle sun.security.krb5.internal.util (not open) [in <module:java.security.jgss>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.832
+!MESSAGE Cannot handle sun.java2d.d3d (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.832
+!MESSAGE Cannot handle sun.java2d.cmm.profiles (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.832
+!MESSAGE Cannot handle sun.awt.www (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.833
+!MESSAGE Cannot handle sun.tools.jconsole.inspector (not open) [in <module:jdk.jconsole>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.833
+!MESSAGE Cannot handle sun.net (not open) [in <module:java.logging>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.833
+!MESSAGE Cannot handle sun.net.idn (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.834
+!MESSAGE Cannot handle sun.reflect.generics.reflectiveObjects (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.834
+!MESSAGE Cannot handle sun.awt.im (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.834
+!MESSAGE Cannot handle sun.swing.text.html (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.835
+!MESSAGE Cannot handle sun.rmi.server.resources (not open) [in <module:java.rmi>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.835
+!MESSAGE Cannot handle sun.jvmstat.perfdata.monitor.v1_0 (not open) [in <module:jdk.internal.jvmstat>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.835
+!MESSAGE Cannot handle sun.rmi.registry (not open) [in <module:java.rmi>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.836
+!MESSAGE Cannot handle sun.text.spi (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.836
+!MESSAGE Cannot handle sun.text.bidi (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.836
+!MESSAGE Cannot handle sun.net.ftp.impl (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.837
+!MESSAGE Cannot handle sun.jvmstat.perfdata.monitor.v2_0 (not open) [in <module:jdk.internal.jvmstat>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.837
+!MESSAGE Cannot handle sun.net.www.protocol (not open) [in <module:java.logging>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.837
+!MESSAGE Cannot handle sun.net.www (not open) [in <module:java.logging>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.837
+!MESSAGE Cannot handle sun.security.krb5.internal.crypto (not open) [in <module:java.security.jgss>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.838
+!MESSAGE Cannot handle sun.java2d.loops [in <module:java.desktop>]
+  Blit$AnyBlit.class (not open)
+  Blit$GeneralMaskBlit.class (not open)
+  Blit$GeneralXorBlit.class (not open)
+  Blit$TraceBlit.class (not open)
+  Blit.class (not open)
+  BlitBg$General.class (not open)
+  BlitBg$TraceBlitBg.class (not open)
+  BlitBg.class (not open)
+  CompositeType.class (not open)
+  CustomComponent.class (not open)
+  DrawGlyphList$General.class (not open)
+  DrawGlyphList$TraceDrawGlyphList.class (not open)
+  DrawGlyphList.class (not open)
+  DrawGlyphListAA$General.class (not open)
+  DrawGlyphListAA$TraceDrawGlyphListAA.class (not open)
+  DrawGlyphListAA.class (not open)
+  DrawGlyphListLCD$TraceDrawGlyphListLCD.class (not open)
+  DrawGlyphListLCD.class (not open)
+  DrawLine$TraceDrawLine.class (not open)
+  DrawLine.class (not open)
+  DrawParallelogram$TraceDrawParallelogram.class (not open)
+  DrawParallelogram.class (not open)
+  DrawPath$TraceDrawPath.class (not open)
+  DrawPath.class (not open)
+  DrawPolygons$TraceDrawPolygons.class (not open)
+  DrawPolygons.class (not open)
+  DrawRect$TraceDrawRect.class (not open)
+  DrawRect.class (not open)
+  FillParallelogram$TraceFillParallelogram.class (not open)
+  FillParallelogram.class (not open)
+  FillPath$TraceFillPath.class (not open)
+  FillPath.class (not open)
+  FillRect$General.class (not open)
+  FillRect$TraceFillRect.class (not open)
+  FillRect.class (not open)
+  FillSpans$TraceFillSpans.class (not open)
+  FillSpans.class (not open)
+  FontInfo.class (not open)
+  GeneralRenderer.class (not open)
+  GraphicsPrimitive$1.class (not open)
+  GraphicsPrimitive$GeneralBinaryOp.class (not open)
+  GraphicsPrimitive$GeneralUnaryOp.class (not open)
+  GraphicsPrimitive$TraceReporter.class (not open)
+  GraphicsPrimitive.class (not open)
+  GraphicsPrimitiveMgr$1.class (not open)
+  GraphicsPrimitiveMgr$2.class (not open)
+  GraphicsPrimitiveMgr$PrimitiveSpec.class (not open)
+  GraphicsPrimitiveMgr.class (not open)
+  GraphicsPrimitiveProxy.class (not open)
+  MaskBlit$General.class (not open)
+  MaskBlit$TraceMaskBlit.class (not open)
+  MaskBlit.class (not open)
+  MaskFill$General.class (not open)
+  MaskFill$TraceMaskFill.class (not open)
+  MaskFill.class (not open)
+  OpaqueCopyAnyToArgb.class (not open)
+  OpaqueCopyArgbToAny.class (not open)
+  PixelWriter.class (not open)
+  PixelWriterDrawHandler.class (not open)
+  ProcessPath$1.class (not open)
+  ProcessPath$ActiveEdgeList.class (not open)
+  ProcessPath$DrawHandler.class (not open)
+  ProcessPath$DrawProcessHandler.class (not open)
+  ProcessPath$Edge.class (not open)
+  ProcessPath$EndSubPathHandler.class (not open)
+  ProcessPath$FillData.class (not open)
+  ProcessPath$FillProcessHandler.class (not open)
+  ProcessPath$Point.class (not open)
+  ProcessPath$ProcessHandler.class (not open)
+  ProcessPath.class (not open)
+  RenderCache$Entry.class (not open)
+  RenderCache.class (not open)
+  RenderLoops.class (not open)
+  ScaledBlit$TraceScaledBlit.class (not open)
+  ScaledBlit.class (not open)
+  SetDrawLineANY.class (not open)
+  SetDrawPathANY.class (not open)
+  SetDrawPolygonsANY.class (not open)
+  SetDrawRectANY.class (not open)
+  SetFillPathANY.class (not open)
+  SetFillRectANY.class (not open)
+  SetFillSpansANY.class (not open)
+  SolidPixelWriter.class (not open)
+  SurfaceType.class (not open)
+  TransformBlit$TraceTransformBlit.class (not open)
+  TransformBlit.class (not open)
+  TransformHelper$TraceTransformHelper.class (not open)
+  TransformHelper.class (not open)
+  XORComposite.class (not open)
+  XorCopyArgbToAny.class (not open)
+  XorDrawGlyphListAAANY.class (not open)
+  XorDrawGlyphListANY.class (not open)
+  XorDrawLineANY.class (not open)
+  XorDrawPathANY.class (not open)
+  XorDrawPolygonsANY.class (not open)
+  XorDrawRectANY.class (not open)
+  XorFillPathANY.class (not open)
+  XorFillRectANY.class (not open)
+  XorFillSpansANY.class (not open)
+  XorPixelWriter$ByteData.class (not open)
+  XorPixelWriter$DoubleData.class (not open)
+  XorPixelWriter$FloatData.class (not open)
+  XorPixelWriter$IntData.class (not open)
+  XorPixelWriter$ShortData.class
+    class ShortData
+  XorPixelWriter.class (not open) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.838
+!MESSAGE Cannot handle sun.tools.serialver (not open) [in <module:jdk.compiler>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.838
+!MESSAGE Cannot handle sun.awt.www.content.audio (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.839
+!MESSAGE Cannot handle sun.security.provider [in <module:java.base>]
+  AbstractDrbg$NonceProvider.class (not open)
+  AbstractDrbg$SeederHolder.class (not open)
+  AbstractDrbg.class (not open)
+  AbstractHashDrbg.class (not open)
+  ByteArrayAccess.class (not open)
+  ConfigFile$Spi$1.class (not open)
+  ConfigFile$Spi$2.class (not open)
+  ConfigFile$Spi.class
+    class Spi
+  ConfigFile.class (not open)
+  CtrDrbg.class (not open)
+  DRBG.class (not open)
+  DSA$Raw$NullDigest20.class (not open)
+  DSA$Raw.class (not open)
+  DSA$RawDSA.class (not open)
+  DSA$RawDSAinP1363Format.class (not open)
+  DSA$SHA1withDSA.class
+    class SHA1withDSA
+  DSA$SHA1withDSAinP1363Format.class
+    class SHA1withDSAinP1363Format
+  DSA$SHA224withDSA.class
+    class SHA224withDSA
+  DSA$SHA224withDSAinP1363Format.class
+    class SHA224withDSAinP1363Format
+  DSA$SHA256withDSA.class
+    class SHA256withDSA
+  DSA$SHA256withDSAinP1363Format.class
+    class SHA256withDSAinP1363Format
+  DSA.class (not open)
+  DSAKeyFactory.class (not open)
+  DSAKeyPairGenerator$Current.class (not open)
+  DSAKeyPairGenerator$Legacy.class (not open)
+  DSAKeyPairGenerator.class (not open)
+  DSAParameterGenerator.class (not open)
+  DSAParameters.class (not open)
+  DSAPrivateKey.class (not open)
+  DSAPublicKey.class (not open)
+  DSAPublicKeyImpl.class (not open)
+  DigestBase.class (not open)
+  DomainKeyStore$1.class (not open)
+  DomainKeyStore$DKS.class (not open)
+  DomainKeyStore$KeyStoreBuilderComponents.class (not open)
+  DomainKeyStore.class (not open)
+  EntropySource.class (not open)
+  FileInputStreamPool$StreamRef.class (not open)
+  FileInputStreamPool$UnclosableInputStream.class (not open)
+  FileInputStreamPool.class (not open)
+  HashDrbg.class (not open)
+  HmacDrbg.class (not open)
+  JavaKeyStore$CaseExactJKS.class (not open)
+  JavaKeyStore$DualFormatJKS.class (not open)
+  JavaKeyStore$JKS.class (not open)
+  JavaKeyStore$KeyEntry.class (not open)
+  JavaKeyStore$TrustedCertEntry.class (not open)
+  JavaKeyStore.class (not open)
+  KeyProtector.class (not open)
+  MD2.class (not open)
+  MD4$1.class (not open)
+  MD4$2.class (not open)
+  MD4.class (not open)
+  MD5.class (not open)
+  MoreDrbgParameters.class (not open)
+  NativePRNG$Blocking.class (not open)
+  NativePRNG$NonBlocking.class (not open)
+  NativePRNG.class (not open)
+  NativeSeedGenerator.class (not open)
+  ParameterCache.class (not open)
+  PolicyFile$1.class (not open)
+  PolicyFile$2.class (not open)
+  PolicyFile$3.class (not open)
+  PolicyFile$4.class (not open)
+  PolicyFile$5.class (not open)
+  PolicyFile$6.class (not open)
+  PolicyFile$7.class (not open)
+  PolicyFile$8.class (not open)
+  PolicyFile$9.class (not open)
+  PolicyFile$PolicyEntry.class (not open)
+  PolicyFile$PolicyInfo.class (not open)
+  PolicyFile$SelfPermission.class (not open)
+  PolicyFile.class (not open)
+  PolicyParser$DomainEntry.class (not open)
+  PolicyParser$GrantEntry.class (not open)
+  PolicyParser$KeyStoreEntry.class (not open)
+  PolicyParser$ParsingException.class (not open)
+  PolicyParser$PermissionEntry.class (not open)
+  PolicyParser$PrincipalEntry.class (not open)
+  PolicyParser.class (not open)
+  PolicySpiFile.class (not open)
+  SHA.class (not open)
+  SHA2$SHA224.class
+    class SHA224
+  SHA2$SHA256.class
+    class SHA256
+  SHA2.class (not open)
+  SHA3$SHA224.class
+    class SHA224
+  SHA3$SHA256.class
+    class SHA256
+  SHA3$SHA384.class
+    class SHA384
+  SHA3$SHA512.class
+    class SHA512
+  SHA3.class (not open)
+  SHA5$SHA384.class
+    class SHA384
+  SHA5$SHA512.class
+    class SHA512
+  SHA5$SHA512_224.class
+    class SHA512_224
+  SHA5$SHA512_256.class
+    class SHA512_256
+  SHA5.class (not open)
+  SecureRandom$SeederHolder.class (not open)
+  SecureRandom.class (not open)
+  SeedGenerator$1.class (not open)
+  SeedGenerator$ThreadedSeedGenerator$1.class (not open)
+  SeedGenerator$ThreadedSeedGenerator$BogusThread.class (not open)
+  SeedGenerator$ThreadedSeedGenerator.class (not open)
+  SeedGenerator$URLSeedGenerator$1.class (not open)
+  SeedGenerator$URLSeedGenerator.class (not open)
+  SeedGenerator.class (not open)
+  SubjectCodeSource$1.class (not open)
+  SubjectCodeSource$2.class (not open)
+  SubjectCodeSource.class (not open)
+  Sun.class (not open)
+  SunEntries$1.class (not open)
+  SunEntries.class (not open)
+  VerificationProvider.class (not open)
+  X509Factory.class (not open) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.839
+!MESSAGE Cannot handle sun.net.www.protocol.file (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.839
+!MESSAGE Cannot handle sun.java2d.pipe [in <module:java.desktop>]
+  AAShapePipe$1.class (not open)
+  AAShapePipe$TileState.class (not open)
+  AAShapePipe.class (not open)
+  AATextRenderer.class (not open)
+  AATileGenerator.class (not open)
+  AlphaColorPipe.class (not open)
+  AlphaPaintPipe$TileContext.class (not open)
+  AlphaPaintPipe.class (not open)
+  BufferedBufImgOps.class (not open)
+  BufferedContext.class (not open)
+  BufferedMaskBlit.class (not open)
+  BufferedMaskFill$1.class (not open)
+  BufferedMaskFill.class (not open)
+  BufferedOpCodes.class (not open)
+  BufferedPaints.class (not open)
+  BufferedRenderPipe$1.class (not open)
+  BufferedRenderPipe$AAParallelogramPipe.class (not open)
+  BufferedRenderPipe$BufferedDrawHandler.class (not open)
+  BufferedRenderPipe.class (not open)
+  BufferedTextPipe$1.class (not open)
+  BufferedTextPipe.class (not open)
+  CompositePipe.class (not open)
+  DrawImage.class (not open)
+  DrawImagePipe.class (not open)
+  GeneralCompositePipe$TileContext.class (not open)
+  GeneralCompositePipe.class (not open)
+  GlyphListLoopPipe.class (not open)
+  GlyphListPipe.class (not open)
+  LCDTextRenderer.class (not open)
+  LoopBasedPipe.class (not open)
+  LoopPipe.class (not open)
+  NullPipe.class (not open)
+  OutlineTextRenderer.class (not open)
+  ParallelogramPipe.class (not open)
+  PixelDrawPipe.class (not open)
+  PixelFillPipe.class (not open)
+  PixelToParallelogramConverter.class (not open)
+  PixelToShapeConverter.class (not open)
+  Region.class (not open)
+  RegionClipSpanIterator.class (not open)
+  RegionIterator.class (not open)
+  RegionSpanIterator.class (not open)
+  RenderBuffer.class (not open)
+  RenderQueue.class (not open)
+  RenderingEngine$Tracer.class (not open)
+  RenderingEngine.class (not open)
+  ShapeDrawPipe.class (not open)
+  ShapeSpanIterator.class (not open)
+  SolidTextRenderer.class (not open)
+  SpanClipRenderer$SCRcontext.class (not open)
+  SpanClipRenderer.class (not open)
+  SpanIterator.class (not open)
+  SpanShapeRenderer$Composite.class (not open)
+  SpanShapeRenderer$Simple.class
+    class Simple
+  SpanShapeRenderer.class (not open)
+  TextPipe.class (not open)
+  TextRenderer.class (not open)
+  ValidatePipe.class (not open) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.839
+!MESSAGE Cannot handle sun.net.www.protocol.http (not open) [in <module:java.logging>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.840
+!MESSAGE Cannot handle sun.net.www.protocol.http.ntlm (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.841
+!MESSAGE Cannot handle sun.security.jgss.wrapper (not open) [in <module:java.security.jgss>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.841
+!MESSAGE Cannot handle sun.usagetracker (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.841
+!MESSAGE Cannot handle sun.nio.ch.sctp (not open) [in <module:jdk.sctp>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.841
+!MESSAGE Cannot handle sun.net.ext (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.841
+!MESSAGE Cannot handle sun.awt.datatransfer (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.842
+!MESSAGE Cannot handle sun.rmi.log (not open) [in <module:java.rmi>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.842
+!MESSAGE Cannot handle sun.net.www.http (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.842
+!MESSAGE Cannot handle sun.awt.dnd (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.842
+!MESSAGE Cannot handle sun.text.resources (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.843
+!MESSAGE Cannot handle sun.reflect (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.843
+!MESSAGE Cannot handle sun.security.tools (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.843
+!MESSAGE Cannot handle sun.java2d [in <module:java.desktop>]
+  DefaultDisposerRecord.class (not open)
+  DestSurfaceProvider.class (not open)
+  Disposer$1.class (not open)
+  Disposer$PollDisposable.class (not open)
+  Disposer.class (not open)
+  DisposerRecord.class (not open)
+  DisposerTarget.class (not open)
+  FontSupport.class (not open)
+  HeadlessGraphicsEnvironment.class (not open)
+  InvalidPipeException.class (not open)
+  NullSurfaceData.class (not open)
+  ReentrantContext.class (not open)
+  ReentrantContextProvider$HardReference.class (not open)
+  ReentrantContextProvider.class (not open)
+  ReentrantContextProviderCLQ.class (not open)
+  ReentrantContextProviderTL$1.class (not open)
+  ReentrantContextProviderTL.class (not open)
+  ScreenUpdateManager.class (not open)
+  Spans$Span.class (not open)
+  Spans$SpanIntersection.class (not open)
+  Spans.class (not open)
+  StateTrackable$State.class
+    enum State
+  StateTrackable.class (not open)
+  StateTrackableDelegate$1.class (not open)
+  StateTrackableDelegate$2.class (not open)
+  StateTrackableDelegate.class (not open)
+  StateTracker$1.class (not open)
+  StateTracker$2.class (not open)
+  StateTracker.class (not open)
+  SunCompositeContext.class (not open)
+  SunGraphics2D.class (not open)
+  SunGraphicsEnvironment$1.class (not open)
+  SunGraphicsEnvironment.class (not open)
+  Surface.class (not open)
+  SurfaceData$PixelToPgramLoopConverter.class (not open)
+  SurfaceData$PixelToShapeLoopConverter.class (not open)
+  SurfaceData.class (not open)
+  SurfaceDataProxy$1.class (not open)
+  SurfaceDataProxy$CountdownTracker.class (not open)
+  SurfaceDataProxy.class (not open)
+  SurfaceManagerFactory.class (not open)
+  WindowsSurfaceManagerFactory.class (not open) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.844
+!MESSAGE Cannot handle sun.net.www.protocol.mailto (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.844
+!MESSAGE Cannot handle sun.java2d.windows (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.844
+!MESSAGE Cannot handle sun.nio (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.844
+!MESSAGE Cannot handle sun.reflect.generics.visitor (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.845
+!MESSAGE Cannot handle sun.util.locale (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.845
+!MESSAGE Cannot handle sun.awt.util (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.845
+!MESSAGE Cannot handle sun.security.tools.jarsigner (not open) [in <module:jdk.jartool>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.846
+!MESSAGE Cannot handle sun.nio.cs (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.846
+!MESSAGE Cannot handle sun.reflect.generics.scope (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.846
+!MESSAGE Cannot handle sun.java2d.cmm.lcms (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.847
+!MESSAGE Cannot handle sun.security.jgss (not open) [in <module:java.security.jgss>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.847
+!MESSAGE Cannot handle sun.rmi.transport (not open) [in <module:java.rmi>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.847
+!MESSAGE Cannot handle sun.util (not open) [in <module:java.logging>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.847
+!MESSAGE Cannot handle sun.jvmstat.perfdata.monitor.protocol.local (not open) [in <module:jdk.internal.jvmstat>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.848
+!MESSAGE Cannot handle sun.security.krb5.internal.rcache (not open) [in <module:java.security.jgss>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.848
+!MESSAGE Cannot handle sun.jvmstat.perfdata.resources (not open) [in <module:jdk.internal.jvmstat>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.848
+!MESSAGE Cannot handle sun.text.resources.cldr (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.849
+!MESSAGE Cannot handle sun.nio.fs (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.849
+!MESSAGE Cannot handle sun.print (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.849
+!MESSAGE Cannot handle sun.reflect.generics.repository (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.850
+!MESSAGE Cannot handle sun.tools.jar.resources (not open) [in <module:jdk.jartool>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.850
+!MESSAGE Cannot handle sun.net.util (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.850
+!MESSAGE Cannot handle sun.security.timestamp (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.850
+!MESSAGE Cannot handle sun.reflect.generics.factory (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.851
+!MESSAGE Cannot handle sun.reflect.generics (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.851
+!MESSAGE Cannot handle sun.security.jgss.krb5 (not open) [in <module:java.security.jgss>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.851
+!MESSAGE Cannot handle sun.swing.icon (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.851
+!MESSAGE Cannot handle sun.tools.attach (not open) [in <module:jdk.attach>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.852
+!MESSAGE Cannot handle sun.util.cldr (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.852
+!MESSAGE Cannot handle sun.security.provider.certpath.ldap (not open) [in <module:java.naming>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.853
+!MESSAGE Cannot handle sun.java2d.opengl (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.853
+!MESSAGE Cannot handle sun.launcher.resources (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.853
+!MESSAGE Cannot handle sun.nio.ch (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.854
+!MESSAGE Cannot handle sun.java2d.marlin.stats (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.854
+!MESSAGE Cannot handle sun.rmi.registry.resources (not open) [in <module:java.rmi>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.854
+!MESSAGE Cannot handle sun.jvmstat.monitor.event (not open) [in <module:jdk.internal.jvmstat>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.855
+!MESSAGE Cannot handle sun.jvmstat.perfdata.monitor.protocol (not open) [in <module:jdk.internal.jvmstat>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.855
+!MESSAGE Cannot handle sun.jvmstat.perfdata.monitor (not open) [in <module:jdk.internal.jvmstat>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.855
+!MESSAGE Cannot handle sun.invoke (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.856
+!MESSAGE Cannot handle sun.security.ssl [in <module:java.base>]
+  AbstractKeyManagerWrapper.class (not open)
+  AbstractTrustManagerWrapper.class (not open)
+  Alert$AlertConsumer.class (not open)
+  Alert$AlertMessage.class (not open)
+  Alert$Level.class (not open)
+  Alert.class (not open)
+  AlpnExtension$AlpnSpec.class (not open)
+  AlpnExtension$AlpnStringizer.class (not open)
+  AlpnExtension$CHAlpnAbsence.class (not open)
+  AlpnExtension$CHAlpnConsumer.class (not open)
+  AlpnExtension$CHAlpnProducer.class (not open)
+  AlpnExtension$SHAlpnAbsence.class (not open)
+  AlpnExtension$SHAlpnConsumer.class (not open)
+  AlpnExtension$SHAlpnProducer.class (not open)
+  AlpnExtension.class (not open)
+  Authenticator$1.class (not open)
+  Authenticator$DTLS10Authenticator.class (not open)
+  Authenticator$DTLS10Mac.class (not open)
+  Authenticator$DTLS13Authenticator.class (not open)
+  Authenticator$DTLSAuthenticator.class (not open)
+  Authenticator$DTLSNullAuthenticator.class (not open)
+  Authenticator$DTLSNullMac.class (not open)
+  Authenticator$MAC.class (not open)
+  Authenticator$MacImpl.class (not open)
+  Authenticator$SSL30Authenticator.class (not open)
+  Authenticator$SSL30Mac.class (not open)
+  Authenticator$SSLAuthenticator.class (not open)
+  Authenticator$SSLNullAuthenticator.class (not open)
+  Authenticator$SSLNullMac.class (not open)
+  Authenticator$TLS10Authenticator.class (not open)
+  Authenticator$TLS10Mac.class (not open)
+  Authenticator$TLS13Authenticator.class (not open)
+  Authenticator.class (not open)
+  BaseSSLSocketImpl.class (not open)
+  CertSignAlgsExtension$CHCertSignatureSchemesConsumer.class (not open)
+  CertSignAlgsExtension$CHCertSignatureSchemesProducer.class (not open)
+  CertSignAlgsExtension$CHCertSignatureSchemesUpdate.class (not open)
+  CertSignAlgsExtension$CRCertSignatureSchemesConsumer.class (not open)
+  CertSignAlgsExtension$CRCertSignatureSchemesProducer.class (not open)
+  CertSignAlgsExtension$CRCertSignatureSchemesUpdate.class (not open)
+  CertSignAlgsExtension$CertSignatureSchemesStringizer.class (not open)
+  CertSignAlgsExtension.class (not open)
+  CertStatusExtension$CHCertStatusReqConsumer.class (not open)
+  CertStatusExtension$CHCertStatusReqProducer.class (not open)
+  CertStatusExtension$CHCertStatusReqV2Consumer.class (not open)
+  CertStatusExtension$CHCertStatusReqV2Producer.class (not open)
+  CertStatusExtension$CTCertStatusResponseConsumer.class (not open)
+  CertStatusExtension$CTCertStatusResponseProducer.class (not open)
+  CertStatusExtension$CertStatusRequest.class (not open)
+  CertStatusExtension$CertStatusRequestSpec.class (not open)
+  CertStatusExtension$CertStatusRequestStringizer.class (not open)
+  CertStatusExtension$CertStatusRequestType.class (not open)
+  CertStatusExtension$CertStatusRequestV2Spec.class (not open)
+  CertStatusExtension$CertStatusRequestsStringizer.class (not open)
+  CertStatusExtension$CertStatusRespStringizer.class (not open)
+  CertStatusExtension$CertStatusResponse.class (not open)
+  CertStatusExtension$CertStatusResponseSpec.class (not open)
+  CertStatusExtension$OCSPStatusRequest.class (not open)
+  CertStatusExtension$OCSPStatusResponse.class (not open)
+  CertStatusExtension$SHCertStatusReqConsumer.class (not open)
+  CertStatusExtension$SHCertStatusReqProducer.class (not open)
+  CertStatusExtension$SHCertStatusReqV2Consumer.class (not open)
+  CertStatusExtension$SHCertStatusReqV2Producer.class (not open)
+  CertStatusExtension.class (not open)
+  CertificateMessage$CertificateEntry.class (not open)
+  CertificateMessage$T12CertificateConsumer.class (not open)
+  CertificateMessage$T12CertificateMessage.class (not open)
+  CertificateMessage$T12CertificateProducer.class (not open)
+  CertificateMessage$T13CertificateConsumer.class (not open)
+  CertificateMessage$T13CertificateMessage.class (not open)
+  CertificateMessage$T13CertificateProducer.class (not open)
+  CertificateMessage.class (not open)
+  CertificateRequest$ClientCertificateType.class (not open)
+  CertificateRequest$T10CertificateRequestConsumer.class (not open)
+  CertificateRequest$T10CertificateRequestMessage.class (not open)
+  CertificateRequest$T10CertificateRequestProducer.class (not open)
+  CertificateRequest$T12CertificateRequestConsumer.class (not open)
+  CertificateRequest$T12CertificateRequestMessage.class (not open)
+  CertificateRequest$T12CertificateRequestProducer.class (not open)
+  CertificateRequest$T13CertificateRequestConsumer.class (not open)
+  CertificateRequest$T13CertificateRequestMessage.class (not open)
+  CertificateRequest$T13CertificateRequestProducer.class (not open)
+  CertificateRequest.class (not open)
+  CertificateStatus$CertificateStatusAbsence.class (not open)
+  CertificateStatus$CertificateStatusConsumer.class (not open)
+  CertificateStatus$CertificateStatusMessage.class (not open)
+  CertificateStatus$CertificateStatusProducer.class (not open)
+  CertificateStatus.class (not open)
+  CertificateVerify$S30CertificateVerifyConsumer.class (not open)
+  CertificateVerify$S30CertificateVerifyMessage.class (not open)
+  CertificateVerify$S30CertificateVerifyProducer.class (not open)
+  CertificateVerify$T10CertificateVerifyConsumer.class (not open)
+  CertificateVerify$T10CertificateVerifyMessage.class (not open)
+  CertificateVerify$T10CertificateVerifyProducer.class (not open)
+  CertificateVerify$T12CertificateVerifyConsumer.class (not open)
+  CertificateVerify$T12CertificateVerifyMessage.class (not open)
+  CertificateVerify$T12CertificateVerifyProducer.class (not open)
+  CertificateVerify$T13CertificateVerifyConsumer.class (not open)
+  CertificateVerify$T13CertificateVerifyMessage.class (not open)
+  CertificateVerify$T13CertificateVerifyProducer.class (not open)
+  CertificateVerify.class (not open)
+  ChangeCipherSpec$T10ChangeCipherSpecConsumer.class (not open)
+  ChangeCipherSpec$T10ChangeCipherSpecProducer.class (not open)
+  ChangeCipherSpec$T13ChangeCipherSpecConsumer.class (not open)
+  ChangeCipherSpec.class (not open)
+  CipherSuite$1.class (not open)
+  CipherSuite$HashAlg.class (not open)
+  CipherSuite$KeyExchange.class (not open)
+  CipherSuite$MacAlg.class (not open)
+  CipherSuite.class (not open)
+  CipherType.class (not open)
+  Ciphertext.class (not open)
+  ClientAuthType.class (not open)
+  ClientHandshakeContext.class (not open)
+  ClientHello$1.class (not open)
+  ClientHello$ClientHelloConsumer.class (not open)
+  ClientHello$ClientHelloKickstartProducer.class (not open)
+  ClientHello$ClientHelloMessage.class (not open)
+  ClientHello$ClientHelloProducer.class (not open)
+  ClientHello$D12ClientHelloConsumer.class (not open)
+  ClientHello$D13ClientHelloConsumer.class (not open)
+  ClientHello$T12ClientHelloConsumer.class (not open)
+  ClientHello$T13ClientHelloConsumer.class (not open)
+  ClientHello.class (not open)
+  ClientKeyExchange$ClientKeyExchangeConsumer.class (not open)
+  ClientKeyExchange$ClientKeyExchangeProducer.class (not open)
+  ClientKeyExchange.class (not open)
+  ConnectionContext.class (not open)
+  ContentType.class (not open)
+  CookieExtension$CHCookieConsumer.class (not open)
+  CookieExtension$CHCookieProducer.class (not open)
+  CookieExtension$CHCookieUpdate.class (not open)
+  CookieExtension$CookieSpec.class (not open)
+  CookieExtension$CookieStringizer.class (not open)
+  CookieExtension$HRRCookieConsumer.class (not open)
+  CookieExtension$HRRCookieProducer.class (not open)
+  CookieExtension$HRRCookieReproducer.class (not open)
+  CookieExtension.class (not open)
+  DHClientKeyExchange$DHClientKeyExchangeConsumer.class (not open)
+  DHClientKeyExchange$DHClientKeyExchangeMessage.class (not open)
+  DHClientKeyExchange$DHClientKeyExchangeProducer.class (not open)
+  DHClientKeyExchange.class (not open)
+  DHKeyExchange$DHECredentials.class (not open)
+  DHKeyExchange$DHEKAGenerator$DHEKAKeyDerivation.class (not open)
+  DHKeyExchange$DHEKAGenerator.class (not open)
+  DHKeyExchange$DHEPossession.class (not open)
+  DHKeyExchange$DHEPossessionGenerator.class (not open)
+  DHKeyExchange.class (not open)
+  DHServerKeyExchange$DHServerKeyExchangeConsumer.class (not open)
+  DHServerKeyExchange$DHServerKeyExchangeMessage.class (not open)
+  DHServerKeyExchange$DHServerKeyExchangeProducer.class (not open)
+  DHServerKeyExchange.class (not open)
+  DTLSInputRecord$DTLSReassembler.class (not open)
+  DTLSInputRecord$HandshakeFlight.class (not open)
+  DTLSInputRecord$HandshakeFragment.class (not open)
+  DTLSInputRecord$HoleDescriptor.class (not open)
+  DTLSInputRecord$RecordFragment.class (not open)
+  DTLSInputRecord.class (not open)
+  DTLSOutputRecord$DTLSFragmenter.class (not open)
+  DTLSOutputRecord$HandshakeMemo.class (not open)
+  DTLSOutputRecord$RecordMemo.class (not open)
+  DTLSOutputRecord.class (not open)
+  DTLSRecord.class (not open)
+  DummyX509KeyManager.class (not open)
+  DummyX509TrustManager.class (not open)
+  ECDHClientKeyExchange$ECDHClientKeyExchangeConsumer.class (not open)
+  ECDHClientKeyExchange$ECDHClientKeyExchangeMessage.class (not open)
+  ECDHClientKeyExchange$ECDHClientKeyExchangeProducer.class (not open)
+  ECDHClientKeyExchange$ECDHEClientKeyExchangeConsumer.class (not open)
+  ECDHClientKeyExchange$ECDHEClientKeyExchangeProducer.class (not open)
+  ECDHClientKeyExchange.class (not open)
+  ECDHKeyExchange$ECDHECredentials.class (not open)
+  ECDHKeyExchange$ECDHEKAGenerator.class (not open)
+  ECDHKeyExchange$ECDHEKAKeyDerivation.class (not open)
+  ECDHKeyExchange$ECDHEPossession.class (not open)
+  ECDHKeyExchange$ECDHEPossessionGenerator.class (not open)
+  ECDHKeyExchange$ECDHKAGenerator.class (not open)
+  ECDHKeyExchange.class (not open)
+  ECDHServerKeyExchange$ECDHServerKeyExchangeConsumer.class (not open)
+  ECDHServerKeyExchange$ECDHServerKeyExchangeMessage.class (not open)
+  ECDHServerKeyExchange$ECDHServerKeyExchangeProducer.class (not open)
+  ECDHServerKeyExchange.class (not open)
+  ECPointFormatsExtension$CHECPointFormatsConsumer.class (not open)
+  ECPointFormatsExtension$CHECPointFormatsProducer.class (not open)
+  ECPointFormatsExtension$ECPointFormat.class (not open)
+  ECPointFormatsExtension$ECPointFormatsSpec.class (not open)
+  ECPointFormatsExtension$ECPointFormatsStringizer.class (not open)
+  ECPointFormatsExtension$SHECPointFormatsConsumer.class (not open)
+  ECPointFormatsExtension.class (not open)
+  EncryptedExtensions$EncryptedExtensionsConsumer.class (not open)
+  EncryptedExtensions$EncryptedExtensionsMessage.class (not open)
+  EncryptedExtensions$EncryptedExtensionsProducer.class (not open)
+  EncryptedExtensions.class (not open)
+  EphemeralKeyManager$EphemeralKeyPair.class (not open)
+  EphemeralKeyManager.class (not open)
+  ExtendedMasterSecretExtension$CHExtendedMasterSecretAbsence.class (not open)
+  ExtendedMasterSecretExtension$CHExtendedMasterSecretConsumer.class (not open)
+  ExtendedMasterSecretExtension$CHExtendedMasterSecretProducer.class (not open)
+  ExtendedMasterSecretExtension$ExtendedMasterSecretSpec.class (not open)
+  ExtendedMasterSecretExtension$ExtendedMasterSecretStringizer.class (not open)
+  ExtendedMasterSecretExtension$SHExtendedMasterSecretAbsence.class (not open)
+  ExtendedMasterSecretExtension$SHExtendedMasterSecretConsumer.class (not open)
+  ExtendedMasterSecretExtension$SHExtendedMasterSecretProducer.class (not open)
+  ExtendedMasterSecretExtension.class (not open)
+  Finished$1.class (not open)
+  Finished$FinishedMessage.class (not open)
+  Finished$S30VerifyDataGenerator.class (not open)
+  Finished$T10VerifyDataGenerator.class (not open)
+  Finished$T12FinishedConsumer.class (not open)
+  Finished$T12FinishedProducer.class (not open)
+  Finished$T12VerifyDataGenerator.class (not open)
+  Finished$T13FinishedConsumer.class (not open)
+  Finished$T13FinishedProducer.class (not open)
+  Finished$T13VerifyDataGenerator.class (not open)
+  Finished$VerifyDataGenerator.class (not open)
+  Finished$VerifyDataScheme.class (not open)
+  Finished.class (not open)
+  HKDF.class (not open)
+  HandshakeAbsence.class (not open)
+  HandshakeConsumer.class (not open)
+  HandshakeContext.class (not open)
+  HandshakeHash$CacheOnlyHash.class (not open)
+  HandshakeHash$CloneableHash.class (not open)
+  HandshakeHash$NonCloneableHash.class (not open)
+  HandshakeHash$S30HandshakeHash.class (not open)
+  HandshakeHash$T10HandshakeHash.class (not open)
+  HandshakeHash$T12HandshakeHash.class (not open)
+  HandshakeHash$T13HandshakeHash.class (not open)
+  HandshakeHash$TranscriptHash.class (not open)
+  HandshakeHash.class (not open)
+  HandshakeOutStream.class (not open)
+  HandshakeProducer.class (not open)
+  HelloCookieManager$Builder.class (not open)
+  HelloCookieManager$D10HelloCookieManager.class (not open)
+  HelloCookieManager$D13HelloCookieManager.class (not open)
+  HelloCookieManager$T13HelloCookieManager.class (not open)
+  HelloCookieManager.class (not open)
+  HelloRequest$HelloRequestConsumer.class (not open)
+  HelloRequest$HelloRequestKickstartProducer.class (not open)
+  HelloRequest$HelloRequestMessage.class (not open)
+  HelloRequest$HelloRequestProducer.class (not open)
+  HelloRequest.class (not open)
+  HelloVerifyRequest$HelloVerifyRequestConsumer.class (not open)
+  HelloVerifyRequest$HelloVerifyRequestMessage.class (not open)
+  HelloVerifyRequest$HelloVerifyRequestProducer.class (not open)
+  HelloVerifyRequest.class (not open)
+  InputRecord.class (not open)
+  JsseJce$EcAvailability.class (not open)
+  JsseJce$SunCertificates$1.class (not open)
+  JsseJce$SunCertificates.class (not open)
+  JsseJce.class (not open)
+  KeyManagerFactoryImpl$SunX509.class
+    class SunX509
+  KeyManagerFactoryImpl$X509.class (not open)
+  KeyManagerFactoryImpl.class (not open)
+  KeyShareExtension$CHKeyShareConsumer.class (not open)
+  KeyShareExtension$CHKeyShareProducer.class (not open)
+  KeyShareExtension$CHKeyShareSpec.class (not open)
+  KeyShareExtension$CHKeyShareStringizer.class (not open)
+  KeyShareExtension$HRRKeyShareConsumer.class (not open)
+  KeyShareExtension$HRRKeyShareProducer.class (not open)
+  KeyShareExtension$HRRKeyShareReproducer.class (not open)
+  KeyShareExtension$HRRKeyShareSpec.class (not open)
+  KeyShareExtension$HRRKeyShareStringizer.class (not open)
+  KeyShareExtension$KeyShareEntry.class (not open)
+  KeyShareExtension$SHKeyShareAbsence.class (not open)
+  KeyShareExtension$SHKeyShareConsumer.class (not open)
+  KeyShareExtension$SHKeyShareProducer.class (not open)
+  KeyShareExtension$SHKeyShareSpec.class (not open)
+  KeyShareExtension$SHKeyShareStringizer.class (not open)
+  KeyShareExtension.class (not open)
+  KeyUpdate$KeyUpdateConsumer.class (not open)
+  KeyUpdate$KeyUpdateKickstartProducer.class (not open)
+  KeyUpdate$KeyUpdateMessage.class (not open)
+  KeyUpdate$KeyUpdateProducer.class (not open)
+  KeyUpdate$KeyUpdateRequest.class (not open)
+  KeyUpdate.class (not open)
+  MaxFragExtension$CHMaxFragmentLengthConsumer.class (not open)
+  MaxFragExtension$CHMaxFragmentLengthProducer.class (not open)
+  MaxFragExtension$EEMaxFragmentLengthConsumer.class (not open)
+  MaxFragExtension$EEMaxFragmentLengthProducer.class (not open)
+  MaxFragExtension$EEMaxFragmentLengthUpdate.class (not open)
+  MaxFragExtension$MaxFragLenEnum.class (not open)
+  MaxFragExtension$MaxFragLenSpec.class (not open)
+  MaxFragExtension$MaxFragLenStringizer.class (not open)
+  MaxFragExtension$SHMaxFragmentLengthConsumer.class (not open)
+  MaxFragExtension$SHMaxFragmentLengthProducer.class (not open)
+  MaxFragExtension$SHMaxFragmentLengthUpdate.class (not open)
+  MaxFragExtension.class (not open)
+  NewSessionTicket$NewSessionTicketConsumer.class (not open)
+  NewSessionTicket$NewSessionTicketKickstartProducer.class (not open)
+  NewSessionTicket$NewSessionTicketMessage.class (not open)
+  NewSessionTicket$NewSessionTicketProducer.class (not open)
+  NewSessionTicket.class (not open)
+  OutputRecord$T13PaddingHolder.class (not open)
+  OutputRecord.class (not open)
+  Plaintext.class (not open)
+  PostHandshakeContext.class (not open)
+  PreSharedKeyExtension$CHPreSharedKeyAbsence.class (not open)
+  PreSharedKeyExtension$CHPreSharedKeyConsumer.class (not open)
+  PreSharedKeyExtension$CHPreSharedKeyProducer.class (not open)
+  PreSharedKeyExtension$CHPreSharedKeySpec.class (not open)
+  PreSharedKeyExtension$CHPreSharedKeyStringizer.class (not open)
+  PreSharedKeyExtension$CHPreSharedKeyUpdate.class (not open)
+  PreSharedKeyExtension$PartialClientHelloMessage.class (not open)
+  PreSharedKeyExtension$PskIdentity.class (not open)
+  PreSharedKeyExtension$SHPreSharedKeyAbsence.class (not open)
+  PreSharedKeyExtension$SHPreSharedKeyConsumer.class (not open)
+  PreSharedKeyExtension$SHPreSharedKeyProducer.class (not open)
+  PreSharedKeyExtension$SHPreSharedKeySpec.class (not open)
+  PreSharedKeyExtension$SHPreSharedKeyStringizer.class (not open)
+  PreSharedKeyExtension.class (not open)
+  PredefinedDHParameterSpecs$1.class (not open)
+  PredefinedDHParameterSpecs.class (not open)
+  ProtocolVersion.class (not open)
+  PskKeyExchangeModesExtension$PskKeyExchangeMode.class (not open)
+  PskKeyExchangeModesExtension$PskKeyExchangeModesConsumer.class (not open)
+  PskKeyExchangeModesExtension$PskKeyExchangeModesOnLoadAbsence.class (not open)
+  PskKeyExchangeModesExtension$PskKeyExchangeModesOnTradeAbsence.class (not open)
+  PskKeyExchangeModesExtension$PskKeyExchangeModesProducer.class (not open)
+  PskKeyExchangeModesExtension$PskKeyExchangeModesSpec.class (not open)
+  PskKeyExchangeModesExtension$PskKeyExchangeModesStringizer.class (not open)
+  PskKeyExchangeModesExtension.class (not open)
+  RSAClientKeyExchange$RSAClientKeyExchangeConsumer.class (not open)
+  RSAClientKeyExchange$RSAClientKeyExchangeMessage.class (not open)
+  RSAClientKeyExchange$RSAClientKeyExchangeProducer.class (not open)
+  RSAClientKeyExchange.class (not open)
+  RSAKeyExchange$EphemeralRSACredentials.class (not open)
+  RSAKeyExchange$EphemeralRSAPossession.class (not open)
+  RSAKeyExchange$EphemeralRSAPossessionGenerator.class (not open)
+  RSAKeyExchange$RSAKAGenerator$RSAKAKeyDerivation.class (not open)
+  RSAKeyExchange$RSAKAGenerator.class (not open)
+  RSAKeyExchange$RSAPremasterSecret.class (not open)
+  RSAKeyExchange.class (not open)
+  RSAServerKeyExchange$RSAServerKeyExchangeConsumer.class (not open)
+  RSAServerKeyExchange$RSAServerKeyExchangeMessage.class (not open)
+  RSAServerKeyExchange$RSAServerKeyExchangeProducer.class (not open)
+  RSAServerKeyExchange.class (not open)
+  RSASignature.class (not open)
+  RandomCookie.class (not open)
+  Record.class (not open)
+  RenegoInfoExtension$CHRenegotiationInfoAbsence.class (not open)
+  RenegoInfoExtension$CHRenegotiationInfoConsumer.class (not open)
+  RenegoInfoExtension$CHRenegotiationInfoProducer.class (not open)
+  RenegoInfoExtension$RenegotiationInfoSpec.class (not open)
+  RenegoInfoExtension$RenegotiationInfoStringizer.class (not open)
+  RenegoInfoExtension$SHRenegotiationInfoAbsence.class (not open)
+  RenegoInfoExtension$SHRenegotiationInfoConsumer.class (not open)
+  RenegoInfoExtension$SHRenegotiationInfoProducer.class (not open)
+  RenegoInfoExtension.class (not open)
+  SSLAlgorithmConstraints$SupportedSignatureAlgorithmConstraints.class (not open)
+  SSLAlgorithmConstraints.class (not open)
+  SSLAlgorithmDecomposer$1.class (not open)
+  SSLAlgorithmDecomposer.class (not open)
+  SSLAuthentication.class (not open)
+  SSLBasicKeyDerivation$SecretSizeSpec.class (not open)
+  SSLBasicKeyDerivation.class (not open)
+  SSLCipher$1.class (not open)
+  SSLCipher$NullReadCipherGenerator$NullReadCipher.class (not open)
+  SSLCipher$NullReadCipherGenerator.class (not open)
+  SSLCipher$NullWriteCipherGenerator$NullWriteCipher.class (not open)
+  SSLCipher$NullWriteCipherGenerator.class (not open)
+  SSLCipher$ReadCipherGenerator.class (not open)
+  SSLCipher$SSLReadCipher.class (not open)
+  SSLCipher$SSLWriteCipher.class (not open)
+  SSLCipher$StreamReadCipherGenerator$StreamReadCipher.class (not open)
+  SSLCipher$StreamReadCipherGenerator.class (not open)
+  SSLCipher$StreamWriteCipherGenerator$StreamWriteCipher.class (not open)
+  SSLCipher$StreamWriteCipherGenerator.class (not open)
+  SSLCipher$T10BlockReadCipherGenerator$BlockReadCipher.class (not open)
+  SSLCipher$T10BlockReadCipherGenerator.class (not open)
+  SSLCipher$T10BlockWriteCipherGenerator$BlockWriteCipher.class (not open)
+  SSLCipher$T10BlockWriteCipherGenerator.class (not open)
+  SSLCipher$T11BlockReadCipherGenerator$BlockReadCipher.class (not open)
+  SSLCipher$T11BlockReadCipherGenerator.class (not open)
+  SSLCipher$T11BlockWriteCipherGenerator$BlockWriteCipher.class (not open)
+  SSLCipher$T11BlockWriteCipherGenerator.class (not open)
+  SSLCipher$T12GcmReadCipherGenerator$GcmReadCipher.class (not open)
+  SSLCipher$T12GcmReadCipherGenerator.class (not open)
+  SSLCipher$T12GcmWriteCipherGenerator$GcmWriteCipher.class (not open)
+  SSLCipher$T12GcmWriteCipherGenerator.class (not open)
+  SSLCipher$T13GcmReadCipherGenerator$GcmReadCipher.class (not open)
+  SSLCipher$T13GcmReadCipherGenerator.class (not open)
+  SSLCipher$T13GcmWriteCipherGenerator$GcmWriteCipher.class (not open)
+  SSLCipher$T13GcmWriteCipherGenerator.class (not open)
+  SSLCipher$WriteCipherGenerator.class (not open)
+  SSLCipher.class (not open)
+  SSLConfiguration$1.class (not open)
+  SSLConfiguration.class (not open)
+  SSLConsumer.class (not open)
+  SSLContextImpl$AbstractDTLSContext.class (not open)
+  SSLContextImpl$AbstractTLSContext.class (not open)
+  SSLContextImpl$CustomizedDTLSContext.class (not open)
+  SSLContextImpl$CustomizedSSLProtocols.class (not open)
+  SSLContextImpl$CustomizedTLSContext.class (not open)
+  SSLContextImpl$DTLS10Context.class (not open)
+  SSLContextImpl$DTLS12Context.class (not open)
+  SSLContextImpl$DTLSContext.class (not open)
+  SSLContextImpl$DefaultManagersHolder$1.class (not open)
+  SSLContextImpl$DefaultManagersHolder$2.class (not open)
+  SSLContextImpl$DefaultManagersHolder.class (not open)
+  SSLContextImpl$DefaultSSLContext.class (not open)
+  SSLContextImpl$DefaultSSLContextHolder.class (not open)
+  SSLContextImpl$TLS10Context.class (not open)
+  SSLContextImpl$TLS11Context.class (not open)
+  SSLContextImpl$TLS12Context.class (not open)
+  SSLContextImpl$TLS13Context.class (not open)
+  SSLContextImpl$TLSContext.class (not open)
+  SSLContextImpl.class (not open)
+  SSLCredentials.class (not open)
+  SSLEngineImpl$DelegatedTask$DelegatedAction.class (not open)
+  SSLEngineImpl$DelegatedTask.class (not open)
+  SSLEngineImpl.class (not open)
+  SSLEngineInputRecord.class (not open)
+  SSLEngineOutputRecord$HandshakeFragment.class (not open)
+  SSLEngineOutputRecord$HandshakeMemo.class (not open)
+  SSLEngineOutputRecord$RecordMemo.class (not open)
+  SSLEngineOutputRecord.class (not open)
+  SSLExtension$ClientExtensions.class (not open)
+  SSLExtension$ExtensionConsumer.class (not open)
+  SSLExtension$SSLExtensionSpec.class (not open)
+  SSLExtension$ServerExtensions.class (not open)
+  SSLExtension.class (not open)
+  SSLExtensions.class (not open)
+  SSLHandshake$HandshakeMessage.class (not open)
+  SSLHandshake.class (not open)
+  SSLHandshakeBinding.class (not open)
+  SSLKeyAgreement.class (not open)
+  SSLKeyAgreementGenerator.class (not open)
+  SSLKeyDerivation.class (not open)
+  SSLKeyDerivationGenerator.class (not open)
+  SSLKeyExchange$1.class (not open)
+  SSLKeyExchange$SSLKeyExDHANON.class (not open)
+  SSLKeyExchange$SSLKeyExDHANONExport.class (not open)
+  SSLKeyExchange$SSLKeyExDHEDSS.class (not open)
+  SSLKeyExchange$SSLKeyExDHEDSSExport.class (not open)
+  SSLKeyExchange$SSLKeyExDHERSA.class (not open)
+  SSLKeyExchange$SSLKeyExDHERSAExport.class (not open)
+  SSLKeyExchange$SSLKeyExDHERSAOrPSS.class (not open)
+  SSLKeyExchange$SSLKeyExECDHANON.class (not open)
+  SSLKeyExchange$SSLKeyExECDHECDSA.class (not open)
+  SSLKeyExchange$SSLKeyExECDHEECDSA.class (not open)
+  SSLKeyExchange$SSLKeyExECDHERSA.class (not open)
+  SSLKeyExchange$SSLKeyExECDHERSAOrPSS.class (not open)
+  SSLKeyExchange$SSLKeyExECDHRSA.class (not open)
+  SSLKeyExchange$SSLKeyExRSA.class (not open)
+  SSLKeyExchange$SSLKeyExRSAExport.class (not open)
+  SSLKeyExchange$T12KeyAgreement.class (not open)
+  SSLKeyExchange$T13KeyAgreement.class (not open)
+  SSLKeyExchange.class (not open)
+  SSLLogger$SSLConsoleLogger.class (not open)
+  SSLLogger$SSLSimpleFormatter$1.class (not open)
+  SSLLogger$SSLSimpleFormatter.class (not open)
+  SSLLogger.class (not open)
+  SSLMasterKeyDerivation$1.class (not open)
+  SSLMasterKeyDerivation$LegacyMasterKeyDerivation.class (not open)
+  SSLMasterKeyDerivation.class (not open)
+  SSLPossession.class (not open)
+  SSLPossessionGenerator.class (not open)
+  SSLProducer.class (not open)
+  SSLRecord.class (not open)
+  SSLSecretDerivation$SecretSchedule.class (not open)
+  SSLSecretDerivation.class (not open)
+  SSLServerSocketFactoryImpl.class (not open)
+  SSLServerSocketImpl.class (not open)
+  SSLSessionContextImpl$1.class (not open)
+  SSLSessionContextImpl$SessionCacheVisitor.class (not open)
+  SSLSessionContextImpl.class (not open)
+  SSLSessionImpl.class (not open)
+  SSLSocketFactoryImpl.class (not open)
+  SSLSocketImpl$AppInputStream.class (not open)
+  SSLSocketImpl$AppOutputStream.class (not open)
+  SSLSocketImpl.class (not open)
+  SSLSocketInputRecord.class (not open)
+  SSLSocketOutputRecord.class (not open)
+  SSLStringizer.class (not open)
+  SSLTrafficKeyDerivation$1.class (not open)
+  SSLTrafficKeyDerivation$KeySchedule.class (not open)
+  SSLTrafficKeyDerivation$LegacyTrafficKeyDerivation.class (not open)
+  SSLTrafficKeyDerivation$S30TrafficKeyDerivationGenerator.class (not open)
+  SSLTrafficKeyDerivation$T10TrafficKeyDerivationGenerator.class (not open)
+  SSLTrafficKeyDerivation$T12TrafficKeyDerivationGenerator.class (not open)
+  SSLTrafficKeyDerivation$T13TrafficKeyDerivation.class (not open)
+  SSLTrafficKeyDerivation$T13TrafficKeyDerivationGenerator.class (not open)
+  SSLTrafficKeyDerivation.class (not open)
+  SSLTransport.class (not open)
+  SecureKey.class (not open)
+  ServerHandshakeContext.class (not open)
+  ServerHello$ServerHelloConsumer.class (not open)
+  ServerHello$ServerHelloMessage.class (not open)
+  ServerHello$T12ServerHelloConsumer.class (not open)
+  ServerHello$T12ServerHelloProducer$KeyExchangeProperties.class (not open)
+  ServerHello$T12ServerHelloProducer.class (not open)
+  ServerHello$T13HelloRetryRequestConsumer.class (not open)
+  ServerHello$T13HelloRetryRequestProducer.class (not open)
+  ServerHello$T13HelloRetryRequestReproducer.class (not open)
+  ServerHello$T13ServerHelloConsumer.class (not open)
+  ServerHello$T13ServerHelloProducer.class (not open)
+  ServerHello.class (not open)
+  ServerHelloDone$ServerHelloDoneConsumer.class (not open)
+  ServerHelloDone$ServerHelloDoneMessage.class (not open)
+  ServerHelloDone$ServerHelloDoneProducer.class (not open)
+  ServerHelloDone.class (not open)
+  ServerKeyExchange$ServerKeyExchangeConsumer.class (not open)
+  ServerKeyExchange$ServerKeyExchangeProducer.class (not open)
+  ServerKeyExchange.class (not open)
+  ServerNameExtension$CHServerNameConsumer.class (not open)
+  ServerNameExtension$CHServerNameProducer.class (not open)
+  ServerNameExtension$CHServerNamesSpec$UnknownServerName.class (not open)
+  ServerNameExtension$CHServerNamesSpec.class (not open)
+  ServerNameExtension$CHServerNamesStringizer.class (not open)
+  ServerNameExtension$EEServerNameConsumer.class (not open)
+  ServerNameExtension$EEServerNameProducer.class (not open)
+  ServerNameExtension$SHServerNameConsumer.class (not open)
+  ServerNameExtension$SHServerNameProducer.class (not open)
+  ServerNameExtension$SHServerNamesSpec.class (not open)
+  ServerNameExtension$SHServerNamesStringizer.class (not open)
+  ServerNameExtension.class (not open)
+  SessionId.class (not open)
+  SignatureAlgorithmsExtension$CHSignatureSchemesConsumer.class (not open)
+  SignatureAlgorithmsExtension$CHSignatureSchemesOnLoadAbsence.class (not open)
+  SignatureAlgorithmsExtension$CHSignatureSchemesOnTradeAbsence.class (not open)
+  SignatureAlgorithmsExtension$CHSignatureSchemesProducer.class (not open)
+  SignatureAlgorithmsExtension$CHSignatureSchemesUpdate.class (not open)
+  SignatureAlgorithmsExtension$CRSignatureSchemesAbsence.class (not open)
+  SignatureAlgorithmsExtension$CRSignatureSchemesConsumer.class (not open)
+  SignatureAlgorithmsExtension$CRSignatureSchemesProducer.class (not open)
+  SignatureAlgorithmsExtension$CRSignatureSchemesUpdate.class (not open)
+  SignatureAlgorithmsExtension$SignatureSchemesSpec.class (not open)
+  SignatureAlgorithmsExtension$SignatureSchemesStringizer.class (not open)
+  SignatureAlgorithmsExtension.class (not open)
+  SignatureScheme$SigAlgParamSpec.class (not open)
+  SignatureScheme.class (not open)
+  StatusResponseManager$1.class (not open)
+  StatusResponseManager$OCSPFetchCall.class (not open)
+  StatusResponseManager$ResponseCacheEntry.class (not open)
+  StatusResponseManager$StaplingParameters.class (not open)
+  StatusResponseManager$StatusInfo.class (not open)
+  StatusResponseManager.class (not open)
+  SunJSSE$1.class (not open)
+  SunJSSE.class (not open)
+  SunX509KeyManagerImpl$X509Credentials.class (not open)
+  SunX509KeyManagerImpl.class (not open)
+  SupportedGroupsExtension$1.class (not open)
+  SupportedGroupsExtension$CHSupportedGroupsConsumer.class (not open)
+  SupportedGroupsExtension$CHSupportedGroupsProducer.class (not open)
+  SupportedGroupsExtension$EESupportedGroupsConsumer.class (not open)
+  SupportedGroupsExtension$EESupportedGroupsProducer.class (not open)
+  SupportedGroupsExtension$NamedGroup.class (not open)
+  SupportedGroupsExtension$NamedGroupType.class (not open)
+  SupportedGroupsExtension$SupportedGroups.class (not open)
+  SupportedGroupsExtension$SupportedGroupsSpec.class (not open)
+  SupportedGroupsExtension$SupportedGroupsStringizer.class (not open)
+  SupportedGroupsExtension.class (not open)
+  SupportedVersionsExtension$CHSupportedVersionsConsumer.class (not open)
+  SupportedVersionsExtension$CHSupportedVersionsProducer.class (not open)
+  SupportedVersionsExtension$CHSupportedVersionsSpec.class (not open)
+  SupportedVersionsExtension$CHSupportedVersionsStringizer.class (not open)
+  SupportedVersionsExtension$HRRSupportedVersionsConsumer.class (not open)
+  SupportedVersionsExtension$HRRSupportedVersionsProducer.class (not open)
+  SupportedVersionsExtension$HRRSupportedVersionsReproducer.class (not open)
+  SupportedVersionsExtension$SHSupportedVersionsConsumer.class (not open)
+  SupportedVersionsExtension$SHSupportedVersionsProducer.class (not open)
+  SupportedVersionsExtension$SHSupportedVersionsSpec.class (not open)
+  SupportedVersionsExtension$SHSupportedVersionsStringizer.class (not open)
+  SupportedVersionsExtension.class (not open)
+  TransportContext$1.class (not open)
+  TransportContext$NotifyHandshake$1.class (not open)
+  TransportContext$NotifyHandshake.class (not open)
+  TransportContext.class (not open)
+  TrustManagerFactoryImpl$1.class (not open)
+  TrustManagerFactoryImpl$PKIXFactory.class (not open)
+  TrustManagerFactoryImpl$SimpleFactory.class
+    class SimpleFactory
+  TrustManagerFactoryImpl.class (not open)
+  TrustStoreManager$TrustAnchorManager.class (not open)
+  TrustStoreManager$TrustStoreDescriptor$1.class (not open)
+  TrustStoreManager$TrustStoreDescriptor.class (not open)
+  TrustStoreManager.class (not open)
+  Utilities.class (not open)
+  X509Authentication$X509Credentials.class (not open)
+  X509Authentication$X509Possession.class (not open)
+  X509Authentication$X509PossessionGenerator.class (not open)
+  X509Authentication.class (not open)
+  X509KeyManagerImpl$CheckResult.class (not open)
+  X509KeyManagerImpl$CheckType.class (not open)
+  X509KeyManagerImpl$EntryStatus.class (not open)
+  X509KeyManagerImpl$KeyType.class (not open)
+  X509KeyManagerImpl$SizedMap.class (not open)
+  X509KeyManagerImpl.class (not open)
+  X509TrustManagerImpl.class (not open) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.858
+!MESSAGE Cannot handle sun.tools.serialver.resources (not open) [in <module:jdk.compiler>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.858
+!MESSAGE Cannot handle sun.net.spi (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.859
+!MESSAGE Cannot handle sun.security.util.math.intpoly (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.859
+!MESSAGE Cannot handle sun.rmi (not open) [in <module:java.rmi>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.859
+!MESSAGE Cannot handle sun.swing [in <module:java.desktop>]
+  AccumulativeRunnable.class (not open)
+  BakedArrayList.class (not open)
+  CachedPainter$PainterMultiResolutionCachedImage.class (not open)
+  CachedPainter.class (not open)
+  DefaultLayoutStyle.class (not open)
+  DefaultLookup.class (not open)
+  FilePane$1.class (not open)
+  FilePane$1FilePaneAction.class (not open)
+  FilePane$2.class (not open)
+  FilePane$3.class (not open)
+  FilePane$4.class (not open)
+  FilePane$5.class (not open)
+  FilePane$6.class (not open)
+  FilePane$7.class (not open)
+  FilePane$8.class (not open)
+  FilePane$9.class (not open)
+  FilePane$AlignableTableHeaderRenderer.class (not open)
+  FilePane$DelayedSelectionUpdater.class (not open)
+  FilePane$DetailsTableCellEditor.class (not open)
+  FilePane$DetailsTableCellRenderer.class (not open)
+  FilePane$DetailsTableModel$1.class (not open)
+  FilePane$DetailsTableModel.class (not open)
+  FilePane$DetailsTableRowSorter$1.class (not open)
+  FilePane$DetailsTableRowSorter$2.class (not open)
+  FilePane$DetailsTableRowSorter$SorterModelWrapper.class (not open)
+  FilePane$DetailsTableRowSorter.class (not open)
+  FilePane$DirectoriesFirstComparatorWrapper.class (not open)
+  FilePane$EditActionListener.class (not open)
+  FilePane$FileChooserUIAccessor.class (not open)
+  FilePane$FileRenderer.class (not open)
+  FilePane$Handler.class (not open)
+  FilePane$SortableListModel.class (not open)
+  FilePane$ViewTypeAction.class (not open)
+  FilePane.class (not open)
+  ImageCache$Entry.class (not open)
+  ImageCache.class (not open)
+  ImageIconUIResource.class (not open)
+  InteropProvider.class (not open)
+  JLightweightFrame$1.class (not open)
+  JLightweightFrame$2.class (not open)
+  JLightweightFrame$3$1.class (not open)
+  JLightweightFrame$3.class (not open)
+  JLightweightFrame$4.class (not open)
+  JLightweightFrame.class (not open)
+  LightweightContent.class (not open)
+  MenuItemCheckIconFactory.class (not open)
+  MenuItemLayoutHelper$ColumnAlignment.class (not open)
+  MenuItemLayoutHelper$LayoutResult.class (not open)
+  MenuItemLayoutHelper$RectSize.class (not open)
+  MenuItemLayoutHelper.class (not open)
+  PrintColorUIResource.class (not open)
+  PrintingStatus$1.class (not open)
+  PrintingStatus$2.class (not open)
+  PrintingStatus$3.class (not open)
+  PrintingStatus$4.class (not open)
+  PrintingStatus$NotificationPrintable$1.class (not open)
+  PrintingStatus$NotificationPrintable.class (not open)
+  PrintingStatus.class (not open)
+  StringUIClientPropertyKey.class (not open)
+  SwingAccessor$JComponentAccessor.class (not open)
+  SwingAccessor$JLightweightFrameAccessor.class (not open)
+  SwingAccessor$JTextComponentAccessor.class (not open)
+  SwingAccessor$KeyStrokeAccessor.class (not open)
+  SwingAccessor$PopupFactoryAccessor.class (not open)
+  SwingAccessor$RepaintManagerAccessor.class (not open)
+  SwingAccessor$UIDefaultsAccessor.class (not open)
+  SwingAccessor.class (not open)
+  SwingUtilities2$KeyPair.class (not open)
+  SwingUtilities2$LSBCacheEntry.class (not open)
+  SwingUtilities2$RepaintListener.class (not open)
+  SwingUtilities2$Section.class
+    enum Section
+  SwingUtilities2.class (not open)
+  UIAction.class (not open)
+  WindowsPlacesBar.class (not open) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.860
+!MESSAGE Cannot handle sun.security.pkcs10 (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.860
+!MESSAGE Cannot handle sun.datatransfer (not open) [in <module:java.datatransfer>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.861
+!MESSAGE Cannot handle sun.management.jmxremote (not open) [in <module:jdk.management.agent>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.861
+!MESSAGE Cannot handle sun.awt.resources (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.861
+!MESSAGE Cannot handle sun.swing.plaf (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.862
+!MESSAGE Cannot handle sun.awt.www.content.image (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.862
+!MESSAGE Cannot handle sun.tools (not open) [in <module:jdk.compiler>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.862
+!MESSAGE Cannot handle sun.security.krb5.internal.ktab (not open) [in <module:java.security.jgss>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.863
+!MESSAGE Cannot handle sun.security (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.863
+!MESSAGE Cannot handle sun.net.sdp (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.864
+!MESSAGE Cannot handle sun.util.locale.provider (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.864
+!MESSAGE Cannot handle sun.awt.www.content (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.864
+!MESSAGE Cannot handle sun.security.krb5 (not open) [in <module:java.security.jgss>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.889
+!MESSAGE Cannot handle sun.security.krb5.internal.tools (not open) [in <module:java.security.jgss>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.889
+!MESSAGE Cannot handle sun.management (not open) [in <module:java.management>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.890
+!MESSAGE Cannot handle sun.font.lookup (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.890
+!MESSAGE Cannot handle sun.security.pkcs (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.890
+!MESSAGE Cannot handle sun.reflect.generics.tree (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.891
+!MESSAGE Cannot handle sun.awt.shell [in <module:java.desktop>]
+  DefaultShellFolder.class (not open)
+  ShellFolder$1.class (not open)
+  ShellFolder$2.class (not open)
+  ShellFolder$3.class (not open)
+  ShellFolder$4.class (not open)
+  ShellFolder$Invoker.class (not open)
+  ShellFolder.class (not open)
+  ShellFolderColumnInfo.class (not open)
+  ShellFolderManager$DirectInvoker.class (not open)
+  ShellFolderManager.class (not open)
+  Win32ShellFolder2$1.class (not open)
+  Win32ShellFolder2$10.class (not open)
+  Win32ShellFolder2$11.class (not open)
+  Win32ShellFolder2$12.class (not open)
+  Win32ShellFolder2$13.class (not open)
+  Win32ShellFolder2$14.class (not open)
+  Win32ShellFolder2$15.class (not open)
+  Win32ShellFolder2$16.class (not open)
+  Win32ShellFolder2$17.class (not open)
+  Win32ShellFolder2$18.class (not open)
+  Win32ShellFolder2$19.class (not open)
+  Win32ShellFolder2$2.class (not open)
+  Win32ShellFolder2$3.class (not open)
+  Win32ShellFolder2$4.class (not open)
+  Win32ShellFolder2$5.class (not open)
+  Win32ShellFolder2$6.class (not open)
+  Win32ShellFolder2$7.class (not open)
+  Win32ShellFolder2$8.class (not open)
+  Win32ShellFolder2$9.class (not open)
+  Win32ShellFolder2$ColumnComparator$1.class (not open)
+  Win32ShellFolder2$ColumnComparator.class (not open)
+  Win32ShellFolder2$FolderDisposer$1.class (not open)
+  Win32ShellFolder2$FolderDisposer.class (not open)
+  Win32ShellFolder2$KnownFolderDefinition.class (not open)
+  Win32ShellFolder2$KnownLibraries.class (not open)
+  Win32ShellFolder2$MultiResolutionIconImage.class (not open)
+  Win32ShellFolder2$SystemIcon.class
+    enum SystemIcon
+  Win32ShellFolder2.class (not open)
+  Win32ShellFolderManager2$1.class (not open)
+  Win32ShellFolderManager2$ComInvoker$1.class (not open)
+  Win32ShellFolderManager2$ComInvoker$2.class (not open)
+  Win32ShellFolderManager2$ComInvoker.class (not open)
+  Win32ShellFolderManager2.class (not open) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.892
+!MESSAGE Cannot handle sun.util.logging (not open) [in <module:java.logging>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.892
+!MESSAGE Cannot handle sun.jvmstat (not open) [in <module:jdk.internal.jvmstat>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.892
+!MESSAGE Cannot handle sun.swing.plaf.windows (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.893
+!MESSAGE Cannot handle sun.tools.jconsole [in <module:jdk.jconsole>]
+  AboutDialog$1.class (not open)
+  AboutDialog$2.class (not open)
+  AboutDialog$TPanel.class (not open)
+  AboutDialog.class (not open)
+  BorderedComponent$1.class (not open)
+  BorderedComponent$ArrowIcon.class (not open)
+  BorderedComponent$FocusBorder.class (not open)
+  BorderedComponent$LabeledBorder.class (not open)
+  BorderedComponent.class (not open)
+  ClassTab$1.class (not open)
+  ClassTab$2.class (not open)
+  ClassTab$ClassOverviewPanel.class (not open)
+  ClassTab.class (not open)
+  ConnectDialog$1.class (not open)
+  ConnectDialog$2.class (not open)
+  ConnectDialog$3.class (not open)
+  ConnectDialog$4.class (not open)
+  ConnectDialog$LocalTabJTable$1.class (not open)
+  ConnectDialog$LocalTabJTable$2.class (not open)
+  ConnectDialog$LocalTabJTable.class (not open)
+  ConnectDialog$ManagedVmTableModel.class (not open)
+  ConnectDialog$Padder.class (not open)
+  ConnectDialog.class (not open)
+  CreateMBeanDialog$1.class (not open)
+  CreateMBeanDialog$2.class (not open)
+  CreateMBeanDialog$3.class (not open)
+  CreateMBeanDialog.class (not open)
+  ExceptionSafePlugin.class (not open)
+  Formatter.class (not open)
+  HTMLPane$1.class (not open)
+  HTMLPane.class (not open)
+  InternalDialog$1.class (not open)
+  InternalDialog$MastheadIcon.class (not open)
+  InternalDialog.class (not open)
+  JConsole$1.class (not open)
+  JConsole$2.class (not open)
+  JConsole$3$1.class (not open)
+  JConsole$3.class (not open)
+  JConsole$4$1.class (not open)
+  JConsole$4.class (not open)
+  JConsole$5.class (not open)
+  JConsole$6.class (not open)
+  JConsole$FixedJRootPane.class (not open)
+  JConsole$WindowMenu.class (not open)
+  JConsole.class (not open)
+  LabeledComponent.class (not open)
+  LocalVirtualMachine.class (not open)
+  MBeansTab$1.class (not open)
+  MBeansTab$2.class (not open)
+  MBeansTab$3.class (not open)
+  MBeansTab.class (not open)
+  MaximizableInternalFrame$1.class (not open)
+  MaximizableInternalFrame$FixedMenuBarLayout.class (not open)
+  MaximizableInternalFrame$MDIButtonIcon.class (not open)
+  MaximizableInternalFrame.class (not open)
+  MemoryPoolProxy.class (not open)
+  MemoryPoolStat.class (not open)
+  MemoryTab$1.class (not open)
+  MemoryTab$2.class (not open)
+  MemoryTab$3.class (not open)
+  MemoryTab$4.class (not open)
+  MemoryTab$MemoryOverviewPanel.class (not open)
+  MemoryTab$PoolChart$AccessiblePoolChart.class (not open)
+  MemoryTab$PoolChart.class (not open)
+  MemoryTab$PoolPlotter.class (not open)
+  MemoryTab.class (not open)
+  Messages.class (not open)
+  OutputViewer$1.class (not open)
+  OutputViewer$PipeListener.class (not open)
+  OutputViewer.class (not open)
+  OverviewPanel$1.class (not open)
+  OverviewPanel.class (not open)
+  OverviewTab$1$1.class (not open)
+  OverviewTab$1.class (not open)
+  OverviewTab$AutoGridLayout.class (not open)
+  OverviewTab.class (not open)
+  Plotter$1.class (not open)
+  Plotter$2.class (not open)
+  Plotter$AccessiblePlotter.class (not open)
+  Plotter$SaveDataFileChooser.class (not open)
+  Plotter$Sequence.class (not open)
+  Plotter$TimeStamps.class (not open)
+  Plotter$Unit.class (not open)
+  Plotter.class (not open)
+  PlotterPanel$1.class (not open)
+  PlotterPanel$AccessiblePlotterPanel.class (not open)
+  PlotterPanel.class (not open)
+  ProxyClient$Snapshot.class
+    class Snapshot
+  ProxyClient$SnapshotInvocationHandler$NameValueMap.class (not open)
+  ProxyClient$SnapshotInvocationHandler.class (not open)
+  ProxyClient$SnapshotMBeanServerConnection.class
+    interface SnapshotMBeanServerConnection
+  ProxyClient$WeakPCL.class (not open)
+  ProxyClient.class (not open)
+  Resources.class (not open)
+  SheetDialog$1.class (not open)
+  SheetDialog$2.class (not open)
+  SheetDialog$3.class (not open)
+  SheetDialog$SheetOptionPane.class (not open)
+  SheetDialog$SlideAndFadeGlassPane$1.class (not open)
+  SheetDialog$SlideAndFadeGlassPane.class (not open)
+  SheetDialog.class (not open)
+  SummaryTab$1.class (not open)
+  SummaryTab$CPUOverviewPanel.class (not open)
+  SummaryTab$Result.class (not open)
+  SummaryTab.class (not open)
+  Tab.class (not open)
+  ThreadTab$1.class (not open)
+  ThreadTab$2$1.class (not open)
+  ThreadTab$2.class (not open)
+  ThreadTab$3.class (not open)
+  ThreadTab$4$1$1.class (not open)
+  ThreadTab$4$1$2.class (not open)
+  ThreadTab$4$1.class (not open)
+  ThreadTab$4$2.class (not open)
+  ThreadTab$4.class (not open)
+  ThreadTab$PromptingTextField.class (not open)
+  ThreadTab$ThreadJList$1.class (not open)
+  ThreadTab$ThreadJList.class (not open)
+  ThreadTab$ThreadOverviewPanel.class (not open)
+  ThreadTab.class (not open)
+  TimeComboBox.class (not open)
+  Utilities$TableScrollPane.class (not open)
+  Utilities.class (not open)
+  VMInternalFrame.class (not open)
+  VMPanel$1.class (not open)
+  VMPanel$10.class (not open)
+  VMPanel$2.class (not open)
+  VMPanel$3$1.class (not open)
+  VMPanel$3.class (not open)
+  VMPanel$4.class (not open)
+  VMPanel$5.class (not open)
+  VMPanel$6.class (not open)
+  VMPanel$7.class (not open)
+  VMPanel$8.class (not open)
+  VMPanel$9.class (not open)
+  VMPanel$TabInfo.class (not open)
+  VMPanel.class (not open)
+  VariableGridLayout.class (not open)
+  Version.class (not open)
+  Worker.class (not open) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.893
+!MESSAGE Cannot handle sun.net.www.content (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.894
+!MESSAGE Cannot handle sun.font [in <module:java.desktop>]
+  AttributeMap.class (not open)
+  AttributeValues$1.class (not open)
+  AttributeValues.class (not open)
+  BidiUtils.class (not open)
+  CMap$CMapFormat0.class (not open)
+  CMap$CMapFormat10.class (not open)
+  CMap$CMapFormat12.class (not open)
+  CMap$CMapFormat2.class (not open)
+  CMap$CMapFormat4.class (not open)
+  CMap$CMapFormat6.class (not open)
+  CMap$CMapFormat8.class (not open)
+  CMap$NullCMapClass.class (not open)
+  CMap$UVS.class (not open)
+  CMap.class (not open)
+  CharArrayCodePointIterator.class (not open)
+  CharSequenceCodePointIterator.class (not open)
+  CharToGlyphMapper.class (not open)
+  CharacterIteratorCodePointIterator.class (not open)
+  CodePointIterator.class (not open)
+  CompositeFont.class (not open)
+  CompositeFontDescriptor.class (not open)
+  CompositeGlyphMapper.class (not open)
+  CompositeStrike.class (not open)
+  CoreMetrics.class (not open)
+  CreatedFontTracker$TempFileDeletionHook.class (not open)
+  CreatedFontTracker.class (not open)
+  Decoration$DecorationImpl.class (not open)
+  Decoration$Label.class (not open)
+  Decoration.class (not open)
+  DelegatingShape.class (not open)
+  EAttribute.class (not open)
+  ExtendedTextLabel.class (not open)
+  ExtendedTextSourceLabel.class (not open)
+  FileFont$1.class (not open)
+  FileFont$CreatedFontFileDisposerRecord$1.class (not open)
+  FileFont$CreatedFontFileDisposerRecord.class (not open)
+  FileFont.class (not open)
+  FileFontStrike.class (not open)
+  Font2D.class (not open)
+  Font2DHandle.class (not open)
+  FontAccess.class (not open)
+  FontDesignMetrics$KeyReference.class (not open)
+  FontDesignMetrics$MetricsKey.class (not open)
+  FontDesignMetrics.class (not open)
+  FontFamily.class (not open)
+  FontLineMetrics.class (not open)
+  FontManager.class (not open)
+  FontManagerFactory$1.class (not open)
+  FontManagerFactory.class (not open)
+  FontManagerForSGE.class (not open)
+  FontManagerNativeLibrary$1.class (not open)
+  FontManagerNativeLibrary.class (not open)
+  FontResolver.class (not open)
+  FontRunIterator.class (not open)
+  FontScaler.class (not open)
+  FontScalerException.class (not open)
+  FontStrike.class (not open)
+  FontStrikeDesc.class (not open)
+  FontStrikeDisposer.class (not open)
+  FontSubstitution.class (not open)
+  FontUtilities$1.class (not open)
+  FontUtilities.class (not open)
+  FreetypeFontScaler.class (not open)
+  GlyphDisposedListener.class (not open)
+  GlyphLayout$EngineRecord.class (not open)
+  GlyphLayout$GVData.class (not open)
+  GlyphLayout$LayoutEngine.class (not open)
+  GlyphLayout$LayoutEngineFactory.class (not open)
+  GlyphLayout$LayoutEngineKey.class (not open)
+  GlyphLayout$SDCache$SDKey.class (not open)
+  GlyphLayout$SDCache.class (not open)
+  GlyphLayout.class (not open)
+  GlyphList.class (not open)
+  GraphicComponent.class (not open)
+  LayoutPathImpl$1.class (not open)
+  LayoutPathImpl$EmptyPath.class (not open)
+  LayoutPathImpl$EndType.class (not open)
+  LayoutPathImpl$SegmentPath$LineInfo.class (not open)
+  LayoutPathImpl$SegmentPath$Mapper.class (not open)
+  LayoutPathImpl$SegmentPath$Segment.class (not open)
+  LayoutPathImpl$SegmentPath.class
+    class SegmentPath
+  LayoutPathImpl$SegmentPathBuilder.class
+    class SegmentPathBuilder
+  LayoutPathImpl.class (not open)
+  NativeFont.class (not open)
+  NativeStrike.class (not open)
+  NullFontScaler.class (not open)
+  PhysicalFont.class (not open)
+  PhysicalStrike.class (not open)
+  Script.class (not open)
+  ScriptRun.class (not open)
+  ScriptRunData.class (not open)
+  StandardGlyphVector$ADL.class (not open)
+  StandardGlyphVector$GlyphStrike.class (not open)
+  StandardGlyphVector$GlyphTransformInfo.class (not open)
+  StandardGlyphVector.class (not open)
+  StandardTextSource.class (not open)
+  StrikeCache$1.class (not open)
+  StrikeCache$2.class (not open)
+  StrikeCache$DisposableStrike.class (not open)
+  StrikeCache$SoftDisposerRef.class (not open)
+  StrikeCache$WeakDisposerRef.class (not open)
+  StrikeCache.class (not open)
+  StrikeMetrics.class (not open)
+  SunFontManager$1.class (not open)
+  SunFontManager$10.class (not open)
+  SunFontManager$11.class (not open)
+  SunFontManager$12.class (not open)
+  SunFontManager$13.class (not open)
+  SunFontManager$2.class (not open)
+  SunFontManager$3.class (not open)
+  SunFontManager$4.class (not open)
+  SunFontManager$5.class (not open)
+  SunFontManager$6.class (not open)
+  SunFontManager$7.class (not open)
+  SunFontManager$8$1.class (not open)
+  SunFontManager$8.class (not open)
+  SunFontManager$9.class (not open)
+  SunFontManager$FamilyDescription.class (not open)
+  SunFontManager$FontRegistrationInfo.class (not open)
+  SunFontManager$T1Filter.class (not open)
+  SunFontManager$TTFilter.class (not open)
+  SunFontManager$TTorT1Filter.class (not open)
+  SunFontManager.class (not open)
+  SunLayoutEngine.class (not open)
+  TextLabel.class (not open)
+  TextLabelFactory.class (not open)
+  TextLineComponent.class (not open)
+  TextRecord.class (not open)
+  TextSource.class (not open)
+  TextSourceLabel.class (not open)
+  TrueTypeFont$1.class (not open)
+  TrueTypeFont$DirectoryEntry.class (not open)
+  TrueTypeFont$TTDisposerRecord.class (not open)
+  TrueTypeFont.class (not open)
+  TrueTypeGlyphMapper.class (not open)
+  Type1Font$1.class (not open)
+  Type1Font$2.class (not open)
+  Type1Font$T1DisposerRecord$1.class (not open)
+  Type1Font$T1DisposerRecord.class (not open)
+  Type1Font.class (not open)
+  Type1GlyphMapper.class (not open)
+  Underline$IMGrayUnderline.class (not open)
+  Underline$StandardUnderline.class (not open)
+  Underline.class (not open) as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.894
+!MESSAGE Cannot handle sun.management.jdp (not open) [in <module:jdk.management.agent>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.895
+!MESSAGE Cannot handle sun.jvmstat.perfdata.monitor.protocol.file (not open) [in <module:jdk.internal.jvmstat>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.895
+!MESSAGE Cannot handle sun.security.jgss.spnego (not open) [in <module:java.security.jgss>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.896
+!MESSAGE Cannot handle sun.awt.resources.cursors (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.896
+!MESSAGE Cannot handle sun.security.internal (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.897
+!MESSAGE Cannot handle sun.reflect.generics.parser (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.897
+!MESSAGE Cannot handle sun.security.jca (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.897
+!MESSAGE Cannot handle sun.instrument (not open) [in <module:java.instrument>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.897
+!MESSAGE Cannot handle sun.security.validator (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.898
+!MESSAGE Cannot handle sun.security.tools.keytool (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.898
+!MESSAGE Cannot handle sun.security.internal.interfaces (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.898
+!MESSAGE Cannot handle sun.net.www.content.text (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.899
+!MESSAGE Cannot handle sun.net.www.protocol.https (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.900
+!MESSAGE Cannot handle sun.swing.table (not open) [in <module:java.desktop>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.900
+!MESSAGE Cannot handle sun.net.www.protocol.http.logging (not open) [in <module:java.logging>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.900
+!MESSAGE Cannot handle sun.util.spi (not open) [in <module:java.base>] as return type.
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 10001 2020-09-22 02:24:28.900
+!MESSAGE Cannot handle sun.management.counter (not open) [in <module:java.management>] as return type.
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:24:31.211
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:24:39.272
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:25:03.711
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:25:03.847
+!MESSAGE jre:jre:statics:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:25:18.327
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:25:30.156
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:25:36.089
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:30:01.844
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:30:14.130
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:30:24.336
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:30:30.819
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.ui 4 0 2020-09-22 02:33:08.170
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (The system cannot find the path specified))
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:67)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:146)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4622)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:361)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:113)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:194)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:205)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:258)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:115)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:472)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:466)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:498)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4173)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5134)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4790)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1501)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2138)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4812)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:253)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4027)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3579)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
+Caused by: org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (The system cannot find the path specified))
+	at org.eclipse.swt.SWT.error(SWT.java:4711)
+	at org.eclipse.swt.SWT.error(SWT.java:4626)
+	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:184)
+	at org.eclipse.tm.terminal.view.ui.local.showin.ExternalExecutablesManager.loadImage(ExternalExecutablesManager.java:266)
+	at org.eclipse.tm.terminal.view.ui.local.showin.DynamicContributionItems.getContributionItems(DynamicContributionItems.java:79)
+	at org.eclipse.ui.actions.CompoundContributionItem.getContributionItemsToFill(CompoundContributionItem.java:83)
+	at org.eclipse.ui.actions.CompoundContributionItem.fill(CompoundContributionItem.java:57)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:146)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:805)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:672)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1224)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicAllRenderedVisibility(MenuManagerRenderer.java:218)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 65 more
+Caused by: java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:181)
+	... 79 more
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:35:27.817
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:35:31.071
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:35:31.080
+!MESSAGE jre:jre:statics:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:35:40.783
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:35:43.763
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:37:03.211
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:37:03.218
+!MESSAGE jre:jre:statics:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:37:30.826
+!MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-22 02:37:30.831
+!MESSAGE jre:jre:statics:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
