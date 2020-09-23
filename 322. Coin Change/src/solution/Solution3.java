@@ -24,7 +24,7 @@ public class Solution3 {
 
 	private void coinHelper(int[] coins, int index, int amount, int count) {
 
-		final int coin = coins[index];
+		int coin = coins[index];
 
 		// Last element
 		if (index == coins.length - 1) {

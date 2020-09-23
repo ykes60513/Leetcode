@@ -1,5 +1,5 @@
 /***********************
- * Quick select
+ * Quicksort solution
  */
 package solution;
 

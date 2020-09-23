@@ -12192,3 +12192,2248 @@ Java Model Exception: Java Model Status [Index out of bounds]
 
 !ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-09-23 03:11:53.001
 !MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.ui 4 0 2020-09-23 03:49:57.950
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (The system cannot find the path specified))
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:67)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:146)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4622)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:361)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:113)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:194)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:205)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:258)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:115)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:472)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:466)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:498)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4173)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5134)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4790)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1501)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2138)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4812)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:253)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4027)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3579)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
+Caused by: org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (The system cannot find the path specified))
+	at org.eclipse.swt.SWT.error(SWT.java:4711)
+	at org.eclipse.swt.SWT.error(SWT.java:4626)
+	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:184)
+	at org.eclipse.tm.terminal.view.ui.local.showin.ExternalExecutablesManager.loadImage(ExternalExecutablesManager.java:266)
+	at org.eclipse.tm.terminal.view.ui.local.showin.DynamicContributionItems.getContributionItems(DynamicContributionItems.java:79)
+	at org.eclipse.ui.actions.CompoundContributionItem.getContributionItemsToFill(CompoundContributionItem.java:83)
+	at org.eclipse.ui.actions.CompoundContributionItem.fill(CompoundContributionItem.java:57)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:146)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:805)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:672)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1224)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicAllRenderedVisibility(MenuManagerRenderer.java:218)
+	at sun.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 65 more
+Caused by: java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:181)
+	... 79 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:10.682
+!MESSAGE Preparing classpath changed notification 215. Kth Largest Element in an Array
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:10.682
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:10.685
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:10.688
+!MESSAGE buffering callback sts4.classpath.ILEQIYNN 215. Kth Largest Element in an Array false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:10.688
+!MESSAGE executing callback sts4.classpath.ILEQIYNN 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:10.706
+!MESSAGE executing callback sts4.classpath.ILEQIYNN SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:25.314
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:25.315
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@54dd55d[org.springframework.tooling.boot.ls:1.15.0.202001210741(id=1748)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:25.315
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-09-23 03:50:27.536
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at org.eclipse.lsp4e.LanguageServerWrapper.supportsWorkspaceFolderCapability(LanguageServerWrapper.java:529)
+	at org.eclipse.lsp4e.LanguageServerWrapper.canOperate(LanguageServerWrapper.java:518)
+	at org.eclipse.lsp4e.LanguageServerWrapper.canOperate(LanguageServerWrapper.java:845)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$6(LanguageServiceAccessor.java:361)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:174)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1556)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:362)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:588)
+	at org.eclipse.lsp4e.ConnectDocumentToLanguageServerSetupParticipant$2.run(ConnectDocumentToLanguageServerSetupParticipant.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-09-23 03:50:28.538
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at org.eclipse.lsp4e.LanguageServerWrapper.supportsWorkspaceFolderCapability(LanguageServerWrapper.java:529)
+	at org.eclipse.lsp4e.LanguageServerWrapper.canOperate(LanguageServerWrapper.java:518)
+	at org.eclipse.lsp4e.LanguageServerWrapper.canOperate(LanguageServerWrapper.java:845)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$7(LanguageServiceAccessor.java:379)
+	at java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
+	at java.util.HashMap$KeySpliterator.tryAdvance(HashMap.java:1577)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
+	at java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.anyMatch(ReferencePipeline.java:449)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:378)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:588)
+	at org.eclipse.lsp4e.ConnectDocumentToLanguageServerSetupParticipant$2.run(ConnectDocumentToLanguageServerSetupParticipant.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-09-23 03:50:30.509
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1784)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1928)
+	at org.eclipse.lsp4e.LanguageServerWrapper.supportsWorkspaceFolderCapability(LanguageServerWrapper.java:529)
+	at org.eclipse.lsp4e.LanguageServerWrapper.canOperate(LanguageServerWrapper.java:518)
+	at org.eclipse.lsp4e.LanguageServerWrapper.canOperate(LanguageServerWrapper.java:845)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$6(LanguageServiceAccessor.java:361)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:174)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1556)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:362)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:588)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.initiateHoverRequest(LSPTextHover.java:230)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:106)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.631
+!MESSAGE Boot LS startup time from start to initialized: 5315ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.720
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.lQdYLNTfisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.722
+!MESSAGE subscribing to classpath changes: sts4.classpath.lQdYLNTf isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.722
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.723
+!MESSAGE subsribers = {sts4.classpath.lQdYLNTf=Send Classpath Notifications(7031), sts4.classpath.ILEQIYNN=Send Classpath Notifications(305)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.723
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.723
+!MESSAGE project 215. Kth Largest Element in an Array ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.724
+!MESSAGE Preparing classpath changed notification 215. Kth Largest Element in an Array
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.724
+!MESSAGE project 1. Two Sum ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.724
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.724
+!MESSAGE project 100. Same Tree ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.725
+!MESSAGE project 101. Symmetric Tree ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.725
+!MESSAGE project 102. Binary Tree Level Order Traversal ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.725
+!MESSAGE project 104. Maximum Depth of Binary Tree ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.726
+!MESSAGE project 106. Construct Binary Tree from Inorder and Postorder Traversal ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.726
+!MESSAGE project 108. Convert Sorted Array to Binary Search Tree ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.726
+!MESSAGE project 109. Convert Sorted List to Binary Search Tree ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.726
+!MESSAGE project 110. Balanced Binary Tree ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.727
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.727
+!MESSAGE project 112. Path Sum ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.727
+!MESSAGE project 121. Best Time to Buy and Sell Stock ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.728
+!MESSAGE project 122. Best Time to Buy and Sell Stock II ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.728
+!MESSAGE project 125. Valid Palindrome ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.728
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 215. Kth Largest Element in an Array false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.728
+!MESSAGE project 13. Roman to Integer ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.728
+!MESSAGE Preparing classpath changed notification 1. Two Sum
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.729
+!MESSAGE project 133. Clone Graph ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.729
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.729
+!MESSAGE project 138. Copy List with Random Pointer ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.729
+!MESSAGE project 14. Longest Common Prefix ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.730
+!MESSAGE project 141. Linked List Cycle ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.730
+!MESSAGE project 142. Linked List Cycle II ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.730
+!MESSAGE project 144. Binary Tree Preorder Traversal ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.730
+!MESSAGE project 145. Binary Tree Postorder Traversal ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.731
+!MESSAGE project 15. 3Sum ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.731
+!MESSAGE project 150. Evaluate Reverse Polish Notation ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.731
+!MESSAGE project 153. Find Minimum in Rotated Sorted Array ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.731
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.732
+!MESSAGE project 155. Min Stack ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.732
+!MESSAGE project 160. Intersection of Two Linked Lists ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.732
+!MESSAGE project 167. Two Sum II - Input array is sorted ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.733
+!MESSAGE project 18. 4Sum ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.733
+!MESSAGE project 189. Rotate Array ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.733
+!MESSAGE project 19. Remove Nth Node From End of List ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.734
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 1. Two Sum false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.734
+!MESSAGE project 2. Add Two Numbers ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.734
+!MESSAGE Preparing classpath changed notification 100. Same Tree
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.734
+!MESSAGE project 20. Valid Parentheses ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.734
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.735
+!MESSAGE project 200. Number of Islands ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.735
+!MESSAGE project 202. Happy Number ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.735
+!MESSAGE project 203. Remove Linked List Elements ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.735
+!MESSAGE project 205. Isomorphic Strings ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.736
+!MESSAGE project 206. Reverse Linked List ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.736
+!MESSAGE project 21. Merge Two Sorted Lists ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.736
+!MESSAGE project 217. Contains Duplicate ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.737
+!MESSAGE project 219. Contains Duplicate II ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.737
+!MESSAGE project 220. Contains Duplicate III ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.737
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.737
+!MESSAGE project 234. Palindrome Linked List ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.738
+!MESSAGE project 237. Delete Node in a Linked List ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.738
+!MESSAGE project 242. Valid Anagram ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.738
+!MESSAGE project 249. Group Shifted Strings ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.738
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 100. Same Tree false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.739
+!MESSAGE project 250. Count Univalue Subtrees ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.739
+!MESSAGE Preparing classpath changed notification 101. Symmetric Tree
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.739
+!MESSAGE project 26. Remove Duplicates from Sorted Array ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.739
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.740
+!MESSAGE project 266. Palindrome Permutation ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.740
+!MESSAGE project 27. Remove Element ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.740
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.740
+!MESSAGE project 279. Perfect Squares ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.741
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 101. Symmetric Tree false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.741
+!MESSAGE project 28. Implement strStr() ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.741
+!MESSAGE Preparing classpath changed notification 102. Binary Tree Level Order Traversal
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.742
+!MESSAGE project 283. Move Zeroes ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.742
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.742
+!MESSAGE project 286. Walls and Gates ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.742
+!MESSAGE project 288. Unique Word Abbreviation ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.742
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.743
+!MESSAGE project 290. Word Pattern ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.743
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 102. Binary Tree Level Order Traversal false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.743
+!MESSAGE project 3. Longest Substring Without Repeating Characters ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.743
+!MESSAGE Preparing classpath changed notification 104. Maximum Depth of Binary Tree
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.744
+!MESSAGE project 322. Coin Change ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.744
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.744
+!MESSAGE project 328. Odd Even Linked List ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.744
+!MESSAGE project 33. Search in Rotated Sorted Array ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.745
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.745
+!MESSAGE project 34. Find First and Last Position of Element in Sorted Array ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.745
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 104. Maximum Depth of Binary Tree false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.745
+!MESSAGE project 344. Reverse String ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.745
+!MESSAGE Preparing classpath changed notification 106. Construct Binary Tree from Inorder and Postorder Traversal
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.746
+!MESSAGE project 347. Top K Frequent Elements ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.746
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.746
+!MESSAGE project 349. Intersection of Two Arrays ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.746
+!MESSAGE project 350. Intersection of Two Arrays II ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.747
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.747
+!MESSAGE project 359. Logger Rate Limiter ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.747
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 106. Construct Binary Tree from Inorder and Postorder Traversal false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.747
+!MESSAGE project 36. Valid Sudoku ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.747
+!MESSAGE Preparing classpath changed notification 108. Convert Sorted Array to Binary Search Tree
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.747
+!MESSAGE project 37. Sudoku Solver ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.748
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.748
+!MESSAGE project 38. Count and Say ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.748
+!MESSAGE project 387. First Unique Character in a String ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.749
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.749
+!MESSAGE project 39. Combination Sum ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.749
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 108. Convert Sorted Array to Binary Search Tree false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.750
+!MESSAGE project 40. Combination Sum II ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.750
+!MESSAGE Preparing classpath changed notification 109. Convert Sorted List to Binary Search Tree
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.750
+!MESSAGE project 409. Longest Palindrome ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.750
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.751
+!MESSAGE project 412. Fizz Buzz ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.751
+!MESSAGE project 430. Flatten a Multilevel Doubly Linked List ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.751
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.752
+!MESSAGE project 438. Find All Anagrams in a String ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.752
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 109. Convert Sorted List to Binary Search Tree false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.752
+!MESSAGE project 443. String Compression ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.752
+!MESSAGE Preparing classpath changed notification 110. Balanced Binary Tree
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.752
+!MESSAGE project 454. 4Sum II ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.753
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.753
+!MESSAGE project 46. Permutations ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.753
+!MESSAGE project 463. Island Perimeter ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.753
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.753
+!MESSAGE project 47. Permutations II ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.754
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 110. Balanced Binary Tree false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.754
+!MESSAGE project 48. Rotate Image ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.754
+!MESSAGE Preparing classpath changed notification 112. Path Sum
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.754
+!MESSAGE project 49. Group Anagrams ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.755
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.755
+!MESSAGE project 494. Target Sum ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.755
+!MESSAGE project 509. Fibonacci Number ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.756
+!MESSAGE project 53. Maximum Subarray ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.756
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.756
+!MESSAGE project 55. Jump Game ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.756
+!MESSAGE project 572. Subtree of Another Tree ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.757
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 112. Path Sum false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.757
+!MESSAGE project 599. Minimum Index Sum of Two Lists ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.757
+!MESSAGE Preparing classpath changed notification 121. Best Time to Buy and Sell Stock
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.757
+!MESSAGE project 61. Rotate List ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.757
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.758
+!MESSAGE project 62. Unique Paths ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.758
+!MESSAGE project 63. Unique Paths II ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.758
+!MESSAGE project 652. Find Duplicate Subtrees ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.758
+!MESSAGE project 66. Plus One ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.759
+!MESSAGE project 67. Add Binary ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.759
+!MESSAGE project 680. Valid Palindrome II ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.759
+!MESSAGE project 69. Sqrt(x) ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.759
+!MESSAGE project 695. Max Area of Island ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.760
+!MESSAGE project 7. Reverse Integer ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.760
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.760
+!MESSAGE project 70. Climbing Stairs ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.760
+!MESSAGE project 707. Design Linked List ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.761
+!MESSAGE project 708. Insert into a Cyclic Sorted List ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.761
+!MESSAGE project 739. Daily Temperatures ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.761
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 121. Best Time to Buy and Sell Stock false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.761
+!MESSAGE project 744. Find Smallest Letter Greater Than Target ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.762
+!MESSAGE Preparing classpath changed notification 122. Best Time to Buy and Sell Stock II
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.762
+!MESSAGE project 746. Min Cost Climbing Stairs ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.762
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.762
+!MESSAGE project 752. Open the Lock ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.762
+!MESSAGE project 77. Combinations ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.763
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.763
+!MESSAGE project 771. Jewels and Stones ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.763
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 122. Best Time to Buy and Sell Stock II false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.763
+!MESSAGE project 78. Subsets ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.763
+!MESSAGE Preparing classpath changed notification 125. Valid Palindrome
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.764
+!MESSAGE project 8. String to Integer (atoi) ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.764
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.764
+!MESSAGE project 811. Subdomain Visit Count ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.764
+!MESSAGE project 844. Backspace String Compare ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.765
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.765
+!MESSAGE project 88. Merge Sorted Array ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.765
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 125. Valid Palindrome false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.766
+!MESSAGE project 90. Subsets II ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.766
+!MESSAGE Preparing classpath changed notification 13. Roman to Integer
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.766
+!MESSAGE project 937. Reorder Data in Log Files ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.766
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.767
+!MESSAGE project 94. Binary Tree Inorder Traversal ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.767
+!MESSAGE project 953. Verifying an Alien Dictionary ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.767
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.767
+!MESSAGE project 977. Squares of a Sorted Array ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.767
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 13. Roman to Integer false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.768
+!MESSAGE project 98. Validate Binary Search Tree ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.768
+!MESSAGE Preparing classpath changed notification 133. Clone Graph
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.768
+!MESSAGE project RemoteSystemsTempFiles ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.768
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.769
+!MESSAGE project RemoteSystemsTempFiles SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.769
+!MESSAGE project Test2 ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.769
+!MESSAGE project Testing ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.769
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.770
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.lQdYLNTf => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.771
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.772
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 133. Clone Graph false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.772
+!MESSAGE Preparing classpath changed notification 138. Copy List with Random Pointer
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.773
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.775
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.776
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 138. Copy List with Random Pointer false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.776
+!MESSAGE Preparing classpath changed notification 14. Longest Common Prefix
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.777
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.777
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.778
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 14. Longest Common Prefix false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.778
+!MESSAGE Preparing classpath changed notification 141. Linked List Cycle
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.779
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.779
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.780
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 141. Linked List Cycle false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.780
+!MESSAGE Preparing classpath changed notification 142. Linked List Cycle II
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.780
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.781
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.781
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 142. Linked List Cycle II false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.782
+!MESSAGE Preparing classpath changed notification 144. Binary Tree Preorder Traversal
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.782
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.783
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.784
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 144. Binary Tree Preorder Traversal false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.784
+!MESSAGE Preparing classpath changed notification 145. Binary Tree Postorder Traversal
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.784
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.785
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.786
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 145. Binary Tree Postorder Traversal false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.786
+!MESSAGE Preparing classpath changed notification 15. 3Sum
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.786
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.789
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.790
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 15. 3Sum false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.790
+!MESSAGE Preparing classpath changed notification 150. Evaluate Reverse Polish Notation
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.791
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.793
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.795
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 150. Evaluate Reverse Polish Notation false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.795
+!MESSAGE Preparing classpath changed notification 153. Find Minimum in Rotated Sorted Array
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.796
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.797
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.797
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 153. Find Minimum in Rotated Sorted Array false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.797
+!MESSAGE Preparing classpath changed notification 155. Min Stack
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.798
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.800
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.802
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 155. Min Stack false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.802
+!MESSAGE Preparing classpath changed notification 160. Intersection of Two Linked Lists
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.802
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.805
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.806
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 160. Intersection of Two Linked Lists false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.807
+!MESSAGE Preparing classpath changed notification 167. Two Sum II - Input array is sorted
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.807
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.808
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.808
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 167. Two Sum II - Input array is sorted false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.808
+!MESSAGE Preparing classpath changed notification 18. 4Sum
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.809
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.811
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.813
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 18. 4Sum false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.813
+!MESSAGE Preparing classpath changed notification 189. Rotate Array
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.813
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.814
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.815
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 189. Rotate Array false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.815
+!MESSAGE Preparing classpath changed notification 19. Remove Nth Node From End of List
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.815
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.818
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.819
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 19. Remove Nth Node From End of List false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.820
+!MESSAGE Preparing classpath changed notification 2. Add Two Numbers
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.820
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.823
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.824
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 2. Add Two Numbers false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.824
+!MESSAGE Preparing classpath changed notification 20. Valid Parentheses
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.825
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.838
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.840
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 20. Valid Parentheses false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.842
+!MESSAGE Preparing classpath changed notification 200. Number of Islands
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.842
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.845
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.847
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 200. Number of Islands false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.847
+!MESSAGE Preparing classpath changed notification 202. Happy Number
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.847
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.850
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.851
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 202. Happy Number false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.852
+!MESSAGE Preparing classpath changed notification 203. Remove Linked List Elements
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.852
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.855
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.856
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 203. Remove Linked List Elements false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.856
+!MESSAGE Preparing classpath changed notification 205. Isomorphic Strings
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.857
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.860
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.861
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 205. Isomorphic Strings false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.862
+!MESSAGE Preparing classpath changed notification 206. Reverse Linked List
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.862
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.865
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.865
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 206. Reverse Linked List false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.866
+!MESSAGE Preparing classpath changed notification 21. Merge Two Sorted Lists
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.866
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.869
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.870
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 21. Merge Two Sorted Lists false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.871
+!MESSAGE Preparing classpath changed notification 217. Contains Duplicate
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.871
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.874
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.875
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 217. Contains Duplicate false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.876
+!MESSAGE Preparing classpath changed notification 219. Contains Duplicate II
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.876
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.878
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.880
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 219. Contains Duplicate II false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.880
+!MESSAGE Preparing classpath changed notification 220. Contains Duplicate III
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.880
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.883
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.885
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 220. Contains Duplicate III false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.885
+!MESSAGE Preparing classpath changed notification 234. Palindrome Linked List
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.886
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.888
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.889
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 234. Palindrome Linked List false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.889
+!MESSAGE Preparing classpath changed notification 237. Delete Node in a Linked List
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.889
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.890
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.890
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 237. Delete Node in a Linked List false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.890
+!MESSAGE Preparing classpath changed notification 242. Valid Anagram
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.891
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.893
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.894
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 242. Valid Anagram false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.894
+!MESSAGE Preparing classpath changed notification 249. Group Shifted Strings
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.894
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.896
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.897
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 249. Group Shifted Strings false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.897
+!MESSAGE Preparing classpath changed notification 250. Count Univalue Subtrees
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.897
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.898
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.898
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 250. Count Univalue Subtrees false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.898
+!MESSAGE Preparing classpath changed notification 26. Remove Duplicates from Sorted Array
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.899
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.899
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.900
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 26. Remove Duplicates from Sorted Array false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.900
+!MESSAGE Preparing classpath changed notification 266. Palindrome Permutation
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.900
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.901
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.901
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 266. Palindrome Permutation false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.902
+!MESSAGE Preparing classpath changed notification 27. Remove Element
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.902
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.903
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.903
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 27. Remove Element false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.903
+!MESSAGE Preparing classpath changed notification 279. Perfect Squares
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.904
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.906
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.907
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 279. Perfect Squares false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.907
+!MESSAGE Preparing classpath changed notification 28. Implement strStr()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.908
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.908
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.909
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 28. Implement strStr() false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.909
+!MESSAGE Preparing classpath changed notification 283. Move Zeroes
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.909
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.911
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.912
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 283. Move Zeroes false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.912
+!MESSAGE Preparing classpath changed notification 286. Walls and Gates
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.912
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.914
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.915
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 286. Walls and Gates false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.916
+!MESSAGE Preparing classpath changed notification 288. Unique Word Abbreviation
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.916
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.917
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.918
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 288. Unique Word Abbreviation false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.919
+!MESSAGE Preparing classpath changed notification 290. Word Pattern
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.919
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.921
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.922
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 290. Word Pattern false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.922
+!MESSAGE Preparing classpath changed notification 3. Longest Substring Without Repeating Characters
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.922
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.924
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.926
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 3. Longest Substring Without Repeating Characters false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.926
+!MESSAGE Preparing classpath changed notification 322. Coin Change
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.926
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.928
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.930
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 322. Coin Change false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.930
+!MESSAGE Preparing classpath changed notification 328. Odd Even Linked List
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.930
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.933
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.934
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 328. Odd Even Linked List false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.934
+!MESSAGE Preparing classpath changed notification 33. Search in Rotated Sorted Array
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.934
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.936
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.937
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 33. Search in Rotated Sorted Array false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.938
+!MESSAGE Preparing classpath changed notification 34. Find First and Last Position of Element in Sorted Array
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.938
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.939
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.940
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 34. Find First and Last Position of Element in Sorted Array false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.940
+!MESSAGE Preparing classpath changed notification 344. Reverse String
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.941
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.942
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.943
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 344. Reverse String false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.943
+!MESSAGE Preparing classpath changed notification 347. Top K Frequent Elements
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.944
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.945
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.946
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 347. Top K Frequent Elements false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.946
+!MESSAGE Preparing classpath changed notification 349. Intersection of Two Arrays
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.947
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.948
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.949
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 349. Intersection of Two Arrays false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.950
+!MESSAGE Preparing classpath changed notification 350. Intersection of Two Arrays II
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.950
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.951
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.952
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 350. Intersection of Two Arrays II false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.952
+!MESSAGE Preparing classpath changed notification 359. Logger Rate Limiter
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.953
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.954
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.955
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 359. Logger Rate Limiter false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.955
+!MESSAGE Preparing classpath changed notification 36. Valid Sudoku
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.956
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.957
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.958
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 36. Valid Sudoku false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.958
+!MESSAGE Preparing classpath changed notification 37. Sudoku Solver
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.958
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.960
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.961
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 37. Sudoku Solver false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.961
+!MESSAGE Preparing classpath changed notification 38. Count and Say
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.962
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.962
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.962
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 38. Count and Say false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.962
+!MESSAGE Preparing classpath changed notification 387. First Unique Character in a String
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.963
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.965
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.966
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 387. First Unique Character in a String false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.967
+!MESSAGE Preparing classpath changed notification 39. Combination Sum
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.967
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.968
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.969
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 39. Combination Sum false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.969
+!MESSAGE Preparing classpath changed notification 40. Combination Sum II
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.970
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.971
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.972
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 40. Combination Sum II false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.972
+!MESSAGE Preparing classpath changed notification 409. Longest Palindrome
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.972
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.973
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.973
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 409. Longest Palindrome false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.973
+!MESSAGE Preparing classpath changed notification 412. Fizz Buzz
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.974
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.974
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.974
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 412. Fizz Buzz false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.974
+!MESSAGE Preparing classpath changed notification 430. Flatten a Multilevel Doubly Linked List
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.975
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.976
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.977
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 430. Flatten a Multilevel Doubly Linked List false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.977
+!MESSAGE Preparing classpath changed notification 438. Find All Anagrams in a String
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.977
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.979
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.980
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 438. Find All Anagrams in a String false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.980
+!MESSAGE Preparing classpath changed notification 443. String Compression
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.980
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.982
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.982
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 443. String Compression false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.982
+!MESSAGE Preparing classpath changed notification 454. 4Sum II
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.983
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.984
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.985
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 454. 4Sum II false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.986
+!MESSAGE Preparing classpath changed notification 46. Permutations
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.986
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.988
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.989
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 46. Permutations false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.990
+!MESSAGE Preparing classpath changed notification 463. Island Perimeter
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.990
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.991
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.991
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 463. Island Perimeter false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.991
+!MESSAGE Preparing classpath changed notification 47. Permutations II
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.991
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.993
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.994
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 47. Permutations II false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.994
+!MESSAGE Preparing classpath changed notification 48. Rotate Image
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.995
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.995
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.995
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 48. Rotate Image false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.996
+!MESSAGE Preparing classpath changed notification 49. Group Anagrams
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.996
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.997
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.999
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 49. Group Anagrams false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.999
+!MESSAGE Preparing classpath changed notification 494. Target Sum
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:30.999
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.001
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.002
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 494. Target Sum false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.002
+!MESSAGE Preparing classpath changed notification 509. Fibonacci Number
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.002
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.003
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.003
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 509. Fibonacci Number false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.003
+!MESSAGE Preparing classpath changed notification 53. Maximum Subarray
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.004
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.005
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.006
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 53. Maximum Subarray false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.006
+!MESSAGE Preparing classpath changed notification 55. Jump Game
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.006
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.007
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.007
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 55. Jump Game false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.007
+!MESSAGE Preparing classpath changed notification 572. Subtree of Another Tree
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.008
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.008
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.008
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 572. Subtree of Another Tree false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.009
+!MESSAGE Preparing classpath changed notification 599. Minimum Index Sum of Two Lists
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.009
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.011
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.012
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 599. Minimum Index Sum of Two Lists false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.012
+!MESSAGE Preparing classpath changed notification 61. Rotate List
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.013
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.015
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.016
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 61. Rotate List false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.016
+!MESSAGE Preparing classpath changed notification 62. Unique Paths
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.016
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.017
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.017
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 62. Unique Paths false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.017
+!MESSAGE Preparing classpath changed notification 63. Unique Paths II
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.017
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.018
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.018
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 63. Unique Paths II false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.019
+!MESSAGE Preparing classpath changed notification 652. Find Duplicate Subtrees
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.019
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.020
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.021
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 652. Find Duplicate Subtrees false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.022
+!MESSAGE Preparing classpath changed notification 66. Plus One
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.022
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.022
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.023
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 66. Plus One false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.023
+!MESSAGE Preparing classpath changed notification 67. Add Binary
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.023
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.024
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.024
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 67. Add Binary false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.024
+!MESSAGE Preparing classpath changed notification 680. Valid Palindrome II
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.025
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.026
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.026
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 680. Valid Palindrome II false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.026
+!MESSAGE Preparing classpath changed notification 69. Sqrt(x)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.027
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.028
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.028
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 69. Sqrt(x) false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.028
+!MESSAGE Preparing classpath changed notification 695. Max Area of Island
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.029
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.029
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.030
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 695. Max Area of Island false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.030
+!MESSAGE Preparing classpath changed notification 7. Reverse Integer
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.030
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.031
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.032
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 7. Reverse Integer false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.032
+!MESSAGE Preparing classpath changed notification 70. Climbing Stairs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.032
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.033
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.034
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 70. Climbing Stairs false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.034
+!MESSAGE Preparing classpath changed notification 707. Design Linked List
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.034
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.036
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.037
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 707. Design Linked List false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.037
+!MESSAGE Preparing classpath changed notification 708. Insert into a Cyclic Sorted List
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.037
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.039
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.040
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 708. Insert into a Cyclic Sorted List false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.040
+!MESSAGE Preparing classpath changed notification 739. Daily Temperatures
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.041
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.042
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.043
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 739. Daily Temperatures false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.043
+!MESSAGE Preparing classpath changed notification 744. Find Smallest Letter Greater Than Target
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.044
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.044
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.044
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 744. Find Smallest Letter Greater Than Target false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.045
+!MESSAGE Preparing classpath changed notification 746. Min Cost Climbing Stairs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.045
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.045
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.046
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 746. Min Cost Climbing Stairs false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.046
+!MESSAGE Preparing classpath changed notification 752. Open the Lock
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.046
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.048
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.049
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 752. Open the Lock false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.049
+!MESSAGE Preparing classpath changed notification 77. Combinations
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.050
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.051
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.052
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 77. Combinations false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.052
+!MESSAGE Preparing classpath changed notification 771. Jewels and Stones
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.053
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.054
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.055
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 771. Jewels and Stones false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.055
+!MESSAGE Preparing classpath changed notification 78. Subsets
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.055
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.057
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.058
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 78. Subsets false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.058
+!MESSAGE Preparing classpath changed notification 8. String to Integer (atoi)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.058
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.059
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.059
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 8. String to Integer (atoi) false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.059
+!MESSAGE Preparing classpath changed notification 811. Subdomain Visit Count
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.059
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.060
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.060
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 811. Subdomain Visit Count false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.060
+!MESSAGE Preparing classpath changed notification 844. Backspace String Compare
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.061
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.061
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.062
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 844. Backspace String Compare false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.062
+!MESSAGE Preparing classpath changed notification 88. Merge Sorted Array
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.063
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.063
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.064
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 88. Merge Sorted Array false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.064
+!MESSAGE Preparing classpath changed notification 90. Subsets II
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.064
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.067
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.068
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 90. Subsets II false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.068
+!MESSAGE Preparing classpath changed notification 937. Reorder Data in Log Files
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.068
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.069
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.069
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 937. Reorder Data in Log Files false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.069
+!MESSAGE Preparing classpath changed notification 94. Binary Tree Inorder Traversal
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.070
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.071
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.071
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 94. Binary Tree Inorder Traversal false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.071
+!MESSAGE Preparing classpath changed notification 953. Verifying an Alien Dictionary
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.072
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.072
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.073
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 953. Verifying an Alien Dictionary false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.073
+!MESSAGE Preparing classpath changed notification 977. Squares of a Sorted Array
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.073
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.074
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.074
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 977. Squares of a Sorted Array false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.074
+!MESSAGE Preparing classpath changed notification 98. Validate Binary Search Tree
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.074
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.076
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.077
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf 98. Validate Binary Search Tree false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.077
+!MESSAGE Preparing classpath changed notification Test2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.077
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.078
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.078
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf Test2 false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.078
+!MESSAGE Preparing classpath changed notification Testing
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.079
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.080
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.082
+!MESSAGE buffering callback sts4.classpath.lQdYLNTf Testing false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.083
+!MESSAGE executing callback sts4.classpath.lQdYLNTf 121 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-09-23 03:50:31.277
+!MESSAGE executing callback sts4.classpath.lQdYLNTf SUCCESS [done]
+
+!ENTRY org.eclipse.ui 4 0 2020-09-23 03:50:42.058
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (The system cannot find the path specified))
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:67)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:146)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4622)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:361)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:113)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:194)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:205)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:258)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:115)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:472)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:466)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:498)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4173)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5134)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4790)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1501)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2138)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4812)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:253)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4027)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3579)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
+Caused by: org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (The system cannot find the path specified))
+	at org.eclipse.swt.SWT.error(SWT.java:4711)
+	at org.eclipse.swt.SWT.error(SWT.java:4626)
+	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:184)
+	at org.eclipse.tm.terminal.view.ui.local.showin.ExternalExecutablesManager.loadImage(ExternalExecutablesManager.java:266)
+	at org.eclipse.tm.terminal.view.ui.local.showin.DynamicContributionItems.getContributionItems(DynamicContributionItems.java:79)
+	at org.eclipse.ui.actions.CompoundContributionItem.getContributionItemsToFill(CompoundContributionItem.java:83)
+	at org.eclipse.ui.actions.CompoundContributionItem.fill(CompoundContributionItem.java:57)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:146)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:805)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:672)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1224)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicAllRenderedVisibility(MenuManagerRenderer.java:218)
+	at sun.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 65 more
+Caused by: java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:181)
+	... 79 more
+
+!ENTRY org.eclipse.ui 4 0 2020-09-23 03:51:24.231
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (The system cannot find the path specified))
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:67)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:146)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4622)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:361)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:113)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:194)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:205)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:258)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:115)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:472)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:466)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:498)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4173)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:5134)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4790)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1501)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2138)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4812)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:253)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4027)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3579)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:633)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
+Caused by: org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (The system cannot find the path specified))
+	at org.eclipse.swt.SWT.error(SWT.java:4711)
+	at org.eclipse.swt.SWT.error(SWT.java:4626)
+	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:184)
+	at org.eclipse.tm.terminal.view.ui.local.showin.ExternalExecutablesManager.loadImage(ExternalExecutablesManager.java:266)
+	at org.eclipse.tm.terminal.view.ui.local.showin.DynamicContributionItems.getContributionItems(DynamicContributionItems.java:79)
+	at org.eclipse.ui.actions.CompoundContributionItem.getContributionItemsToFill(CompoundContributionItem.java:83)
+	at org.eclipse.ui.actions.CompoundContributionItem.fill(CompoundContributionItem.java:57)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:146)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:728)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:805)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:672)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1224)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicAllRenderedVisibility(MenuManagerRenderer.java:218)
+	at sun.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 65 more
+Caused by: java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git\git-for-windows.ico (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:181)
+	... 79 more
