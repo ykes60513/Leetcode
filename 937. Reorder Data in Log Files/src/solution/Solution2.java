@@ -18,6 +18,7 @@ public class Solution2 {
 				return split1[0].compareTo(split2[0]);
 			}
 			return isDigit1 ? (isDigit2 ? 0 : 1) : -1;
+			// 1: swap, 0: totally the same,  -1: do nothing  
 		});
 
 		return logs;
