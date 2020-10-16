@@ -28,12 +28,12 @@ public class Solution {
 
 		LinkedList<int[]> result = new LinkedList<>();
 
-		for (int[] t : intervals) {
+		for (int[] i : intervals) {
 
-			if (result.isEmpty() || result.getLast()[1] > t[0])
-				result.add(t);
+			if (result.isEmpty() || result.getLast()[1] < i[0])
+				result.add(i);
 			else {
-				result.getLast()[1] = Math.max(result.getLast()[1],t[1]);
+				result.getLast()[1] = Math.max(result.getLast()[1],i[1]);
 			}
 
 		}
