@@ -1,5 +1,6 @@
 /**************************
  * Sorting solution
+	Time Complexity: O(nlogn)
  */
 package solution;
 
