@@ -31,6 +31,15 @@ public class PriorityQueueDemo {
 		
 		while(!queue.isEmpty())
 			System.out.println(queue.poll());
+		
+		System.out.println("////////////////////////");
+		
+		PriorityQueue<String> list = new PriorityQueue<>();
+		list.add("a");
+		list.add("aaa");
+		list.add("aa");
+		System.out.println(list);
+		list.forEach(n -> System.out.println(n));
 	}
 
 }
