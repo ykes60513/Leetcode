@@ -17,7 +17,8 @@ public class Solution {
 
 		Queue<int[]> queue = new LinkedList<>();
 		int count_fresh = 0;
-
+		
+		//Find the rotting orange to start
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < cols; j++) {
 				if (grid[i][j] == 2) {

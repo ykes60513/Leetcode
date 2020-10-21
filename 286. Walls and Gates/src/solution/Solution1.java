@@ -13,13 +13,15 @@ public class Solution1 {
 
 	public void wallsAndGates(int[][] rooms) {
 
-		int m = rooms.length;
-		if (m == 0)
+		if (rooms == null || rooms.length == 0)
 			return;
-		int n = rooms[0].length;
+
+		final int m = rooms.length;
+		final int n = rooms[0].length;
 
 		Queue<int[]> queue = new LinkedList<>();
 
+		//Find the gate
 		for (int i = 0; i < m; i++) {
 			for (int j = 0; j < n; j++) {
 
