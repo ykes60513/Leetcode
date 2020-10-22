@@ -55,5 +55,9 @@ public class Main {
 			int result = new Solution().area(height);
 			System.out.println(result);
 		}
+		
+		int t = 0;
+		
+		System.out.println(t>>1);
 	}
 }
