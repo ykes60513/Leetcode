@@ -5,7 +5,103 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2020-10-30T01:58:36Z</updated>
+  <updated>2020-11-02T16:18:19Z</updated>
+  <entry>
+    <title>Spring Integration 5.4 goes GA; some other Integration releases</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/11/02/spring-integration-5-4-goes-ga-some-other-integration-releases" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Artem Bilan</name>
+    </author>
+    <id>tag:spring.io,2020-11-02:4251</id>
+    <updated>2020-11-02T16:18:19Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;Dear Spring community,&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf the team and everybody contributed, it&amp;#8217;s my pleasure to announce that last week we released general availability for Spring Integration &lt;code&gt;5.4&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;It can be downloaded from Maven Central:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="groovy"&gt;compile 'org.springframework.integration:spring-integration-core:5.4.0'&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Here is a summary of features and improvements for this Spring Integration generation:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;R2DBC channel adapters;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ZeroMQ proxy, message channel and channel adapters;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Redis Streams channel adapters (which are reactive);&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;spring-integration-kafka&lt;/code&gt; extension has been moved to the core project and, alongside with an upgrade to the latest Spring for Apache Kafka &lt;code&gt;2.6.2&lt;/code&gt;, includes some improvements;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;code&gt;RenewableLockRegistry&lt;/code&gt; is implemented for the &lt;code&gt;JdbcLockRegistry&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;See &lt;a href="https://docs.spring.io/spring-integration/docs/5.4.0/reference/html/whats-new.html#whats-new"&gt;What&amp;#8217;s New&lt;/a&gt; in documentation for more information.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This version is included into dependency management of Spring Boot &lt;a href="https://spring.io/blog/2020/10/30/spring-boot-2-4-0-rc1-available-now"&gt;&lt;code&gt;2.4.0-RC1&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="other-relevant-releases"&gt;&lt;a class="anchor" href="#other-relevant-releases"&gt;&lt;/a&gt;Other relevant releases&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We also released several maintenance versions and some Spring Integration extensions:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Integration &lt;code&gt;5.1.13.RELEASE&lt;/code&gt; - the last release in this generation: has reached its End of Life and goes out of support starting this November;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Integration &lt;code&gt;5.2.9.RELEASE&lt;/code&gt; - includes bug fixes and dependencies upgrades; going to be supported until Spring Boot &lt;code&gt;2.2&lt;/code&gt; generation;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Integration &lt;code&gt;5.3.3.RELEASE&lt;/code&gt; - includes bug fixes and dependencies upgrades; going to be supported until Spring Boot &lt;code&gt;2.3&lt;/code&gt; generation;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;spring-integration-aws-2.3.4.RELEASE&lt;/code&gt; - upgrades, some good contribution and several bug fixes; based on Spring Integration &lt;code&gt;5.3.3.RELEASE&lt;/code&gt; and Spring Cloud AWS &lt;code&gt;2.2.4.RELEASE&lt;/code&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;spring-cloud-stream-binder-aws-kinesis-2.0.3.RELEASE&lt;/code&gt; - some good contributions and upgrades to the latest dependencies;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;spring-integration-cassandra-0.9.0&lt;/code&gt; - based on Spring Integration &lt;code&gt;5.4&lt;/code&gt; and Spring Data &lt;code&gt;2020.0.0&lt;/code&gt;; used by the latest &lt;a href="https://github.com/spring-cloud/stream-applications"&gt;Stream Applications&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;spring-integration-hazelcast-3.0.0&lt;/code&gt; - upgrades to the latest versions of Spring Integration and Hazelcast and respective API incompatibility fixes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;See more information in &lt;a href="https://github.com/spring-projects/spring-integration-extensions"&gt;Spring Integration Extensions&lt;/a&gt; project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Cheers,&amp;#160;&lt;br&gt;
+Artem&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="http://projects.spring.io/spring-integration/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-integration/issues"&gt;GitHub Issues&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-integration/blob/master/CONTRIBUTING.adoc"&gt;Contributing&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-integration"&gt;Help&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-integration"&gt;Chat&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Boot 2.4.0-RC1 available now</title>
     <link rel="alternate" href="https://spring.io/blog/2020/10/30/spring-boot-2-4-0-rc1-available-now" />
@@ -858,28 +954,6 @@ Finally, we saw how we can easily switch &lt;code&gt;MessageGroupStore&lt;/code&
 &lt;div class="paragraph"&gt;
 &lt;p&gt;&lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server/issues"&gt;GitHub Issues&lt;/a&gt; |  &lt;a href="https://app.zenhub.com/workspaces/authorization-server-5e8f3182b5e8f5841bfc4902/board?repos=248032165"&gt;ZenHub Board&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Premiering: Bootiful Kotlin</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/10/15/premiering-bootiful-kotlin" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2020-10-15:4231</id>
-    <updated>2020-10-15T06:08:44Z</updated>
-    <content type="html">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/nso-sPLfaTk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;Hi, Spring fans! In this talk Spring Developer Advocate, Java Champion, and Kotlin Google Developer Advocate Josh Long (&lt;a href="http://twitter.com/starbuxman"&gt;@starbuxman&lt;/a&gt;) introduces the Kotlin ecosystem, the language, and its application when building server-side Spring applications.&lt;/p&gt;
-&lt;p&gt;This is a roving tour of all things Kotlin, and there&amp;rsquo;s a lot to cover, including:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;building Android applications with Kotlin on mobile devices&lt;/li&gt;
-  &lt;li&gt;building native applications with Kotlin and Kotlin Native ((m)alloc, pointers, and POSIX APIs, oh, my!)&lt;/li&gt;
-  &lt;li&gt;giving existing APIs like the venerable &lt;code&gt;JdbcTemplate&lt;/code&gt; a fresh coat of paint with Kotlin&lt;/li&gt;
-  &lt;li&gt;using Kotlin ecosystem libraries like the Exposed ORM with Spring&lt;/li&gt;
-  &lt;li&gt;using rich DSLs such as those provided for Spring Framework&amp;rsquo;s programmatic bean registration, HTTP endpoints, and for Spring Cloud Gateway&lt;/li&gt;
-  &lt;li&gt;kicking up our reactive applications a notch with coroutines&lt;/li&gt;
-&lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
