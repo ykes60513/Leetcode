@@ -5,7 +5,6 @@
 package solution;
 
 public class Solution {
-
 	public int findCircleNum(int[][] M) {
 		int[] visited = new int[M.length];
 		int count = 0;
@@ -26,5 +25,4 @@ public class Solution {
 			}
 		}
 	}
-
 }

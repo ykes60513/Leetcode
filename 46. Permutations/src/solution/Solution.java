@@ -6,7 +6,6 @@ public class Solution {
 	public List<List<Integer>> permute(int[] nums) {
 
 		List<List<Integer>> result = new ArrayList<>();
-		// Arrays.sort(nums); // not necessary
 		backtrack(result, new ArrayList<>(), nums);
 		return result;
 	}
