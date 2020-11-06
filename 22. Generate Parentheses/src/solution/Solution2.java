@@ -10,15 +10,15 @@ public class Solution2 {
 		return ans;
 	}
 
-	public void backtrack(List<String> ans, String cur, int open, int close, int max) {
-		if (cur.length() == max * 2) {
+	public void backtrack(List<String> ans, String cur, int open, int close, int n) {
+		if (cur.length() == n * 2) {
 			ans.add(cur);
 			return;
 		}
 
-		if (open < max)
-			backtrack(ans, cur + "(", open + 1, close, max);
+		if (open < n)
+			backtrack(ans, cur + "(", open + 1, close, n);
 		if (close < open)
-			backtrack(ans, cur + ")", open, close + 1, max);
+			backtrack(ans, cur + ")", open, close + 1, n);
 	}
 }
