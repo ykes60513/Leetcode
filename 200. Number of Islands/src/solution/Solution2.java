@@ -38,7 +38,6 @@ public class Solution2 {
 								neighbors.add(r * n + c);
 								grid[r][c] = '0';
 							}
-
 						}
 					}
 				}
