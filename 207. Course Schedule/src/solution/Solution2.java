@@ -19,7 +19,7 @@ public class Solution2 {
 		}
 
 		int count = 0;
-		Queue<Integer> queue = new LinkedList();
+		Queue<Integer> queue = new LinkedList<>();
 		for (int i = 0; i < indegree.length; i++) {
 			if (indegree[i] == 0)
 				queue.offer(i);
