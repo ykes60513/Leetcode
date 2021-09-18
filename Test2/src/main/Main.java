@@ -2,6 +2,8 @@ package main;
 
 import java.io.*;
 
+import dog.Dog;
+
 public class Main {
 
 	public static int[] Convert(String s) {
@@ -35,6 +37,12 @@ public class Main {
 		
 		System.out.println(3<<2);
 		
+		Cat cat = new Cat();
+		cat.setName("mimi");
+		Dog dog = new Dog("ttt");
+		
+		cat.printString();
+		System.out.println(dog.getName());
 	}
 }
 
