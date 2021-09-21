@@ -5986,3 +5986,18 @@ Caused by: java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git
 	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
 	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:181)
 	... 78 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 12:42:34.726
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 12:42:34.729
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 12:42:34.730
+!MESSAGE buffering callback sts4.classpath.cAzMLdzw 95. Unique Binary Search Trees II false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 12:42:34.731
+!MESSAGE executing callback sts4.classpath.cAzMLdzw 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-21 12:42:34.737
+!MESSAGE executing callback sts4.classpath.cAzMLdzw SUCCESS [done]
