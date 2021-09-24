@@ -5,13 +5,7 @@ import java.util.*;
 class Solution {
 	public int earliestAcq(int[][] logs, int n) {
 
-		Arrays.sort(logs, new Comparator<int[]>() {
-
-			@Override
-			public int compare(int[] o1, int[] o2) {
-				return o1[0] - o2[0];
-			}
-		});
+		Arrays.sort(logs, (a,b) -> a[0] - b[0]);
 
 		UnionFind uf = new UnionFind(n);
 

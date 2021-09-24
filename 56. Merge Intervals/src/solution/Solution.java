@@ -18,13 +18,7 @@ public class Solution {
 
 	public int[][] merge(int[][] intervals) {
 
-		Arrays.sort(intervals, new Comparator<int[]>() {
-
-			@Override
-			public int compare(int[] o1, int[] o2) {
-				return o1[0] < o2[0] ? -1 : o1[0] == o2[0] ? 0 : 1;
-			}
-		});
+		Arrays.sort(intervals, (o1, o2) -> o1[0] - o2[0]);
 
 		LinkedList<int[]> result = new LinkedList<>();
 

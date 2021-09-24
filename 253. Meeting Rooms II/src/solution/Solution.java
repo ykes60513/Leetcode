@@ -18,22 +18,9 @@ public class Solution {
 		}
 
 		// Sort intervals by start time
-		Arrays.sort(intervals, new Comparator<int[]>() {
+		Arrays.sort(intervals, (o1, o2) -> o1[0] - o2[0]);
 
-			@Override
-			public int compare(int[] a, int[] b) {
-				return a[0] - b[0];
-			}
-		});
-
-		PriorityQueue<Integer> queue = new PriorityQueue<>(intervals.length, new Comparator<Integer>() {
-
-			@Override
-			public int compare(Integer a, Integer b) {
-
-				return a - b;
-			}
-		});
+		PriorityQueue<Integer> queue = new PriorityQueue<>(intervals.length, (a,b) -> a - b);
 
 		queue.add(intervals[0][1]);
 

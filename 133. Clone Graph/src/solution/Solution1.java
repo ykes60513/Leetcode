@@ -20,7 +20,8 @@ public class Solution1 {
 		
 		if(node==null)
 			return null;
-		if(map.containsKey(node)) return map.get(node);
+		if(map.containsKey(node)) 
+			return map.get(node);
 		Node dup = new Node(node.val, new ArrayList<Node>());
 		map.put(node, dup);  // clone node and store as a node-duplicate pair
 		for(Node neighbor : node.neighbors) {
