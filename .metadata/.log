@@ -7065,3 +7065,8 @@ java.util.concurrent.TimeoutException
 	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
 	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
 	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.core.resources 2 2 2021-09-25 20:11:24.300
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2021-09-25 20:11:24.300
+!MESSAGE The project description file (.project) for '213. House Robber II' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
