@@ -15,16 +15,17 @@ public class Solution2 {
 	}
 
 	public int rob_simple(int[] nums, int start, int end) {
-		int t1 = 0;
-		int t2 = 0;
+		
+		int t_1 = 0;
+		int t_2 = 0;
 
 		for (int i = start; i <= end; i++) {
-			int temp = t1;
-			int current = nums[i];
-			t1 = Math.max(current + t2, t1);
-			t2 = temp;
+			
+			int temp = t_1;
+			t_1 = Math.max(nums[i] + t_2, t_1);
+			t_2 = temp;
 		}
 
-		return t1;
+		return t_1;
 	}
 }
