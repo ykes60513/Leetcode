@@ -1,6 +1,4 @@
-package solution;
-
-import main.TreeNode;
+package main;
 
 public class Solution2 {
 	public int maxDepth(TreeNode root) {

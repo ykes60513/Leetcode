@@ -1,6 +1,4 @@
-package solution;
-
-import main.TreeNode;
+package main;
 
 public class Solution1 {
 	public boolean isSymmetric(TreeNode root) {

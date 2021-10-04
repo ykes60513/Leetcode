@@ -155,7 +155,6 @@ INDEX VERSION 1.131+D:\Programming\Leetcode\.metadata\.plugins\org.eclipse.jdt.c
 3773309051.index
 3217823655.index
 2133083280.index
-3249915772.index
 3537654176.index
 656637535.index
 1747599478.index

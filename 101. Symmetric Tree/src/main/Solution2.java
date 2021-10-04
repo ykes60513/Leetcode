@@ -2,11 +2,9 @@
  * Iterative solution
  */
 
-package solution;
+package main;
 
 import java.util.*;
-
-import main.TreeNode;
 
 public class Solution2 {
 	 public boolean isSymmetric(TreeNode root) {
