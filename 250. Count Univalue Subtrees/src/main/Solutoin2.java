@@ -1,6 +1,4 @@
-package solution;
-
-import main.TreeNode;
+package main;
 
 public class Solutoin2 {
 	int count = 0;

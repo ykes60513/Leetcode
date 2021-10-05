@@ -176,6 +176,7 @@
 <item elementID="=153. Find Minimum in Rotated Sorted Array" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=953. Verifying an Alien Dictionary" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=290. Word Pattern" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=117. Populating Next Right Pointers in Each Node II" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=1202. Smallest String With Swaps" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=461. Hamming Distance" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=19. Remove Nth Node From End of List" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
@@ -220,6 +221,8 @@
 <item elementID="=95. Unique Binary Search Trees II" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=494. Target Sum" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=697. Degree of an Array" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=236. Lowest Common Ancestor of a Binary Tree" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=124. Binary Tree Maximum Path Sum" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1559514122170_2" label="Window Working Set" name="Aggregate for window 1559514122169"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1632928497215_7" label="Multiple Working Sets" name="Aggregate:CoreJava:Disjoint Set:">

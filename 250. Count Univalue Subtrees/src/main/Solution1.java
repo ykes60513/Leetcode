@@ -1,9 +1,8 @@
-package solution;
-
-import main.TreeNode;
+package main;
 
 public class Solution1 {
-	int count;
+	
+	int count = 0;
 
 	public int countUnivalSubtrees(TreeNode root) {
 		count = 0;

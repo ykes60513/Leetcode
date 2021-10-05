@@ -1,8 +1,6 @@
-package solution;
+package main;
 
 import java.util.*;
-
-import main.TreeNode;
 
 public class Solution {
 	int[] inorder;

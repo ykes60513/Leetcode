@@ -1,6 +1,4 @@
-package solution;
-
-import main.TreeNode;
+package main;
 
 public class Solution {
 	public boolean hasPathSum(TreeNode root, int sum) {
