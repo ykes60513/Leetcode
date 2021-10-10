@@ -1,4 +1,4 @@
-package main;
+  package main;
 
 //UnionFind.class
 class UnionFind {

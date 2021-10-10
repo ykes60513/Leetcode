@@ -20,10 +20,10 @@ class UnionFind {
 	// The find function here is the same as that in the disjoint set with path
 	// compression.
 	public int find(int x) {
-		if (x == root[x]) {
-			return x;
+		if (x != root[x]) {
+			root[x] = find(root[x]);
 		}
-		return root[x] = find(root[x]);
+		return root[x];
 	}
 
 	// The union function with union by rank
@@ -65,5 +65,8 @@ public class App {
 		// 1-2-5-6-7 3-8-9-4
 		uf.union(9, 4);
 		System.out.println(uf.connected(4, 9)); // true
+		System.out.println(uf.find(2));
+		System.out.println(uf.find(5));
+		System.out.println(uf.find(7));
 	}
 }

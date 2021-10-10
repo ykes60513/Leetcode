@@ -4,14 +4,14 @@ public class Solution1 {
 
 	public boolean canJump(int[] nums) {
 
-		int max = 0;
+		int furtherJump = 0;
 
-		for (int i = 0; i < nums.length; i++) {
+		for (int index = 0; index < nums.length; index++) {
 
-			if (i > max)
+			if (index > furtherJump)
 				return false;
 
-			max = Math.max(nums[i] + i, max);
+			furtherJump = Math.max(nums[index] + index, furtherJump);
 		}
 		return true;
 	}

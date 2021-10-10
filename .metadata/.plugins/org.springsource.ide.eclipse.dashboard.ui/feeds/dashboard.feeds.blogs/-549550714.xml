@@ -5,7 +5,60 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2021-10-04T16:59:33Z</updated>
+  <updated>2021-10-07T19:00:00Z</updated>
+  <entry>
+    <title>A Bootiful Podcast: Heiko Scherrer on OpenWMS, Spring, Spring Boot, Spring Data, workflow with Activiti and more</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/10/07/a-bootiful-podcast-heiko-scherrer-on-openwms-spring-spring-boot-spring-data-workflow-with-activiti-and-more" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-10-07:4564</id>
+    <updated>2021-10-07T19:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, &lt;a href="https://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to OpenWMS founder &lt;a href="https://twitter.com/openwms"&gt;Heiko Scherrer (@openwms)&lt;/a&gt; about OpenWMS, Spring, Spring Boot, Spring Data, workflow with Activiti and more.&lt;/p&gt;
+&lt;p&gt;&lt;iframe title="Heiko Scherrer on OpenWMS, Spring, Spring Boot, Spring Data, workflow with Activiti and more  " allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=w3vqw-10fbf60-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;btn-skin=7"&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Tips: Spring GraphQL</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/10/06/spring-tips-spring-graphql" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-10-04:4561</id>
+    <updated>2021-10-06T07:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment we look at the new Spring GraphQL project.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/kVSYVhmvNCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - October 5th, 2021</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/10/05/this-week-in-spring-october-5th-2021" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-10-05:4563</id>
+    <updated>2021-10-05T07:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! Life&amp;rsquo;s been busy but fun this last week. I&amp;rsquo;ve been knee-deep in video production! I&amp;rsquo;ve got a lot of fun &lt;a href="https://twitter.com/SpringTipsLive"&gt;&lt;em&gt;Spring Tips&lt;/em&gt;&lt;/a&gt; installments lined up or in production at the moment, and I can&amp;rsquo;t wait for you to see &amp;rsquo;em! &lt;/p&gt;
+&lt;p&gt;I also spent much of last week with my buddy Matt Raible and we made JHipster work with Spring Native, and I&amp;rsquo;m still giddy as can be about the newly opened possibilities. (More on that below) &lt;/p&gt;
+&lt;p&gt;How are you doin&amp;rsquo;, otherwise? I hope you&amp;rsquo;re doing well! &lt;/p&gt;
+&lt;p&gt;Now then, we&amp;rsquo;ve got a lot to cover and oh-so little time in which to do it. Let&amp;rsquo;s goo! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;In this installment of &lt;a href="https://spring.io/blog/2021/09/29/spring-tips-bootiful-edge-services"&gt;&lt;em&gt;Spring Tips&lt;/em&gt;, I look at &amp;ldquo;Bootiful Edge Services&amp;rdquo;&lt;/a&gt; with Spring GraphQL, Spring Cloud Gateway, and Reactive Programming.&lt;/li&gt;
+  &lt;li&gt;In this installment of a &lt;a href="https://spring.io/blog/2021/09/30/a-bootiful-podcast-spring-data-engineer-christoph-strobl-on-mongodb-redis-graphql-and-spring-native"&gt;&lt;em&gt;A Bootiful Podcast&lt;/em&gt;, I talk to Spring Data engineer Christoph Strobl on MongoDB, Redis, GraphQL and Spring Native &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.linkedin.com/pulse/jhipster-works-spring-native-matt-raible"&gt;JHipster Works with Spring Native (Kinda)!&lt;/a&gt; Last week, Matt Raible and I presented at the (virtual) San Francisco Java User Group (in person). The event was a lot of fun because Matt and I enjoy working together. The goal was to deliver a presentation on the (experimental!) Spring Native project which enables GraalVM builds for Spring Boot-based applications. But Matt wanted to make JHipster work! So we hacked. And hacked. And hacked. Finally we ended up with an application that worked with GraalVM, sans only the OpenAPI support. It was &lt;em&gt;awesome&lt;/em&gt;. It&amp;rsquo;s not as smooth as it could be, of course, but it&amp;rsquo;s &lt;em&gt;something&lt;/em&gt;. Check it out!&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://rieckpil.de/common-pitfalls-when-testing-spring-boot-applications/?amp"&gt;Common Pitfalls When Testing Spring Boot Applications&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blogs.vmware.com/vmworld/2021/09/enabling-next-gen-experiences-with-the-lumen-platform.html"&gt;Enabling Next-Gen Experiences with the Lumen Platform&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/10/04/spring-cloud-2021-0-0-m2-codename-jubilee-is-available"&gt;Spring Cloud 2021.0.0-M2 (codename Jubilee) is Available.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://developer.okta.com/blog/2021/09/16/spring-native-okta-starter"&gt;Spring Native in Action with the Okta Spring Boot Starter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I just learned about &lt;em&gt;JobRunr&lt;/em&gt;, a job scheduler that has &lt;a href="https://www.jobrunr.io/en/documentation/configuration/spring/"&gt;a nice Spring Boot starter&lt;/a&gt;. You can use this job scheduler with all sorts of infrastructure thanks to its &lt;code&gt;StorageManager&lt;/code&gt; abstraction. Could be good! This is an alternative, of course, to things like the Quartz integration in Spring and the &lt;code&gt;@Scheduled&lt;/code&gt; annotation in Spring.&lt;/li&gt;
+  &lt;li&gt;Did you try out the more recent &lt;a href="https://github.com/spring-io/initializr/blob/main/README.adoc"&gt;release of the Spring Initializr yet&lt;/a&gt;?&lt;/li&gt;
+  &lt;li&gt;I like this more recent tutorial showing how to connect a &lt;a href="https://www.youtube.com/watch?v=7I37-awpaGg"&gt;Spring Boot application to DataStax Astra&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Cloud 2021.0.0-M2 (codename Jubilee) is Available.</title>
     <link rel="alternate" href="https://spring.io/blog/2021/10/04/spring-cloud-2021-0-0-m2-codename-jubilee-is-available" />
@@ -888,61 +941,6 @@ Let me know if you would like me to cover specific topics.&lt;/p&gt;
 &lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2021-09-15-4120-release-incl-language-servers-version-1280"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2021-09-15-4120-release-incl-language-servers-version-1280&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Spring Tools 4.12.1 is scheduled to be released in late October 2021.&lt;/p&gt;
 &lt;p&gt;Enjoy!&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Framework 5.3.10 and 5.2.17 available now</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/09/15/spring-framework-5-3-10-and-5-2-17-available-now" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>St?phane Nicoll</name>
-    </author>
-    <id>tag:spring.io,2021-09-15:4545</id>
-    <updated>2021-09-15T08:44:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Framework &lt;code&gt;5.3.10&lt;/code&gt; and &lt;code&gt;5.2.17&lt;/code&gt; are available now.&lt;/p&gt;
-&lt;p&gt;Spring Framework &lt;code&gt;5.3.10&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.3.10"&gt;45 fixes and improvements&lt;/a&gt;. Spring Framework &lt;code&gt;5.2.17&lt;/code&gt; includes &lt;a href="https://github.com/spring-projects/spring-framework/releases/tag/v5.2.17.RELEASE"&gt;13 selected fixes and improvements&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Stay tuned for follow-up Spring Boot releases next week.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://projects.spring.io/spring-framework/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-framework/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-framework/docs/5.3.10/reference/html/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tips: A Bootiful Look at SpringOne 2021</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/09/15/spring-tips-a-bootiful-look-at-springone-2021" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2021-09-12:4543</id>
-    <updated>2021-09-15T07:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, I&amp;rsquo;m joined by teammates Tiffany Jernigan and Mario Gray as we recap some of our favorite talks from the just-finished SpringOne 2021 event! Did you miss the show? (why)? Fret not: we&amp;rsquo;ll look at some of our favorite moments from SpringOne 2021! &lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VMtUzytjo6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - September 14th, 2021</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/09/14/this-week-in-spring-september-14th-2021" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2021-09-14:4544</id>
-    <updated>2021-09-14T10:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! It&amp;rsquo;s September 14th! I can&amp;rsquo;t believe it. I know this is a common refrain on my weekly posts, but can you &lt;em&gt;believe&lt;/em&gt; it&amp;rsquo;s already nearly Fall and Winter? What is happening?? How&amp;rsquo;d we get here so quickly? &lt;/p&gt;
-&lt;p&gt;Anyway, how are you doin&amp;rsquo;? I&amp;rsquo;m doing alright! It&amp;rsquo;s been kinda a crazy week. I was in the studio all day and some of the night yesterday filming a new &lt;em&gt;Livelessons&lt;/em&gt; video that I can&amp;rsquo;t wait for y&amp;rsquo;all to see. (But be forewarned: there will be &lt;code&gt;.YAML&lt;/code&gt;!) &lt;/p&gt;
-&lt;p&gt;Then, at 3am my time, I did a presentation for the Japanese Java User Group. This would be one thing in of itself, but what made this special for me was that I was supposed to appear at the JJUG six weeks ago. Yes, &lt;em&gt;that&lt;/em&gt; six weeks ago. The same six weeks ago when I was convalescing with COVID-19, six weeks ago. Needless to say (but I will!), when one is sick with the virus, they sleep. So I did. A lot. And I ended up accidentally sleeping through my appearance. And they graciously, empathetically, and kindly agreed to reschedule a week (or two? It&amp;rsquo;s all a blur to me) later. Anyway, I also slept through that one!! Ugh! I was and am so embarrassed! I still am mortified that I disappointed folks not once (perhaps understandable) but twice (_what_?!). Last night was my third attempt at being there in less than two months! They were so gracious and kind. Thank you so, so, &lt;em&gt;so&lt;/em&gt; much JJUG, for coming out and for making the show fun and for all the great questions! &lt;/p&gt;
-&lt;p&gt;And today, I need to get back to the studio, so let&amp;rsquo;s get this wicked, wonderful, weekly roundup done and out there! &lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;In last week&amp;rsquo;s &lt;a href="https://spring.io/blog/2021/09/09/a-bootiful-podcast-spring-security-engineer-josh-cummings"&gt;&lt;em&gt;A Bootiful Podcast&lt;/em&gt;, I talked to Spring Security Engineer Josh Cummings&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/09/14/efficient-parsing-of-reactive-buffer-streams"&gt;Efficient Parsing of Reactive Buffer Streams&lt;/a&gt; - a very, detailed post by Spring legend Arjen Poutsma.&lt;/li&gt;
-  &lt;li&gt;Oh, and bt the way, here&amp;rsquo;s &lt;a href="https://youtube.com/watch?v=OjN6BafjOqg&amp;feature=share"&gt;my &lt;em&gt;Kubernetes Native Java&lt;/em&gt; talk from the Japanese Java User Group last night, if you want to join in on the 90 minutes of fun&lt;/a&gt;! This talk looks at a &lt;em&gt;ton&lt;/em&gt; of stuff: motivations for cloud native computing, reactive programming, R2DBC, HTTP/REST APIs with Spring WebFlux, Kubernetes probes and observability with the Spring Boot Actuator and Micrometer, Buildpacks/Paketo/KPack, GraalVM native images with Spring Native, RSocket, Kubernetes-specific configuration, API gateways with Spring Cloud Gateway, service orchestration and composition with reactive APIs, data integration gateways GraphQL with Spring GraphQL. Oh, and we deploy to Kubernetes and all the code was in a mix of Java and Kotlin! There&amp;rsquo;s a &lt;em&gt;ton&lt;/em&gt; of fun in these 90 minutes! Don&amp;rsquo;t miss it!&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/jonatan_ivanov/status/1436446588138704897?s=12"&gt;We&amp;rsquo;ve released Spring Cloud Sleuth OpenTelemetry 1.0.0-M10 and 1.1.0-M1! &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I liked this community comparison of &lt;a href="https://www.dhaval-shah.com/performance-comparison-rsocket-webflux/"&gt;Spring Webflux and Spring&amp;rsquo;s RSocket integration&lt;/a&gt;. Hint: RSocket is &lt;em&gt;fast&lt;/em&gt;, and &lt;em&gt;very&lt;/em&gt; stable!&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/PieterHumphrey/status/1435788337097297925"&gt;Check out what &lt;em&gt;Java Brains&lt;/em&gt; was able to do in ~15 hours - they built a full stack &lt;em&gt;Good Reads&lt;/em&gt; clone with Spring Security Spring Data and Spring Boot to scale to millions of records with Cassandra&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://blogs.vmware.com/vmworld/2021/09/simplify-cloud-migration-and-modernization-with-microsoft-and-vmware.html"&gt;Simplify Cloud Migration and Modernization with Microsoft and VMware&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/09/09/spring-data-jdbc-how-to-use-custom-id-generation"&gt;Spring Data JDBC - How to use custom ID generation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/VMware/status/1435633964031545346"&gt;Last week, we announced the launch of Azure Spring Cloud Enterprise, managed by Microsoft! Learn more about how this service works&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Also, I just wanna thank folks for coming to the talk &lt;a href="https://twitter.com/juliendubois/status/1437819092459741187?s=21"&gt;that Julien Dubois&lt;/a&gt;, Layla Porter and I did at SpringOne 2021. We received 94% positive feedback from more than 2,000 votes. Thank you for coming and thank you for making it fun!&lt;/li&gt;
-&lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

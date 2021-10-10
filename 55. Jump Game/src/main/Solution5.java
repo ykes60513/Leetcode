@@ -14,10 +14,6 @@ public class Solution5 {
 			memo[i] = Index.UNKNOWN;
 		}
 		memo[memo.length - 1] = Index.GOOD;
-		
-		for(Index i : memo) {
-			System.out.println(i);
-		}
 
 		for (int i = nums.length - 2; i >= 0; i--) {
 			int furthestJump = Math.min(i + nums[i], nums.length - 1);

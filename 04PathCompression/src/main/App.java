@@ -12,10 +12,10 @@ class UnionFind {
 	}
 
 	public int find(int x) {
-		if (x == root[x]) {
-			return x;
+		if (x != root[x]) {
+			root[x] = find(root[x]);
 		}
-		return root[x] = find(root[x]);
+		return root[x];
 	}
 
 	public void union(int x, int y) {
