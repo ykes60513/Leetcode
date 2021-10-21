@@ -1,6 +1,4 @@
-package solution;
-
-import main.ListNode;
+package main;
 
 public class Solution {
 	public boolean hasCycle(ListNode head) {
