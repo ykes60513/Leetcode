@@ -234,6 +234,10 @@
 <item elementID="=54. Spiral Matrix" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=118. Pascal\&apos;s Triangle" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=209. Minimum Size Subarray Sum" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=119. Pascal\&apos;s Triangle II" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=941. Valid Mountain Array" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=1051. Height Checker" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=487. Max Consecutive Ones II" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1633838391956_12" label="C++" name="C++"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1559514122170_2" label="Window Working Set" name="Aggregate for window 1559514122169"/>
